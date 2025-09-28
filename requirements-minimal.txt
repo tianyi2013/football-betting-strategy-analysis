@@ -1,0 +1,4 @@
+# Minimal requirements for Premier League Analytics
+# Only the essential dependencies needed to run the basic functionality
+
+pandas>=1.3.0
