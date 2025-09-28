@@ -1,0 +1,15 @@
+# Premier League Betting Strategy Requirements
+# Complete requirements including core and optional dependencies
+
+# Include minimal requirements (core dependencies)
+-r requirements-minimal.txt
+
+# Optional dependencies for enhanced features
+# Uncomment the lines below if you want additional functionality
+
+# matplotlib>=3.5.0          # For creating charts and graphs
+# seaborn>=0.11.0            # For statistical data visualization
+# jupyter>=1.0.0             # For interactive notebooks
+# scipy>=1.7.0               # For advanced statistical analysis
+# openpyxl>=3.0.0            # For Excel file support
+# pytest>=6.0.0              # For testing

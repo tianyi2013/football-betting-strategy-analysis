@@ -1,0 +1,182 @@
+#!/usr/bin/env python3
+"""
+Data Cleansing Module for Premier League Betting Data
+
+This module provides data cleansing functionality to standardize all date formats 
+across all data files to yyyy-mm-dd format. This eliminates the need for complex 
+date parsing logic in the strategy code.
+"""
+
+import pandas as pd
+import os
+import glob
+from pathlib import Path
+from typing import List, Dict, Tuple
+
+class DataCleaner:
+    """
+    Handles data cleansing operations for Premier League betting data.
+    """
+    
+    def __init__(self, data_directory: str = "data/premier_league"):
+        """
+        Initialize the data cleaner.
+        
+        Args:
+            data_directory (str): Path to directory containing data files
+        """
+        self.data_directory = data_directory
+    
+    def cleanse_date_format(self, file_path: str) -> Tuple[bool, str]:
+        """
+        Cleanse date format in a single CSV file.
+        
+        Args:
+            file_path (str): Path to the CSV file
+            
+        Returns:
+            Tuple[bool, str]: (success, message)
+        """
+        try:
+            print(f"Processing {file_path}...")
+            
+            # Read the CSV file
+            df = pd.read_csv(file_path, on_bad_lines='skip', encoding='latin-1')
+            
+            # Check if Date column exists
+            if 'Date' not in df.columns:
+                message = f"No 'Date' column found in {file_path}"
+                print(f"  ⚠️  {message}")
+                return False, message
+            
+            # Store original date format for logging
+            original_dates = df['Date'].head(3).tolist()
+            
+            # Try different date formats and convert to yyyy-mm-dd
+            date_formats = [
+                '%d/%m/%Y',  # 16/08/2024
+                '%d/%m/%y',   # 16/08/05
+                '%Y-%m-%d',   # 2024-08-16 (already correct)
+                '%d-%m-%Y',   # 16-08-2024
+                '%d-%m-%y',   # 16-08-05
+            ]
+            
+            converted = False
+            for fmt in date_formats:
+                try:
+                    # Create a copy to test the format
+                    test_df = df.copy()
+                    test_df['Date'] = pd.to_datetime(test_df['Date'], format=fmt, errors='coerce')
+                    
+                    # Check if this format worked (fewer NaT values)
+                    na_count = test_df['Date'].isna().sum()
+                    if na_count < len(test_df) * 0.5:  # Less than 50% NaT values
+                        df['Date'] = test_df['Date']
+                        # Convert to yyyy-mm-dd string format
+                        df['Date'] = df['Date'].dt.strftime('%Y-%m-%d')
+                        converted = True
+                        break
+                except:
+                    continue
+            
+            if not converted:
+                message = f"Could not parse dates in {file_path}"
+                print(f"  ❌ {message}")
+                return False, message
+            
+            # Save the cleansed data back to the file
+            df.to_csv(file_path, index=False, encoding='utf-8')
+            
+            message = f"Converted {original_dates} → {df['Date'].head(3).tolist()}"
+            print(f"  ✅ {message}")
+            return True, message
+            
+        except Exception as e:
+            message = f"Error processing {file_path}: {str(e)}"
+            print(f"  ❌ {message}")
+            return False, message
+    
+    def cleanse_all_files(self) -> Dict[str, int]:
+        """
+        Cleanse all CSV files in the data directory.
+        
+        Returns:
+            Dict[str, int]: Summary of cleansing results
+        """
+        print("🧹 Premier League Data Cleansing Script")
+        print("=" * 50)
+        
+        # Find all CSV files in the data directory
+        if not os.path.exists(self.data_directory):
+            print(f"❌ Data directory '{self.data_directory}' not found!")
+            return {'successful': 0, 'failed': 0, 'total': 0}
+        
+        csv_files = glob.glob(os.path.join(self.data_directory, "*.csv"))
+        
+        if not csv_files:
+            print(f"❌ No CSV files found in '{self.data_directory}' directory!")
+            return {'successful': 0, 'failed': 0, 'total': 0}
+        
+        print(f"📁 Found {len(csv_files)} CSV files to process")
+        print()
+        
+        # Process each file
+        successful = 0
+        failed = 0
+        
+        for file_path in sorted(csv_files):
+            success, _ = self.cleanse_date_format(file_path)
+            if success:
+                successful += 1
+            else:
+                failed += 1
+            print()
+        
+        # Summary
+        print("=" * 50)
+        print("📊 CLEANSING SUMMARY")
+        print("=" * 50)
+        print(f"✅ Successfully processed: {successful} files")
+        print(f"❌ Failed to process: {failed} files")
+        print(f"📁 Total files: {len(csv_files)} files")
+        
+        if successful == len(csv_files):
+            print("\n🎉 All files processed successfully!")
+            print("📅 All date formats are now standardized to yyyy-mm-dd")
+            print("🔧 Strategy code can now use simple date parsing")
+        else:
+            print(f"\n⚠️  {failed} files failed to process. Check the errors above.")
+        
+        return {
+            'successful': successful,
+            'failed': failed,
+            'total': len(csv_files)
+        }
+
+
+def cleanse_all_data(data_directory: str = "data/premier_league") -> Dict[str, int]:
+    """
+    Convenience function to cleanse all data files.
+    
+    Args:
+        data_directory (str): Path to directory containing data files
+        
+    Returns:
+        Dict[str, int]: Summary of cleansing results
+    """
+    cleaner = DataCleaner(data_directory)
+    return cleaner.cleanse_all_files()
+
+
+def main():
+    """Main function to run data cleansing."""
+    try:
+        cleanse_all_data()
+    except KeyboardInterrupt:
+        print("\nGoodbye! 👋")
+    except Exception as e:
+        print(f"Error: {e}")
+
+
+if __name__ == "__main__":
+    main()
