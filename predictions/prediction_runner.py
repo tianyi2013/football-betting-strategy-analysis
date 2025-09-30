@@ -54,7 +54,7 @@ def run_predictions(league: str = "premier_league"):
     predictor = NextRoundPredictor(data_dir)
     
     # Get current date
-    current_date = datetime.now().strftime('%d/%m/%Y')
+    current_date = datetime.now().strftime('%Y-%m-%d')
     print(f"📅 Current Date: {current_date}")
     
     # Get predictions for next round
@@ -121,12 +121,12 @@ def run_predictions(league: str = "premier_league"):
             if bet_team:
                 print(f"        💰 BET ON: {bet_team}")
                 print(f"        🎯 Confidence: {confidence:.1%}")
-                print(f"        📝 Reason: {reason}")
+                print(f"        [NOTE] Reason: {reason}")
                 if recommendation['supporting_strategies']:
                     print(f"        🔍 Supporting: {', '.join(recommendation['supporting_strategies'])}")
             else:
                 print(f"        ❌ No bet recommended")
-                print(f"        📝 Reason: {reason}")
+                print(f"        [NOTE] Reason: {reason}")
             
             print()
     else:

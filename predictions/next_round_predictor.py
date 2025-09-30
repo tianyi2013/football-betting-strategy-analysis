@@ -48,13 +48,13 @@ class NextRoundPredictor:
         Get betting predictions for the next round of upcoming games.
         
         Args:
-            current_date (str): Current date in format 'DD/MM/YYYY' (default: today)
+            current_date (str): Current date in format 'YYYY-MM-DD' (default: today)
             
         Returns:
             Dict: Predictions for the next round with metadata
         """
         if current_date is None:
-            current_date = datetime.now().strftime('%d/%m/%Y')
+            current_date = datetime.now().strftime('%Y-%m-%d')
         
         try:
             # Load upcoming games
@@ -65,13 +65,10 @@ class NextRoundPredictor:
             
             # Convert Date column to datetime - now standardized to YYYY-MM-DD format
             upcoming_df['Date'] = pd.to_datetime(upcoming_df['Date'], format='%Y-%m-%d', errors='coerce')
-            current_date_obj = pd.to_datetime(current_date, format='%d/%m/%Y')
+            current_date_obj = pd.to_datetime(current_date, format='%Y-%m-%d')
             
-            # Filter for games that haven't been played yet (no result or future date)
-            upcoming_games = upcoming_df[
-                (upcoming_df['Date'] > current_date_obj) | 
-                (upcoming_df['Result'].isna() | (upcoming_df['Result'] == ''))
-            ].copy()
+            # Filter for games that are actually in the future (not just missing results)
+            upcoming_games = upcoming_df[upcoming_df['Date'] > current_date_obj].copy()
             
             if upcoming_games.empty:
                 return {
@@ -81,21 +78,26 @@ class NextRoundPredictor:
                     'predictions': []
                 }
             
-            # Group by round to find the next round
-            rounds = upcoming_games['Round Number'].unique()
-            next_round = min(rounds)
+            # Find the next round based on dates, not just round numbers
+            # Get the earliest upcoming date
+            earliest_upcoming_date = upcoming_games['Date'].min()
             
-            # Get games for the next round
-            next_round_games = upcoming_games[upcoming_games['Round Number'] == next_round]
+            # Find the round number of the earliest upcoming game
+            earliest_round = upcoming_games[upcoming_games['Date'] == earliest_upcoming_date]['Round Number'].iloc[0]
+            
+            # Find all games in that round (they may be spread across multiple dates)
+            next_round_games = upcoming_games[upcoming_games['Round Number'] == earliest_round]
             
             if next_round_games.empty:
                 return {
                     'error': 'No games found for next round',
                     'current_date': current_date,
-                    'next_round': next_round,
                     'total_games': 0,
                     'predictions': []
                 }
+            
+            # Get the round number from the next round games
+            next_round = next_round_games['Round Number'].iloc[0]
             
             # Convert to betting advisor format
             upcoming_games_list = []
@@ -142,7 +144,7 @@ class NextRoundPredictor:
         Print formatted predictions for the next round.
         
         Args:
-            current_date (str): Current date in format 'DD/MM/YYYY' (default: today)
+            current_date (str): Current date in format 'YYYY-MM-DD' (default: today)
         """
         result = self.get_next_round_predictions(current_date)
         
