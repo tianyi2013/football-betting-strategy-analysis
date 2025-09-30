@@ -40,7 +40,7 @@ class MomentumStrategy(BaseBettingStrategy):
             # Load season data
             df = self.load_season_data(season)
             
-            # Convert date column to datetime - all dates are now standardized to yyyy-mm-dd format
+            # Convert date column to datetime - now standardized to YYYY-MM-DD format
             df['Date'] = pd.to_datetime(df['Date'], format='%Y-%m-%d', errors='coerce')
             
             # Parse match_date - now standardized to YYYY-MM-DD format
