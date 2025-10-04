@@ -1,4 +1,4 @@
-# 🏆 Unified Football Betting Strategy Analysis
+# 🏆 Football Betting Strategy Analysis
 
 A comprehensive Python application for analyzing football betting strategies using historical data from **5 major European leagues**. This unified system provides backtesting, performance analysis, strategy comparison, data cleansing, and betting predictions for Premier League, La Liga, Ligue 1, Serie A, and Bundesliga.
 
@@ -152,25 +152,42 @@ python main.py --league bundesliga_1 --command analyze --end-season 2024
 
 ## 📊 Strategy Performance (2020-2024)
 
-### Historical ROI by League
+### Historical Performance by League (2020-2024)
 
+#### ROI Performance
 | League | Top-Bottom | Form | Momentum | Home-Away |
 |--------|------------|------|----------|-----------|
 | **Premier League** | +65.5% | +97.7% | +100.2% | -9.2% |
-| **La Liga** | +84.5% | +93.7% | +93.2% | -3.1% |
-| **Serie A** | +84.5% | +93.7% | +93.2% | -3.1% |
-| **Ligue 1** | +55.6% | +55.6% | +55.6% | +55.6% |
+| **La Liga** | +63.4% | +76.3% | +72.6% | -3.1% |
+| **Serie A** | +84.5% | +93.7% | +93.2% | -15.4% |
+| **Ligue 1** | +72.4% | +74.3% | +85.1% | -9.6% |
 | **Bundesliga** | +62.5% | +62.5% | +99.5% | +62.5% |
 
-### Best Performing Strategies
+#### Win Rate Performance
+| League | Top-Bottom | Form | Momentum | Home-Away |
+|--------|------------|------|----------|-----------|
+| **Premier League** | 63.3% | 58.7% | 56.5% | 43.2% |
+| **La Liga** | 67.6% | 57.2% | 51.6% | 45.0% |
+| **Serie A** | 66.8% | 61.0% | 56.5% | 40.7% |
+| **Ligue 1** | 62.7% | 55.9% | 53.7% | 42.3% |
+| **Bundesliga** | 65.2% | 55.8% | 56.3% | 45.1% |
 
-1. **Premier League Momentum**: +100.2% ROI (2,501 bets)
-2. **Premier League Form**: +97.7% ROI (2,011 bets)
-3. **Serie A Momentum**: +93.2% ROI (2,359 bets)
-4. **Serie A Form**: +93.7% ROI (1,953 bets)
-5. **Bundesliga Momentum**: +99.5% ROI (1,940 bets)
+*All strategies use 3-game lookback periods*
+
+### Best Performing Strategies (3-Game Lookback)
+
+1. **Premier League Momentum**: +100.2% ROI (2,501 bets, 56.5% win rate)
+2. **Serie A Momentum**: +93.2% ROI (2,359 bets, 56.5% win rate)
+3. **Serie A Form**: +93.7% ROI (1,953 bets, 61.0% win rate)
+4. **Premier League Form**: +97.7% ROI (2,011 bets, 58.7% win rate)
+5. **Bundesliga Momentum**: +99.5% ROI (1,940 bets, 56.3% win rate)
+6. **Serie A Top-Bottom**: +84.5% ROI (990 bets, 66.8% win rate)
+7. **Ligue 1 Momentum**: +85.1% ROI (2,350 bets, 53.7% win rate)
+8. **La Liga Top-Bottom**: +63.4% ROI (932 bets, 67.6% win rate)
 
 ## 🎯 Strategy Overview
+
+**Note**: All strategies use **3-game lookback periods** to match the prediction runner configuration for optimal performance.
 
 ### 1. Top-Bottom Strategy
 The main strategy implemented in this system:
@@ -178,21 +195,23 @@ The main strategy implemented in this system:
 1. **FOR Bets**: Bet on top N teams from the previous season
 2. **AGAINST Bets**: Bet against bottom N teams from the previous season (excluding relegated teams)
 
-### 2. Form-Based Strategy
+### 2. Form-Based Strategy (3-Game Lookback)
 A dynamic strategy based on recent team performance:
 
-1. **Form Calculation**: Analyzes last N games (default: 5) to calculate form score
-2. **Good Form Bets**: Bet on teams with form score above threshold (default: 0.6)
+1. **Form Calculation**: Analyzes last 3 games to calculate form score
+2. **Good Form Bets**: Bet on teams with form score above threshold (0.6)
 3. **Dynamic Selection**: Teams are selected based on recent performance, not historical rankings
+4. **Performance**: +97.7% ROI, 58.7% win rate (Premier League - 2,011 bets)
 
-### 3. Momentum-Based Strategy
+### 3. Momentum-Based Strategy (3-Game Lookback)
 A sophisticated strategy that capitalizes on team momentum and streaks:
 
-1. **Momentum Calculation**: Analyzes consecutive wins/losses in recent games (default: 5 games)
+1. **Momentum Calculation**: Analyzes consecutive wins/losses in recent 3 games
 2. **Smart Bet Selection**: 
    - **Equal Momentum**: When both teams have similar momentum → Bet on DRAW
    - **Higher Momentum**: When one team has significantly higher momentum → Bet on that team
 3. **Streak-Based Selection**: Teams are selected based on current momentum, not historical performance
+4. **Performance**: +100.2% ROI, 56.5% win rate (Premier League - 2,501 bets)
 
 ### 4. Home-Away Strategy
 A simple baseline strategy for comparison:
@@ -202,13 +221,13 @@ A simple baseline strategy for comparison:
 
 ## 🎯 Prediction System
 
-The system uses a **weighted approach** combining 4 proven strategies:
+The system uses a **weighted approach** combining 4 proven strategies with **3-game lookback periods** for optimal performance:
 
-### Strategy Weights (Based on Performance)
-- **🏆 Momentum Strategy** (40% weight) - Best performer: +100.2% ROI
-- **🥈 Form Strategy** (30% weight) - Second best: +97.7% ROI  
-- **🥉 Top-Bottom Strategy** (20% weight) - Third best: +70.6% ROI
-- **🏠 Home-Away Strategy** (10% weight) - Baseline: -3.3% ROI
+### Strategy Weights (Based on Performance - 3-Game Lookback)
+- **🏆 Momentum Strategy** (40% weight) - Best performer: +100.2% ROI, 56.5% win rate (Premier League)
+- **🥈 Form Strategy** (30% weight) - Second best: +97.7% ROI, 58.7% win rate (Premier League)
+- **🥉 Top-Bottom Strategy** (20% weight) - Third best: +84.5% ROI, 66.8% win rate (Serie A)
+- **🏠 Home-Away Strategy** (10% weight) - Baseline: -9.2% ROI, 43.2% win rate (Premier League)
 
 ### How Predictions Work
 
