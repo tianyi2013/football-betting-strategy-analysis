@@ -46,7 +46,7 @@ class DataCleaner:
             # Check if Date column exists
             if 'Date' not in df.columns:
                 message = f"No 'Date' column found in {file_path}"
-                print(f"  ⚠️  {message}")
+                print(f"  [WARNING]  {message}")
                 return False, message
             
             # Store original date format for logging
@@ -81,19 +81,19 @@ class DataCleaner:
             
             if not converted:
                 message = f"Could not parse dates in {file_path}"
-                print(f"  ❌ {message}")
+                print(f"  [ERROR] {message}")
                 return False, message
             
             # Save the cleansed data back to the file
             df.to_csv(file_path, index=False, encoding='utf-8')
             
-            message = f"Converted {original_dates} → {df['Date'].head(3).tolist()}"
-            print(f"  ✅ {message}")
+            message = f"Converted {original_dates} -> {df['Date'].head(3).tolist()}"
+            print(f"  [SUCCESS] {message}")
             return True, message
             
         except Exception as e:
             message = f"Error processing {file_path}: {str(e)}"
-            print(f"  ❌ {message}")
+            print(f"  [ERROR] {message}")
             return False, message
     
     def cleanse_all_files(self) -> Dict[str, int]:
@@ -103,21 +103,21 @@ class DataCleaner:
         Returns:
             Dict[str, int]: Summary of cleansing results
         """
-        print("🧹 Premier League Data Cleansing Script")
+        print("[CLEANSE] Premier League Data Cleansing Script")
         print("=" * 50)
         
         # Find all CSV files in the data directory
         if not os.path.exists(self.data_directory):
-            print(f"❌ Data directory '{self.data_directory}' not found!")
+            print(f"[ERROR] Data directory '{self.data_directory}' not found!")
             return {'successful': 0, 'failed': 0, 'total': 0}
         
         csv_files = glob.glob(os.path.join(self.data_directory, "*.csv"))
         
         if not csv_files:
-            print(f"❌ No CSV files found in '{self.data_directory}' directory!")
+            print(f"[ERROR] No CSV files found in '{self.data_directory}' directory!")
             return {'successful': 0, 'failed': 0, 'total': 0}
         
-        print(f"📁 Found {len(csv_files)} CSV files to process")
+        print(f"[FILES] Found {len(csv_files)} CSV files to process")
         print()
         
         # Process each file
@@ -134,18 +134,18 @@ class DataCleaner:
         
         # Summary
         print("=" * 50)
-        print("📊 CLEANSING SUMMARY")
+        print("[SUMMARY] CLEANSING SUMMARY")
         print("=" * 50)
-        print(f"✅ Successfully processed: {successful} files")
-        print(f"❌ Failed to process: {failed} files")
-        print(f"📁 Total files: {len(csv_files)} files")
+        print(f"[SUCCESS] Successfully processed: {successful} files")
+        print(f"[ERROR] Failed to process: {failed} files")
+        print(f"[FILES] Total files: {len(csv_files)} files")
         
         if successful == len(csv_files):
-            print("\n🎉 All files processed successfully!")
-            print("📅 All date formats are now standardized to yyyy-mm-dd")
-            print("🔧 Strategy code can now use simple date parsing")
+            print("\n[SUCCESS] All files processed successfully!")
+            print("[DATE] All date formats are now standardized to yyyy-mm-dd")
+            print("[TOOL] Strategy code can now use simple date parsing")
         else:
-            print(f"\n⚠️  {failed} files failed to process. Check the errors above.")
+            print(f"\n[WARNING]  {failed} files failed to process. Check the errors above.")
         
         return {
             'successful': successful,
@@ -173,7 +173,7 @@ def main():
     try:
         cleanse_all_data()
     except KeyboardInterrupt:
-        print("\nGoodbye! 👋")
+        print("\nGoodbye! [GOODBYE]")
     except Exception as e:
         print(f"Error: {e}")
 

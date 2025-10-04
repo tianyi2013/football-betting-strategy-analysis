@@ -2,7 +2,7 @@
 
 ## Overview
 
-The unified application consolidates both `main_app.py` and `multi_league_app.py` into a single, comprehensive betting strategy application that supports all 5 major European leagues.
+The unified application provides a single, comprehensive betting strategy application that supports all 5 major European leagues with advanced strategy analysis and prediction capabilities.
 
 ## 🚀 Quick Start
 
@@ -135,21 +135,6 @@ python main.py --league premier_league --command cleanse
 - Use shorter lookback periods for more recent data
 - Consider league-specific betting patterns
 
-## 🔄 Migration from Old Applications
-
-### Old Commands → New Commands
-
-```bash
-# Old multi-league app
-python -m app.multi_league_app --league premier_league --command backtest
-
-# New unified app
-python main.py --league premier_league --command backtest
-```
-
-### Backward Compatibility
-
-The unified application maintains full backward compatibility with existing command structures while adding new features and improved error handling.
 
 ## 🛠️ Technical Details
 
@@ -158,24 +143,23 @@ The unified application maintains full backward compatibility with existing comm
 ```
 app/
 ├── unified_app.py          # Main unified application
-├── main_app.py            # Legacy (can be removed)
-└── multi_league_app.py    # Legacy (can be removed)
+└── __init__.py
 
-main.py                    # New entry point
+main.py                    # Application entry point
 ```
 
 ### Dependencies
 
-- All existing dependencies remain the same
-- No new dependencies required
-- Backward compatible with existing data
+- pandas (data manipulation and analysis)
+- numpy (numerical computing)
+- Standard Python libraries
 
 ## 🚨 Important Notes
 
 1. **Data Requirements**: Ensure all leagues have proper data files
 2. **File Naming**: Supports both `upcoming_25.csv` and `upcoming_2025.csv` formats
 3. **Date Format**: All dates must be in YYYY-MM-DD format
-4. **Error Handling**: Improved error messages and graceful failure handling
+4. **Error Handling**: Comprehensive error messages and graceful failure handling
 
 ## 📞 Support
 
@@ -187,4 +171,4 @@ For issues or questions:
 
 ---
 
-**🎉 The unified application provides a single, powerful interface for all your betting strategy needs across all major European leagues!**
+**🎉 The unified application provides a powerful interface for all your betting strategy needs across all major European leagues!**

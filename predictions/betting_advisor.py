@@ -192,7 +192,7 @@ class BettingAdvisor:
             away_recent_results = away_momentum.get('recent_results', [])
             
             # Create detailed reason with recent games and scores
-            detailed_reason = f"Home team: {home_recent_results} (Score: {home_momentum_score:.2f}) | Away team: {away_recent_results} (Score: {away_momentum_score:.2f}) | Thresholds: Strong ≥{strong_momentum_threshold}, Weak ≤{weak_momentum_threshold}"
+            detailed_reason = f"Home team: {home_recent_results} (Score: {home_momentum_score:.2f}) | Away team: {away_recent_results} (Score: {away_momentum_score:.2f}) | Thresholds: Strong >={strong_momentum_threshold}, Weak <={weak_momentum_threshold}"
             
             if home_momentum_score >= strong_momentum_threshold and away_momentum_score <= weak_momentum_threshold:
                 return {
@@ -256,7 +256,7 @@ class BettingAdvisor:
             away_points = away_form.get('points', 0)
             
             # Create detailed reason with recent games, points, and scores
-            detailed_reason = f"Home team: {home_recent_results} ({home_points} pts, Score: {home_form_score:.2f}) | Away team: {away_recent_results} ({away_points} pts, Score: {away_form_score:.2f}) | Thresholds: Good ≥{good_form_threshold}, Poor ≤{poor_form_threshold}"
+            detailed_reason = f"Home team: {home_recent_results} ({home_points} pts, Score: {home_form_score:.2f}) | Away team: {away_recent_results} ({away_points} pts, Score: {away_form_score:.2f}) | Thresholds: Good >={good_form_threshold}, Poor <={poor_form_threshold}"
             
             if home_form_score >= good_form_threshold and away_form_score <= poor_form_threshold:
                 return {

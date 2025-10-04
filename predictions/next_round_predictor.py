@@ -67,8 +67,8 @@ class NextRoundPredictor:
             upcoming_df['Date'] = pd.to_datetime(upcoming_df['Date'], format='%Y-%m-%d', errors='coerce')
             current_date_obj = pd.to_datetime(current_date, format='%Y-%m-%d')
             
-            # Filter for games that are actually in the future (not just missing results)
-            upcoming_games = upcoming_df[upcoming_df['Date'] > current_date_obj].copy()
+            # Filter for games that are on or after the current date
+            upcoming_games = upcoming_df[upcoming_df['Date'] >= current_date_obj].copy()
             
             if upcoming_games.empty:
                 return {

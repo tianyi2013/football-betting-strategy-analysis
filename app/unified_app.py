@@ -78,10 +78,10 @@ class UnifiedBettingApp:
             end_season (int): Ending season year
             home_away (bool): Whether to use home-away strategy
         """
-        print(f"🏆 {self.league_display} Backtest Analysis")
+        print(f"[TROPHY] {self.league_display} Backtest Analysis")
         print("=" * 60)
-        print(f"📊 Analyzing top {top_n} teams from {start_season} to {end_season}")
-        print(f"🏠 Home-Away Strategy: {'Yes' if home_away else 'No'}")
+        print(f"[CHART] Analyzing top {top_n} teams from {start_season} to {end_season}")
+        print(f"[HOME] Home-Away Strategy: {'Yes' if home_away else 'No'}")
         print("=" * 60)
         
         try:
@@ -100,27 +100,27 @@ class UnifiedBettingApp:
                 )
             
             if 'error' in results:
-                print(f"❌ Error: {results['error']}")
+                print(f"[ERROR] Error: {results['error']}")
                 return
             
             # Print results
-            print(f"📈 Total Bets: {results['total_bets']}")
-            print(f"🎯 Win Rate: {results['win_rate']:.1%}")
-            print(f"💰 ROI: {results['roi']:.1%}")
-            print(f"💵 Profit/Loss: {results['profit_loss']:+.1f} units")
+            print(f"[TREND] Total Bets: {results['total_bets']}")
+            print(f"[TARGET] Win Rate: {results['win_rate']:.1%}")
+            print(f"[MONEY] ROI: {results['roi']:.1%}")
+            print(f"[CASH] Profit/Loss: {results['profit_loss']:+.1f} units")
             print("=" * 60)
             
             if results['bet_details']:
-                print("\n🎲 BETTING DETAILS:")
+                print("\n[DICE] BETTING DETAILS:")
                 print("-" * 60)
                 for bet in results['bet_details'][:10]:  # Show first 10 bets
-                    print(f"📅 {bet['date']}: {bet['home_team']} vs {bet['away_team']}")
-                    print(f"   💰 Bet: {bet['bet_team']} @ {bet['odds']:.2f}")
-                    print(f"   🎯 Result: {'WIN' if bet['result'] == 'win' else 'LOSS'} ({bet['profit_loss']:+.2f} units)")
+                    print(f"[DATE] {bet['date']}: {bet['home_team']} vs {bet['away_team']}")
+                    print(f"   [MONEY] Bet: {bet['bet_team']} @ {bet['odds']:.2f}")
+                    print(f"   [TARGET] Result: {'WIN' if bet['result'] == 'win' else 'LOSS'} ({bet['profit_loss']:+.2f} units)")
                     print()
             
         except Exception as e:
-            print(f"❌ Error running backtest: {e}")
+            print(f"[ERROR] Error running backtest: {e}")
     
     def run_form_analysis(self, form_games: int = 5, form_threshold: float = 0.6,
                          start_season: int = 2020, end_season: int = 2024) -> None:
@@ -133,11 +133,11 @@ class UnifiedBettingApp:
             start_season (int): Starting season year
             end_season (int): Ending season year
         """
-        print(f"📊 {self.league_display} Form Analysis")
+        print(f"[CHART] {self.league_display} Form Analysis")
         print("=" * 60)
-        print(f"🎯 Form Games: {form_games}")
-        print(f"📈 Form Threshold: {form_threshold:.1%}")
-        print(f"📅 Seasons: {start_season}-{end_season}")
+        print(f"[TARGET] Form Games: {form_games}")
+        print(f"[TREND] Form Threshold: {form_threshold:.1%}")
+        print(f"[DATE] Seasons: {start_season}-{end_season}")
         print("=" * 60)
         
         try:
@@ -149,18 +149,18 @@ class UnifiedBettingApp:
             )
             
             if 'error' in results:
-                print(f"❌ Error: {results['error']}")
+                print(f"[ERROR] Error: {results['error']}")
                 return
             
             # Print results
-            print(f"📈 Total Bets: {results['total_bets']}")
-            print(f"🎯 Win Rate: {results['win_rate']:.1%}")
-            print(f"💰 ROI: {results['roi']:.1%}")
-            print(f"💵 Profit/Loss: {results['profit_loss']:+.1f} units")
+            print(f"[TREND] Total Bets: {results['total_bets']}")
+            print(f"[TARGET] Win Rate: {results['win_rate']:.1%}")
+            print(f"[MONEY] ROI: {results['roi']:.1%}")
+            print(f"[CASH] Profit/Loss: {results['profit_loss']:+.1f} units")
             print("=" * 60)
             
         except Exception as e:
-            print(f"❌ Error running form analysis: {e}")
+            print(f"[ERROR] Error running form analysis: {e}")
     
     def run_momentum_analysis(self, lookback_games: int = 5, 
                             winning_momentum_threshold: float = 0.2,
@@ -174,11 +174,11 @@ class UnifiedBettingApp:
             start_season (int): Starting season year
             end_season (int): Ending season year
         """
-        print(f"🚀 {self.league_display} Momentum Analysis")
+        print(f"[ROCKET] {self.league_display} Momentum Analysis")
         print("=" * 60)
-        print(f"🎯 Lookback Games: {lookback_games}")
-        print(f"📈 Momentum Threshold: {winning_momentum_threshold:.1%}")
-        print(f"📅 Seasons: {start_season}-{end_season}")
+        print(f"[TARGET] Lookback Games: {lookback_games}")
+        print(f"[TREND] Momentum Threshold: {winning_momentum_threshold:.1%}")
+        print(f"[DATE] Seasons: {start_season}-{end_season}")
         print("=" * 60)
         
         try:
@@ -190,24 +190,24 @@ class UnifiedBettingApp:
             )
             
             if 'error' in results:
-                print(f"❌ Error: {results['error']}")
+                print(f"[ERROR] Error: {results['error']}")
                 return
             
             # Print results
-            print(f"📈 Total Bets: {results['total_bets']}")
-            print(f"🎯 Win Rate: {results['win_rate']:.1%}")
-            print(f"💰 ROI: {results['roi']:.1%}")
-            print(f"💵 Profit/Loss: {results['profit_loss']:+.1f} units")
+            print(f"[TREND] Total Bets: {results['total_bets']}")
+            print(f"[TARGET] Win Rate: {results['win_rate']:.1%}")
+            print(f"[MONEY] ROI: {results['roi']:.1%}")
+            print(f"[CASH] Profit/Loss: {results['profit_loss']:+.1f} units")
             print("=" * 60)
             
         except Exception as e:
-            print(f"❌ Error running momentum analysis: {e}")
+            print(f"[ERROR] Error running momentum analysis: {e}")
     
     def run_predictions(self) -> None:
         """
         Run betting predictions for the next round of games using weighted approach.
         """
-        print(f"🎯 {self.league_display} Betting Predictions (Weighted Approach)")
+        print(f"[TARGET] {self.league_display} Betting Predictions (Weighted Approach)")
         print("=" * 60)
         print("Getting predictions for the next round of games...")
         print("=" * 60)
@@ -215,7 +215,7 @@ class UnifiedBettingApp:
         try:
             run_predictions(self.league)
         except Exception as e:
-            print(f"❌ Error running predictions: {e}")
+            print(f"[ERROR] Error running predictions: {e}")
     
     def run_waterfall_advisor(self, bankroll: float = 1000.0, 
                             risk_per_bet: float = 0.02) -> None:
@@ -226,32 +226,32 @@ class UnifiedBettingApp:
             bankroll (float): Starting bankroll
             risk_per_bet (float): Risk per bet as percentage of bankroll
         """
-        print(f"💧 {self.league_display} Waterfall Betting Advisor")
+        print(f"[WATER] {self.league_display} Waterfall Betting Advisor")
         print("=" * 60)
-        print(f"💰 Bankroll: ${bankroll:,.2f}")
-        print(f"🎯 Risk per Bet: {risk_per_bet:.1%}")
+        print(f"[MONEY] Bankroll: ${bankroll:,.2f}")
+        print(f"[TARGET] Risk per Bet: {risk_per_bet:.1%}")
         print("=" * 60)
         
         try:
             advisor = WaterfallBettingAdvisor(self.data_directory)
             advisor.run_advisor(bankroll, risk_per_bet)
         except Exception as e:
-            print(f"❌ Error running waterfall advisor: {e}")
+            print(f"[ERROR] Error running waterfall advisor: {e}")
     
     def cleanse_data(self) -> None:
         """
         Cleanse all data files.
         """
-        print(f"🧹 {self.league_display} Data Cleansing")
+        print(f"[CLEANSE] {self.league_display} Data Cleansing")
         print("=" * 60)
         print("Cleansing all data files...")
         print("=" * 60)
         
         try:
             cleanse_all_data(self.data_directory)
-            print("✅ Data cleansing completed successfully!")
+            print("[SUCCESS] Data cleansing completed successfully!")
         except Exception as e:
-            print(f"❌ Error cleansing data: {e}")
+            print(f"[ERROR] Error cleansing data: {e}")
 
 
 def main():
@@ -318,14 +318,14 @@ def main():
         elif args.command == 'cleanse':
             app.cleanse_data()
         else:
-            print(f"❌ Unknown command: {args.command}")
+            print(f"[ERROR] Unknown command: {args.command}")
             sys.exit(1)
             
     except KeyboardInterrupt:
-        print("\n👋 Goodbye!")
+        print("\n[GOODBYE] Goodbye!")
         sys.exit(0)
     except Exception as e:
-        print(f"❌ Error: {e}")
+        print(f"[ERROR] Error: {e}")
         sys.exit(1)
 
 

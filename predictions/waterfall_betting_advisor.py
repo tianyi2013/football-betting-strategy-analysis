@@ -554,7 +554,7 @@ class WaterfallBettingAdvisor:
 
                     'reason': f'Home team poor form ({home_form_score:.2f}) vs threshold ({poor_form_threshold})',
 
-                    'detailed_reason': f'Home team form: {home_form_score:.2f} ≤ {poor_form_threshold} (poor form threshold)'
+                    'detailed_reason': f'Home team form: {home_form_score:.2f} <= {poor_form_threshold} (poor form threshold)'
 
                 }
 
@@ -572,7 +572,7 @@ class WaterfallBettingAdvisor:
 
                     'reason': f'Away team poor form ({away_form_score:.2f}) vs threshold ({poor_form_threshold})',
 
-                    'detailed_reason': f'Away team form: {away_form_score:.2f} ≤ {poor_form_threshold} (poor form threshold)'
+                    'detailed_reason': f'Away team form: {away_form_score:.2f} <= {poor_form_threshold} (poor form threshold)'
 
                 }
 
@@ -658,7 +658,7 @@ class WaterfallBettingAdvisor:
 
                     'reason': f'Home team negative momentum ({home_momentum_score:.2f}) vs threshold ({losing_momentum_threshold})',
 
-                    'detailed_reason': f'Home team momentum: {home_momentum_score:.2f} ≤ {losing_momentum_threshold} (negative momentum threshold)'
+                    'detailed_reason': f'Home team momentum: {home_momentum_score:.2f} <= {losing_momentum_threshold} (negative momentum threshold)'
 
                 }
 
@@ -676,7 +676,7 @@ class WaterfallBettingAdvisor:
 
                     'reason': f'Away team negative momentum ({away_momentum_score:.2f}) vs threshold ({losing_momentum_threshold})',
 
-                    'detailed_reason': f'Away team momentum: {away_momentum_score:.2f} ≤ {losing_momentum_threshold} (negative momentum threshold)'
+                    'detailed_reason': f'Away team momentum: {away_momentum_score:.2f} <= {losing_momentum_threshold} (negative momentum threshold)'
 
                 }
 
@@ -762,7 +762,7 @@ class WaterfallBettingAdvisor:
 
                     'reason': f'Home team positive momentum ({home_momentum_score:.2f}) vs threshold ({winning_momentum_threshold})',
 
-                    'detailed_reason': f'Home team momentum: {home_momentum_score:.2f} ≥ {winning_momentum_threshold} (positive momentum threshold)'
+                    'detailed_reason': f'Home team momentum: {home_momentum_score:.2f} >= {winning_momentum_threshold} (positive momentum threshold)'
 
                 }
 
@@ -780,7 +780,7 @@ class WaterfallBettingAdvisor:
 
                     'reason': f'Away team positive momentum ({away_momentum_score:.2f}) vs threshold ({winning_momentum_threshold})',
 
-                    'detailed_reason': f'Away team momentum: {away_momentum_score:.2f} ≥ {winning_momentum_threshold} (positive momentum threshold)'
+                    'detailed_reason': f'Away team momentum: {away_momentum_score:.2f} >= {winning_momentum_threshold} (positive momentum threshold)'
 
                 }
 
@@ -862,7 +862,7 @@ class WaterfallBettingAdvisor:
 
                     'reason': f'Home team good form ({home_form_score:.2f}) vs threshold ({form_threshold})',
 
-                    'detailed_reason': f'Home team form: {home_form_score:.2f} ≥ {form_threshold} (good form threshold)'
+                    'detailed_reason': f'Home team form: {home_form_score:.2f} >= {form_threshold} (good form threshold)'
 
                 }
 
@@ -880,7 +880,7 @@ class WaterfallBettingAdvisor:
 
                     'reason': f'Away team good form ({away_form_score:.2f}) vs threshold ({form_threshold})',
 
-                    'detailed_reason': f'Away team form: {away_form_score:.2f} ≥ {form_threshold} (good form threshold)'
+                    'detailed_reason': f'Away team form: {away_form_score:.2f} >= {form_threshold} (good form threshold)'
 
                 }
 
