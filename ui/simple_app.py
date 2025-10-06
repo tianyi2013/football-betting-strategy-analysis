@@ -154,9 +154,14 @@ def load_bets():
     if os.path.exists(BETS_FILE):
         try:
             with open(BETS_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except:
+                data = json.load(f)
+                print(f"Loaded {len(data)} bets from {BETS_FILE}")
+                return data
+        except Exception as e:
+            print(f"Error loading bets: {e}")
             return []
+    else:
+        print(f"Bets file not found: {BETS_FILE}")
     return []
 
 def save_bets(bets_data):
@@ -1078,6 +1083,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         let opportunities = [];
         let activeBets = [];
         let completedBets = [];
+        let currentDateFilter = 'all';  // Track current filter state
 
         // Date filtering functions
         function populateDateFilter() {
@@ -1090,8 +1096,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             // Add date options
             uniqueDates.forEach(date => {
                 const option = document.createElement('option');
-                option.value = date;
-                option.textContent = formatDateForDisplay(date);
+                option.value = date;  // Keep the raw date value for filtering
+                option.textContent = formatDateForDisplay(date);  // Display formatted date
                 dateFilter.appendChild(option);
             });
         }
@@ -1132,15 +1138,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         
         function filterOpportunitiesByDate() {
             const selectedDate = document.getElementById('date-filter').value;
+            currentDateFilter = selectedDate;  // Save current filter state
+            console.log('Selected date:', selectedDate);
+            
             const filteredOpportunities = selectedDate === 'all' 
                 ? opportunities 
-                : opportunities.filter(opp => opp.match_date === selectedDate);
+                : opportunities.filter(opp => {
+                    console.log('Comparing:', opp.match_date, '===', selectedDate, '?', opp.match_date === selectedDate);
+                    return opp.match_date === selectedDate;
+                });
             
+            console.log('Filtered opportunities:', filteredOpportunities.length, 'out of', opportunities.length);
             displayOpportunities(filteredOpportunities);
         }
         
         function clearDateFilter() {
             document.getElementById('date-filter').value = 'all';
+            currentDateFilter = 'all';  // Reset filter state
             displayOpportunities(opportunities);
         }
 
@@ -1206,8 +1220,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 return;
             }
             
-            opportunitiesToDisplay.forEach((opp, index) => {
-                const card = createOpportunityCard(opp, index);
+            opportunitiesToDisplay.forEach((opp, displayIndex) => {
+                // Find the actual index in the full opportunities array
+                const actualIndex = opportunities.findIndex(o => 
+                    o.game === opp.game && 
+                    o.bet_team === opp.bet_team && 
+                    o.league === opp.league
+                );
+                const card = createOpportunityCard(opp, actualIndex);
                 grid.appendChild(card);
             });
         }
@@ -1434,8 +1454,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             document.getElementById(`odds-${index}`).value = '';
             document.getElementById(`stake-${index}`).value = '';
             
-            // Refresh opportunities display to show bet placed indicator
-            displayOpportunities();
+            // Refresh opportunities display with current filter
+            if (currentDateFilter === 'all') {
+                displayOpportunities(opportunities);
+            } else {
+                const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
+                displayOpportunities(filteredOpportunities);
+            }
             
             alert('Bet added successfully!');
         }
@@ -1478,8 +1503,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             document.getElementById(`odds-${index}`).value = '';
             document.getElementById(`stake-${index}`).value = '';
             
-            // Refresh opportunities display to show bet placed indicator
-            displayOpportunities();
+            // Refresh opportunities display with current filter
+            if (currentDateFilter === 'all') {
+                displayOpportunities(opportunities);
+            } else {
+                const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
+                displayOpportunities(filteredOpportunities);
+            }
             
             alert('Bet added and marked as won!');
         }
@@ -1522,8 +1552,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             document.getElementById(`odds-${index}`).value = '';
             document.getElementById(`stake-${index}`).value = '';
             
-            // Refresh opportunities display to show bet placed indicator
-            displayOpportunities();
+            // Refresh opportunities display with current filter
+            if (currentDateFilter === 'all') {
+                displayOpportunities(opportunities);
+            } else {
+                const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
+                displayOpportunities(filteredOpportunities);
+            }
             
             alert('Bet added and marked as lost!');
         }
