@@ -4,21 +4,20 @@ Simple Football Betting Logger Web Interface
 Real-time predictions from your betting algorithm with file-based storage
 """
 
-import os
 import json
-import webbrowser
+import os
+import sys
 import threading
 import time
-import sys
-from flask import Flask, render_template_string, jsonify, request, make_response
+import webbrowser
 from datetime import datetime
-import random
+
+from flask import Flask, jsonify, request, make_response
 
 # Add the parent directory to the path to import prediction modules
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from predictions.next_round_predictor import NextRoundPredictor
-from predictions.prediction_runner import run_predictions
 
 app = Flask(__name__)
 
@@ -49,26 +48,27 @@ LEAGUES = {
     }
 }
 
+
 def get_real_opportunities():
     """Get real betting opportunities from prediction system"""
     opportunities = []
-    
+
     print(f"Getting opportunities for {len(LEAGUES)} leagues...")
-    
+
     for league_key, league_info in LEAGUES.items():
         try:
             print(f"Processing {league_info['display_name']}...")
             # Initialize predictor for this league
             predictor = NextRoundPredictor(league_info['data_dir'])
-            
+
             # Get predictions for current date
             current_date = datetime.now().strftime('%Y-%m-%d')
             print(f"Getting predictions for {current_date}...")
             print(f"Data directory: {league_info['data_dir']}")
             result = predictor.get_next_round_predictions(current_date)
-            
+
             print(f"Result keys: {list(result.keys()) if isinstance(result, dict) else 'Not a dict'}")
-            
+
             if 'error' not in result and result.get('predictions'):
                 print(f"Found {len(result['predictions'])} predictions for {league_info['display_name']}")
                 for pred in result['predictions']:
@@ -78,7 +78,7 @@ def get_real_opportunities():
                         individual_strategies = pred.get('individual_strategies', {})
                         primary_strategy = 'weighted'
                         strategy_priority = 3  # Default priority (lower = higher priority)
-                        
+
                         # Check which strategies are supporting this bet
                         supporting = recommendation.get('supporting_strategies', [])
                         if any('momentum' in s.lower() for s in supporting):
@@ -87,10 +87,10 @@ def get_real_opportunities():
                         elif any('form' in s.lower() for s in supporting):
                             primary_strategy = 'form'
                             strategy_priority = 2
-                        
+
                         # Get actual game date from the prediction data
                         game_date = pred.get('match_date', result.get('round_date', 'Unknown'))
-                        
+
                         opportunities.append({
                             'league': league_info['display_name'],
                             'game': pred.get('game', 'Unknown vs Unknown'),
@@ -112,16 +112,16 @@ def get_real_opportunities():
             import traceback
             traceback.print_exc()
             continue
-    
+
     print(f"Total opportunities found: {len(opportunities)}")
-    
+
     # Sort opportunities by date first (near future first), then by strategy priority and confidence
     def sort_key(opp):
         # Parse the match date for sorting
         match_date = opp.get('match_date', 'Unknown')
         if match_date == 'Unknown':
             return (999, 999, 0)  # Put unknown dates last
-        
+
         try:
             # Handle DD/MM/YYYY format
             if '/' in match_date:
@@ -134,20 +134,22 @@ def get_real_opportunities():
             else:
                 # Handle YYYY-MM-DD format
                 date_obj = datetime.strptime(match_date, '%Y-%m-%d')
-            
+
             # Return (days_from_now, strategy_priority, -confidence)
             days_from_now = (date_obj - datetime.now()).days
             return (days_from_now, opp.get('strategy_priority', 3), -opp.get('confidence', 0))
         except:
             return (999, 999, 0)  # Put invalid dates last
-    
+
     opportunities.sort(key=sort_key)
-    
+
     return opportunities
+
 
 # File-based storage for bets and analytics
 BETS_FILE = 'bets.json'
 ANALYTICS_FILE = 'analytics.json'
+
 
 def load_bets():
     """Load bets from JSON file"""
@@ -164,6 +166,7 @@ def load_bets():
         print(f"Bets file not found: {BETS_FILE}")
     return []
 
+
 def save_bets(bets_data):
     """Save bets to JSON file"""
     try:
@@ -171,6 +174,7 @@ def save_bets(bets_data):
             json.dump(bets_data, f, indent=2, ensure_ascii=False)
     except Exception as e:
         print(f"Error saving bets: {e}")
+
 
 def load_analytics():
     """Load analytics from JSON file"""
@@ -182,6 +186,7 @@ def load_analytics():
             return {}
     return {}
 
+
 def save_analytics(analytics_data):
     """Save analytics to JSON file"""
     try:
@@ -190,9 +195,11 @@ def save_analytics(analytics_data):
     except Exception as e:
         print(f"Error saving analytics: {e}")
 
+
 # Initialize storage
 bets = load_bets()
 bet_id_counter = max([bet.get('id', 0) for bet in bets], default=0) + 1
+
 
 @app.route('/')
 def index():
@@ -203,6 +210,7 @@ def index():
     response.headers['Pragma'] = 'no-cache'
     response.headers['Expires'] = '0'
     return response
+
 
 # HTML Template
 HTML_TEMPLATE = """<!DOCTYPE html>
@@ -2156,6 +2164,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </body>
 </html>"""
 
+
 @app.route('/api/opportunities')
 def get_opportunities():
     """API endpoint to get real betting opportunities from prediction system"""
@@ -2171,11 +2180,12 @@ def get_opportunities():
         # Return empty list if there's an error
         return jsonify([])
 
+
 @app.route('/api/bets', methods=['GET', 'POST'])
 def handle_bets():
     """API endpoint to handle bets with file-based storage"""
     global bet_id_counter, bets
-    
+
     if request.method == 'GET':
         return jsonify(bets)
     elif request.method == 'POST':
@@ -2185,16 +2195,17 @@ def handle_bets():
         save_bets(bets)
         return jsonify({'success': True})
 
+
 @app.route('/api/analytics')
 def get_analytics():
     """API endpoint to get betting analytics"""
     total_bets = len(bets)
     won_bets = len([bet for bet in bets if bet.get('status') == 'won'])
     win_rate = (won_bets / total_bets * 100) if total_bets > 0 else 0
-    
+
     total_stake = sum(bet.get('stake', 0) for bet in bets)
     total_profit = sum(bet.get('profit', 0) for bet in bets)
-    
+
     return jsonify({
         'total_bets': total_bets,
         'win_rate': round(win_rate, 1),
@@ -2202,10 +2213,12 @@ def get_analytics():
         'total_profit': round(total_profit, 2)
     })
 
+
 def open_browser():
     """Open the browser after a short delay to ensure the server is running"""
     time.sleep(1.5)  # Wait for server to start
     webbrowser.open('http://localhost:5000')
+
 
 def open_browser_once():
     """Open browser only once, even with Flask auto-reloader"""
@@ -2213,6 +2226,7 @@ def open_browser_once():
     if not _browser_opened:
         _browser_opened = True
         open_browser()
+
 
 if __name__ == '__main__':
     # Check if this is the main process (not a reloader subprocess)
@@ -2228,10 +2242,10 @@ if __name__ == '__main__':
         print("   - Track bet results and calculate P&L")
         print("   - Beautiful, responsive web interface")
         print("\nYour predictions are powered by momentum, form, top-bottom, and home-away strategies!")
-        
+
         # Start browser opening in a separate thread
         browser_thread = threading.Thread(target=open_browser)
         browser_thread.daemon = True
         browser_thread.start()
-    
+
     app.run(debug=False, host='0.0.0.0', port=5000)
