@@ -21,17 +21,17 @@ pip install -r requirements-minimal.txt
 ### 3. Run Analysis
 ```bash
 # Get betting predictions for any league
-python main.py --league premier_league --command predict
-python main.py --league laliga_1 --command predict
-python main.py --league le_championnat --command predict
-python main.py --league serie_a --command predict
-python main.py --league bundesliga_1 --command predict
+python -m app.cli --league premier_league --command predict
+python -m app.cli --league laliga_1 --command predict
+python -m app.cli --league le_championnat --command predict
+python -m app.cli --league serie_a --command predict
+python -m app.cli --league bundesliga_1 --command predict
 
 # Run backtest analysis
-python main.py --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
+python -m app.cli --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
 
 # Clean data formats
-python main.py --league premier_league --command cleanse
+python -m app.cli --league premier_league --command cleanse
 ```
 
 ## 📁 Project Structure
@@ -40,7 +40,7 @@ python main.py --league premier_league --command cleanse
 football_data/
 ├── app/                        # 🚀 Unified Application
 │   ├── __init__.py
-│   └── unified_app.py         # Single unified application for all leagues
+│   └── cli.py         # Command-line interface for the application
 ├── analytics/                  # 📊 Analytics and data processing
 │   ├── __init__.py
 │   ├── league_analytics.py    # Core league table analysis
@@ -71,7 +71,6 @@ football_data/
 │   ├── le_championnat/       # Ligue 1 data
 │   ├── serie_a/              # Serie A data
 │   └── bundesliga_1/         # Bundesliga data
-├── main.py                    # 🎯 Main entry point
 ├── requirements-minimal.txt   # 📦 Core dependencies
 ├── UNIFIED_APP_README.md      # 📖 Detailed usage guide
 └── README.md                  # 📖 This file
@@ -96,19 +95,19 @@ The unified application supports **5 major European leagues**:
 
 ```bash
 # Premier League predictions
-python main.py --league premier_league --command predict
+python -m app.cli --league premier_league --command predict
 
 # La Liga predictions
-python main.py --league laliga_1 --command predict
+python -m app.cli --league laliga_1 --command predict
 
 # Ligue 1 predictions
-python main.py --league le_championnat --command predict
+python -m app.cli --league le_championnat --command predict
 
 # Serie A predictions
-python main.py --league serie_a --command predict
+python -m app.cli --league serie_a --command predict
 
 # Bundesliga predictions
-python main.py --league bundesliga_1 --command predict
+python -m app.cli --league bundesliga_1 --command predict
 ```
 
 ### 2. Backtest Analysis (`--command backtest`)
@@ -116,38 +115,38 @@ python main.py --league bundesliga_1 --command predict
 
 ```bash
 # Top-Bottom strategy
-python main.py --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
+python -m app.cli --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
 
 # Home-Away strategy
-python main.py --league serie_a --command backtest --home-away --start-season 2020 --end-season 2024
+python -m app.cli --league serie_a --command backtest --home-away --start-season 2020 --end-season 2024
 ```
 
 ### 3. Form Analysis (`--command form`)
 **Purpose**: Run form-based betting analysis
 
 ```bash
-python main.py --league laliga_1 --command form --form-games 5 --form-threshold 0.6 --start-season 2020 --end-season 2024
+python -m app.cli --league laliga_1 --command form --form-games 5 --form-threshold 0.6 --start-season 2020 --end-season 2024
 ```
 
 ### 4. Momentum Analysis (`--command momentum`)
 **Purpose**: Run momentum-based betting analysis
 
 ```bash
-python main.py --league le_championnat --command momentum --lookback-games 5 --winning-momentum-threshold 0.2 --start-season 2020 --end-season 2024
+python -m app.cli --league le_championnat --command momentum --lookback-games 5 --winning-momentum-threshold 0.2 --start-season 2020 --end-season 2024
 ```
 
 ### 5. Data Cleansing (`--command cleanse`)
 **Purpose**: Clean and standardize data formats
 
 ```bash
-python main.py --league premier_league --command cleanse
+python -m app.cli --league premier_league --command cleanse
 ```
 
 ### 6. League Analysis (`--command analyze`)
 **Purpose**: Analyze league standings for a specific season
 
 ```bash
-python main.py --league bundesliga_1 --command analyze --end-season 2024
+python -m app.cli --league bundesliga_1 --command analyze --end-season 2024
 ```
 
 ## 📊 Strategy Performance (2020-2024)
@@ -284,9 +283,8 @@ The system uses a **weighted approach** combining 4 proven strategies with **3-g
 
 ## 🏗️ Architecture
 
-### Unified Application
-- **`app/unified_app.py`**: Single application supporting all 5 leagues
-- **`main.py`**: Main entry point with unified command interface
+### Command Line
+- **`app/cli.py`**: Command-line interface supporting all 5 leagues
 
 ### Analytics Module
 - **`league_analytics.py`**: Core data processing and league table generation
@@ -339,28 +337,28 @@ pip install -r requirements-minimal.txt
 ### Complete Workflow
 ```bash
 # 1. Clean data first
-python main.py --league premier_league --command cleanse
+python -m app.cli --league premier_league --command cleanse
 
 # 2. Run backtest analysis
-python main.py --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
+python -m app.cli --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
 
 # 3. Get predictions for next round
-python main.py --league premier_league --command predict
+python -m app.cli --league premier_league --command predict
 ```
 
 ### Strategy Testing
 ```bash
 # Test form strategy with custom parameters
-python main.py --league laliga_1 --command form --form-games 5 --form-threshold 0.6 --start-season 2023 --end-season 2023
+python -m app.cli --league laliga_1 --command form --form-games 5 --form-threshold 0.6 --start-season 2023 --end-season 2023
 
 # Test momentum strategy
-python main.py --league serie_a --command momentum --lookback-games 5 --winning-momentum-threshold 0.2 --start-season 2023 --end-season 2023
+python -m app.cli --league serie_a --command momentum --lookback-games 5 --winning-momentum-threshold 0.2 --start-season 2023 --end-season 2023
 ```
 
 ### League Analysis
 ```bash
 # Analyze 2024 season for any league
-python main.py --league bundesliga_1 --command analyze --end-season 2024
+python -m app.cli --league bundesliga_1 --command analyze --end-season 2024
 ```
 
 ## 🎯 Key Benefits
@@ -410,11 +408,11 @@ pip install -r requirements-minimal.txt
 **Problem: `Unknown league 'xyz'`**
 ```bash
 # Use supported league names:
-python main.py --league premier_league --command predict
-python main.py --league laliga_1 --command predict
-python main.py --league le_championnat --command predict
-python main.py --league serie_a --command predict
-python main.py --league bundesliga_1 --command predict
+python -m app.cli --league premier_league --command predict
+python -m app.cli --league laliga_1 --command predict
+python -m app.cli --league le_championnat --command predict
+python -m app.cli --league serie_a --command predict
+python -m app.cli --league bundesliga_1 --command predict
 ```
 
 **Problem: `No upcoming games found`**
@@ -435,18 +433,18 @@ For detailed usage instructions, see `UNIFIED_APP_README.md`
 
 ### Most Common Commands
 ```bash
-# Get predictions for any league
-python main.py --league premier_league --command predict
-python main.py --league laliga_1 --command predict
-python main.py --league le_championnat --command predict
-python main.py --league serie_a --command predict
-python main.py --league bundesliga_1 --command predict
+# Get betting predictions for any league
+python -m app.cli --league premier_league --command predict
+python -m app.cli --league laliga_1 --command predict
+python -m app.cli --league le_championnat --command predict
+python -m app.cli --league serie_a --command predict
+python -m app.cli --league bundesliga_1 --command predict
 
 # Run backtest analysis
-python main.py --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
+python -m app.cli --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
 
 # Clean data formats
-python main.py --league premier_league --command cleanse
+python -m app.cli --league premier_league --command cleanse
 ```
 
 ### League Switching
