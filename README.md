@@ -19,28 +19,63 @@ pip install -r requirements-minimal.txt
 ```
 
 ### 3. Run Analysis
+
+#### Option A: Using Batch Scripts (Windows - Auto-activates venv)
+```bash
+# Navigate to bin folder
+cd bin
+
+# Run predictions for all leagues
+prediction.bat
+
+# Or run data cleansing
+cleansing.bat
+```
+
+#### Option B: Direct Command Line
 ```bash
 # Get betting predictions for any league
-python -m app.cli --league premier_league --command predict
-python -m app.cli --league laliga_1 --command predict
-python -m app.cli --league le_championnat --command predict
-python -m app.cli --league serie_a --command predict
-python -m app.cli --league bundesliga_1 --command predict
+python app/cli.py --league premier_league --command predict
+python app/cli.py --league laliga_1 --command predict
+python app/cli.py --league le_championnat --command predict
+python app/cli.py --league serie_a --command predict
+python app/cli.py --league bundesliga_1 --command predict
 
 # Run backtest analysis
-python -m app.cli --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
+python app/cli.py --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
 
 # Clean data formats
-python -m app.cli --league premier_league --command cleanse
+python app/cli.py --league premier_league --command cleanse
+```
+
+#### Option C: Web Interface (UI Dashboard)
+```bash
+# Start the web interface
+python ui/simple_app.py
+
+# Then open http://localhost:5000 in your browser
 ```
 
 ## 📁 Project Structure
 
 ```
 football_data/
+├── bin/                        # 🔧 Batch scripts for automation
+│   ├── prediction.bat         # Batch script for running predictions (auto-activates venv)
+│   └── cleansing.bat          # Batch script for data cleansing
 ├── app/                        # 🚀 Unified Application
 │   ├── __init__.py
-│   └── cli.py         # Command-line interface for the application
+│   └── cli.py                 # Command-line interface for the application
+├── ui/                         # 💻 Web Interface
+│   ├── __init__.py
+│   ├── simple_app.py          # Flask web application for betting dashboard
+│   ├── bets.json              # Legacy JSON storage (for reference)
+│   └── data_storage/          # 📊 Database storage layer
+│       ├── __init__.py
+│       ├── database_models.py # SQLite database schema and repositories
+│       ├── storage_adapter.py # Storage abstraction layer
+│       ├── migration.py       # JSON to SQLite migration utilities
+│       └── betting_data.db    # SQLite database (active)
 ├── analytics/                  # 📊 Analytics and data processing
 │   ├── __init__.py
 │   ├── league_analytics.py    # Core league table analysis
@@ -48,8 +83,8 @@ football_data/
 ├── strategies/                 # 🎯 Betting strategies
 │   ├── __init__.py
 │   ├── base_strategy.py       # Abstract base strategy class
-│   ├── form_strategy.py       # Form-based strategy
-│   ├── momentum_strategy.py   # Momentum-based strategy
+│   ├── form_strategy.py       # Form-based strategy (3-game lookback)
+│   ├── momentum_strategy.py   # Momentum-based strategy (3-game lookback)
 │   ├── home_away_strategy.py  # Home-away strategy
 │   └── top_bottom_strategy.py # Top-Bottom betting strategy
 ├── backtest/                   # 🔄 Backtesting functionality
@@ -58,7 +93,7 @@ football_data/
 │   └── results_analyzer.py    # Results analysis and visualization
 ├── predictions/                # 🎯 Prediction functionality
 │   ├── __init__.py
-│   ├── betting_advisor.py     # Core betting advisor
+│   ├── betting_advisor.py     # Core betting advisor (4 strategies)
 │   ├── waterfall_betting_advisor.py # Waterfall priority-based advisor
 │   ├── next_round_predictor.py # Next round predictions
 │   └── prediction_runner.py   # Prediction runner
@@ -66,13 +101,17 @@ football_data/
 │   ├── __init__.py
 │   └── data_cleaner.py        # Data cleansing utilities
 ├── data/                      # 📈 Data directory (5 leagues)
-│   ├── premier_league/        # Premier League data
-│   ├── laliga_1/             # La Liga data
-│   ├── le_championnat/       # Ligue 1 data
-│   ├── serie_a/              # Serie A data
-│   └── bundesliga_1/         # Bundesliga data
+│   ├── premier_league/        # Premier League data (2000-2025)
+│   ├── laliga_1/             # La Liga data (2000-2025)
+│   ├── le_championnat/       # Ligue 1 data (2000-2025)
+│   ├── serie_a/              # Serie A data (2000-2025)
+│   └── bundesliga_1/         # Bundesliga data (2000-2025)
+├── doc/                       # 📚 Documentation
+│   └── (Markdown documentation files)
+├── .backups/                  # 📦 Migration backups
 ├── requirements-minimal.txt   # 📦 Core dependencies
-├── UNIFIED_APP_README.md      # 📖 Detailed usage guide
+├── requirements.txt           # 📦 All dependencies
+├── venv/                      # 🐍 Virtual environment
 └── README.md                  # 📖 This file
 ```
 
@@ -95,19 +134,19 @@ The unified application supports **5 major European leagues**:
 
 ```bash
 # Premier League predictions
-python -m app.cli --league premier_league --command predict
+python app/cli.py --league premier_league --command predict
 
 # La Liga predictions
-python -m app.cli --league laliga_1 --command predict
+python app/cli.py --league laliga_1 --command predict
 
 # Ligue 1 predictions
-python -m app.cli --league le_championnat --command predict
+python app/cli.py --league le_championnat --command predict
 
 # Serie A predictions
-python -m app.cli --league serie_a --command predict
+python app/cli.py --league serie_a --command predict
 
 # Bundesliga predictions
-python -m app.cli --league bundesliga_1 --command predict
+python app/cli.py --league bundesliga_1 --command predict
 ```
 
 ### 2. Backtest Analysis (`--command backtest`)
@@ -115,38 +154,38 @@ python -m app.cli --league bundesliga_1 --command predict
 
 ```bash
 # Top-Bottom strategy
-python -m app.cli --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
+python app/cli.py --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
 
 # Home-Away strategy
-python -m app.cli --league serie_a --command backtest --home-away --start-season 2020 --end-season 2024
+python app/cli.py --league serie_a --command backtest --home-away --start-season 2020 --end-season 2024
 ```
 
 ### 3. Form Analysis (`--command form`)
 **Purpose**: Run form-based betting analysis
 
 ```bash
-python -m app.cli --league laliga_1 --command form --form-games 5 --form-threshold 0.6 --start-season 2020 --end-season 2024
+python app/cli.py --league laliga_1 --command form --form-games 5 --form-threshold 0.6 --start-season 2020 --end-season 2024
 ```
 
 ### 4. Momentum Analysis (`--command momentum`)
 **Purpose**: Run momentum-based betting analysis
 
 ```bash
-python -m app.cli --league le_championnat --command momentum --lookback-games 5 --winning-momentum-threshold 0.2 --start-season 2020 --end-season 2024
+python app/cli.py --league le_championnat --command momentum --lookback-games 5 --winning-momentum-threshold 0.2 --start-season 2020 --end-season 2024
 ```
 
 ### 5. Data Cleansing (`--command cleanse`)
 **Purpose**: Clean and standardize data formats
 
 ```bash
-python -m app.cli --league premier_league --command cleanse
+python app/cli.py --league premier_league --command cleanse
 ```
 
 ### 6. League Analysis (`--command analyze`)
 **Purpose**: Analyze league standings for a specific season
 
 ```bash
-python -m app.cli --league bundesliga_1 --command analyze --end-season 2024
+python app/cli.py --league bundesliga_1 --command analyze --end-season 2024
 ```
 
 ## 📊 Strategy Performance (2020-2024)
@@ -337,28 +376,28 @@ pip install -r requirements-minimal.txt
 ### Complete Workflow
 ```bash
 # 1. Clean data first
-python -m app.cli --league premier_league --command cleanse
+python app/cli.py --league premier_league --command cleanse
 
 # 2. Run backtest analysis
-python -m app.cli --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
+python app/cli.py --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
 
 # 3. Get predictions for next round
-python -m app.cli --league premier_league --command predict
+python app/cli.py --league premier_league --command predict
 ```
 
 ### Strategy Testing
 ```bash
 # Test form strategy with custom parameters
-python -m app.cli --league laliga_1 --command form --form-games 5 --form-threshold 0.6 --start-season 2023 --end-season 2023
+python app/cli.py --league laliga_1 --command form --form-games 5 --form-threshold 0.6 --start-season 2023 --end-season 2023
 
 # Test momentum strategy
-python -m app.cli --league serie_a --command momentum --lookback-games 5 --winning-momentum-threshold 0.2 --start-season 2023 --end-season 2023
+python app/cli.py --league serie_a --command momentum --lookback-games 5 --winning-momentum-threshold 0.2 --start-season 2023 --end-season 2023
 ```
 
 ### League Analysis
 ```bash
 # Analyze 2024 season for any league
-python -m app.cli --league bundesliga_1 --command analyze --end-season 2024
+python app/cli.py --league bundesliga_1 --command analyze --end-season 2024
 ```
 
 ## 🎯 Key Benefits
@@ -408,11 +447,11 @@ pip install -r requirements-minimal.txt
 **Problem: `Unknown league 'xyz'`**
 ```bash
 # Use supported league names:
-python -m app.cli --league premier_league --command predict
-python -m app.cli --league laliga_1 --command predict
-python -m app.cli --league le_championnat --command predict
-python -m app.cli --league serie_a --command predict
-python -m app.cli --league bundesliga_1 --command predict
+python app/cli.py --league premier_league --command predict
+python app/cli.py --league laliga_1 --command predict
+python app/cli.py --league le_championnat --command predict
+python app/cli.py --league serie_a --command predict
+python app/cli.py --league bundesliga_1 --command predict
 ```
 
 **Problem: `No upcoming games found`**
@@ -425,26 +464,50 @@ python -m app.cli --league bundesliga_1 --command predict
 # data/bundesliga_1/upcoming_25.csv
 ```
 
+**Problem: `ModuleNotFoundError` when running from bin folder**
+```bash
+# Make sure to run from the project root, not from bin/
+cd ..
+python app/cli.py --league premier_league --command predict
+```
+
 ## 📞 Support
 
-For detailed usage instructions, see `UNIFIED_APP_README.md`
+For detailed usage instructions, see this README.md
+
+For web interface help, see `ui/simple_app.py` comments
 
 ## 🚀 Quick Usage Summary
 
 ### Most Common Commands
 ```bash
 # Get betting predictions for any league
-python -m app.cli --league premier_league --command predict
-python -m app.cli --league laliga_1 --command predict
-python -m app.cli --league le_championnat --command predict
-python -m app.cli --league serie_a --command predict
-python -m app.cli --league bundesliga_1 --command predict
+python app/cli.py --league premier_league --command predict
+python app/cli.py --league laliga_1 --command predict
+python app/cli.py --league le_championnat --command predict
+python app/cli.py --league serie_a --command predict
+python app/cli.py --league bundesliga_1 --command predict
 
 # Run backtest analysis
-python -m app.cli --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
+python app/cli.py --league premier_league --command backtest --top-n 3 --start-season 2020 --end-season 2024
 
 # Clean data formats
-python -m app.cli --league premier_league --command cleanse
+python app/cli.py --league premier_league --command cleanse
+
+# Start web interface
+python ui/simple_app.py
+```
+
+### Batch Script Methods (Windows Only)
+```bash
+# From bin folder
+cd bin
+
+# Run all predictions
+prediction.bat
+
+# Run data cleansing
+cleansing.bat
 ```
 
 ### League Switching
