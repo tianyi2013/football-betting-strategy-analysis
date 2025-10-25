@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Simple Football Betting Logger Web Interface
-Real-time predictions from your betting algorithm with file-based storage
+Real-time predictions from your betting algorithm with robust database storage
 """
 
 import json
@@ -18,33 +18,37 @@ from flask import Flask, jsonify, request, make_response
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from predictions.next_round_predictor import NextRoundPredictor
+from ui.data_storage.storage_adapter import get_storage_adapter, SQLiteStorageAdapter
 
 app = Flask(__name__)
 
 # Global flag to prevent multiple browser openings
 _browser_opened = False
 
+# ...existing code...
+
 # League configuration
+_base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 LEAGUES = {
     'premier_league': {
         'display_name': 'Premier League',
-        'data_dir': '../data/premier_league'
+        'data_dir': os.path.join(_base_dir, 'data', 'premier_league')
     },
     'bundesliga_1': {
         'display_name': 'Bundesliga',
-        'data_dir': '../data/bundesliga_1'
+        'data_dir': os.path.join(_base_dir, 'data', 'bundesliga_1')
     },
     'laliga_1': {
         'display_name': 'La Liga',
-        'data_dir': '../data/laliga_1'
+        'data_dir': os.path.join(_base_dir, 'data', 'laliga_1')
     },
     'le_championnat': {
         'display_name': 'Ligue 1',
-        'data_dir': '../data/le_championnat'
+        'data_dir': os.path.join(_base_dir, 'data', 'le_championnat')
     },
     'serie_a': {
         'display_name': 'Serie A',
-        'data_dir': '../data/serie_a'
+        'data_dir': os.path.join(_base_dir, 'data', 'serie_a')
     }
 }
 
@@ -146,59 +150,43 @@ def get_real_opportunities():
     return opportunities
 
 
-# File-based storage for bets and analytics
+# Initialize storage adapter (SQLite database)
+# Use absolute path to ensure we find the database regardless of working directory
+import os
+_db_path = os.path.join(os.path.dirname(__file__), 'data_storage', 'betting_data.db')
+storage = get_storage_adapter(storage_type='sqlite', db_path=_db_path)
+
+# Legacy JSON file path for potential migration
 BETS_FILE = 'bets.json'
-ANALYTICS_FILE = 'analytics.json'
 
-
-def load_bets():
-    """Load bets from JSON file"""
-    if os.path.exists(BETS_FILE):
-        try:
-            with open(BETS_FILE, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-                print(f"Loaded {len(data)} bets from {BETS_FILE}")
-                return data
-        except Exception as e:
-            print(f"Error loading bets: {e}")
-            return []
-    else:
-        print(f"Bets file not found: {BETS_FILE}")
-    return []
-
-
-def save_bets(bets_data):
-    """Save bets to JSON file"""
+# Convenience function to get all bets
+def get_all_bets():
+    """Get all bets from database"""
     try:
-        with open(BETS_FILE, 'w', encoding='utf-8') as f:
-            json.dump(bets_data, f, indent=2, ensure_ascii=False)
+        bets = storage.get_all_bets()
+        return bets if bets else []
+    except Exception as e:
+        print(f"Error loading bets: {e}")
+        return []
+
+
+def save_bets_to_db(bets_data):
+    """
+    Save/update bets in database.
+    This is called when the client sends updated bets list.
+    """
+    try:
+        # For each bet, update if exists or create new
+        for bet in bets_data:
+            if 'id' in bet and isinstance(bet['id'], int):
+                # Update existing
+                storage.update_bet(bet['id'], bet)
+            else:
+                # Add new
+                storage.add_bet(bet)
     except Exception as e:
         print(f"Error saving bets: {e}")
 
-
-def load_analytics():
-    """Load analytics from JSON file"""
-    if os.path.exists(ANALYTICS_FILE):
-        try:
-            with open(ANALYTICS_FILE, 'r', encoding='utf-8') as f:
-                return json.load(f)
-        except:
-            return {}
-    return {}
-
-
-def save_analytics(analytics_data):
-    """Save analytics to JSON file"""
-    try:
-        with open(ANALYTICS_FILE, 'w', encoding='utf-8') as f:
-            json.dump(analytics_data, f, indent=2, ensure_ascii=False)
-    except Exception as e:
-        print(f"Error saving analytics: {e}")
-
-
-# Initialize storage
-bets = load_bets()
-bet_id_counter = max([bet.get('id', 0) for bet in bets], default=0) + 1
 
 
 @app.route('/')
@@ -1243,11 +1231,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         // Check if opportunity already has a bet placed
         function hasBetOnOpportunity(opportunity) {
             const allBets = [...activeBets, ...completedBets];
-            return allBets.some(bet => 
-                bet.opportunity.game === opportunity.game && 
-                bet.opportunity.bet_team === opportunity.bet_team &&
-                bet.opportunity.league === opportunity.league
-            );
+            return allBets.some(bet => {
+                // Support both old format (with opportunity nested) and new format (flat)
+                const betGame = bet.opportunity?.game || bet.game;
+                const betTeam = bet.opportunity?.bet_team || bet.bet_team;
+                const betLeague = bet.opportunity?.league || bet.league;
+                return betGame === opportunity.game && 
+                       betTeam === opportunity.bet_team &&
+                       betLeague === opportunity.league;
+            });
         }
 
         // Create opportunity card
@@ -1617,10 +1609,13 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             activeBets.forEach(bet => {
                 const betItem = document.createElement('div');
                 betItem.className = 'bet-item';
+                // Support both old format (with opportunity nested) and new format (flat)
+                const game = bet.opportunity?.game || bet.game || 'Unknown';
+                const betTeam = bet.opportunity?.bet_team || bet.bet_team || 'Unknown';
                 betItem.innerHTML = `
                     <div class="bet-info">
                         <div class="bet-amount">£${bet.stake.toFixed(2)} @ ${bet.odds.toFixed(3)}</div>
-                        <div class="bet-odds">${bet.opportunity.game} - ${bet.opportunity.bet_team}</div>
+                        <div class="bet-odds">${game} - ${betTeam}</div>
                     </div>
                     <div>
                         <span class="bet-status status-pending">Pending</span>
@@ -1749,9 +1744,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 weekendStats[weekend].totalBets++;
                 weekendStats[weekend].totalStake += bet.stake;
                 
-                // Track leagues for this weekend
-                if (bet.opportunity?.league) {
-                    weekendStats[weekend].leagues.add(bet.opportunity.league);
+                // Track leagues for this weekend (support both flat and nested structures)
+                const league = bet.league || bet.opportunity?.league;
+                if (league) {
+                    weekendStats[weekend].leagues.add(league);
                 }
                 
                 if (bet.status === 'won') {
@@ -2075,8 +2071,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 const betItem = document.createElement('div');
                 betItem.className = 'breakdown-bet-item';
                 
-                const profit = bet.status === 'won' ? (bet.stake * bet.odds) - bet.stake : 
-                              bet.status === 'lost' ? -bet.stake : 0;
+                // Use the profit value from database
+                const profit = bet.profit !== undefined ? bet.profit : 
+                              (bet.status === 'won' ? (bet.stake * bet.odds) - bet.stake : 
+                               bet.status === 'lost' ? -bet.stake : 0);
                 const profitClass = bet.status === 'won' ? 'profit-positive' : 
                                    bet.status === 'lost' ? 'profit-negative' : 'profit-pending';
                 const profitText = bet.status === 'pending' ? 'Pending' : 
@@ -2091,14 +2089,21 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 const date = new Date(bet.date).toLocaleDateString();
                 const time = new Date(bet.date).toLocaleTimeString();
                 
+                // Support both flat and nested structures
+                const game = bet.game || bet.opportunity?.game || 'Unknown';
+                const betTeam = bet.bet_team || bet.opportunity?.bet_team || 'Unknown';
+                const betType = bet.bet_type || bet.opportunity?.bet_type || 'WIN';
+                const strategy = bet.strategy || bet.opportunity?.strategy || 'Unknown';
+                const league = bet.league || bet.opportunity?.league || 'Unknown';
+                
                 betItem.innerHTML = `
                     <div class="breakdown-bet-info">
-                        <div class="breakdown-bet-title">${bet.opportunity.game}</div>
+                        <div class="breakdown-bet-title">${game}</div>
                         <div class="breakdown-bet-details">
-                            <strong>${bet.opportunity.bet_team}</strong> - ${bet.opportunity.bet_type} (${bet.opportunity.strategy})
+                            <strong>${betTeam}</strong> - ${betType} (${strategy})
                         </div>
                         <div class="breakdown-bet-meta">
-                            ${bet.opportunity.league} • ${date} ${time}
+                            ${league} • ${date} ${time}
                         </div>
                     </div>
                     <div class="breakdown-bet-amounts">
@@ -2183,35 +2188,37 @@ def get_opportunities():
 
 @app.route('/api/bets', methods=['GET', 'POST'])
 def handle_bets():
-    """API endpoint to handle bets with file-based storage"""
-    global bet_id_counter, bets
-
+    """API endpoint to handle bets with database storage"""
     if request.method == 'GET':
+        # Return all bets from database
+        bets = get_all_bets()
         return jsonify(bets)
     elif request.method == 'POST':
         # Update all bets from client
         new_bets = request.json
-        bets = new_bets
-        save_bets(bets)
+        save_bets_to_db(new_bets)
         return jsonify({'success': True})
 
 
 @app.route('/api/analytics')
 def get_analytics():
     """API endpoint to get betting analytics"""
-    total_bets = len(bets)
-    won_bets = len([bet for bet in bets if bet.get('status') == 'won'])
-    win_rate = (won_bets / total_bets * 100) if total_bets > 0 else 0
-
-    total_stake = sum(bet.get('stake', 0) for bet in bets)
-    total_profit = sum(bet.get('profit', 0) for bet in bets)
-
-    return jsonify({
-        'total_bets': total_bets,
-        'win_rate': round(win_rate, 1),
-        'total_stake': round(total_stake, 2),
-        'total_profit': round(total_profit, 2)
-    })
+    try:
+        analytics = storage.get_analytics()
+        return jsonify(analytics)
+    except Exception as e:
+        print(f"Error getting analytics: {e}")
+        return jsonify({
+            'total_bets': 0,
+            'won_bets': 0,
+            'lost_bets': 0,
+            'pending_bets': 0,
+            'win_rate': 0,
+            'total_stake': 0,
+            'total_profit': 0,
+            'average_odds': 0,
+            'roi': 0
+        })
 
 
 def open_browser():
