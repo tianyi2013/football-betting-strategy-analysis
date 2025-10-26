@@ -174,18 +174,46 @@ def save_bets_to_db(bets_data):
     """
     Save/update bets in database.
     This is called when the client sends updated bets list.
+
+    Returns:
+        True if all bets were saved/updated successfully, False otherwise.
     """
+    errors = []
     try:
         # For each bet, update if exists or create new
         for bet in bets_data:
+            # If the client provides an ID, it may be a temporary timestamp id generated in the browser.
+            # Try to update an existing DB row with that id; if no row exists, add the bet as new.
             if 'id' in bet and isinstance(bet['id'], int):
-                # Update existing
-                storage.update_bet(bet['id'], bet)
+                try:
+                    existing = storage.get_bet_by_id(bet['id'])
+                    if existing:
+                        ok = storage.update_bet(bet['id'], bet)
+                        if not ok:
+                            # If update returned False, attempt insert
+                            storage.add_bet(bet)
+                    else:
+                        # Insert as new since the provided id doesn't exist in DB
+                        storage.add_bet(bet)
+                except Exception as e:
+                    # Record the error and continue with next bet
+                    errors.append({'bet': bet, 'error': str(e)})
             else:
-                # Add new
-                storage.add_bet(bet)
+                try:
+                    storage.add_bet(bet)
+                except Exception as e:
+                    errors.append({'bet': bet, 'error': str(e)})
     except Exception as e:
+        # Major failure
         print(f"Error saving bets: {e}")
+        raise
+
+    if errors:
+        # Print errors for debugging and raise a combined exception so callers can react
+        print(f"Errors while saving bets: {errors}")
+        raise Exception(f"Failed to save {len(errors)} bets. See server logs for details.")
+
+    return True
 
 
 
@@ -743,6 +771,128 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             color: #e74c3c;
         }
 
+        .weekend-expand-btn {
+            width: 100%;
+            padding: 10px;
+            margin-top: 15px;
+            background: #3498db;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .weekend-expand-btn:hover {
+            background: #2980b9;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 10px rgba(52, 152, 219, 0.3);
+        }
+
+        .weekend-bets-container {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 2px solid #e9ecef;
+        }
+
+        .weekend-bets-list {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .weekend-bet-item {
+            background: #f8f9fa;
+            border: 1px solid #e9ecef;
+            border-radius: 8px;
+            padding: 12px;
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .weekend-bet-item:hover {
+            background: #eef2f7;
+            border-color: #3498db;
+        }
+
+        .weekend-bet-left {
+            flex: 1;
+        }
+
+        .weekend-bet-game {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 14px;
+            margin-bottom: 3px;
+        }
+
+        .weekend-bet-team {
+            color: #6c757d;
+            font-size: 13px;
+            margin-bottom: 5px;
+        }
+
+        .weekend-bet-meta {
+            color: #95a5a6;
+            font-size: 12px;
+        }
+
+        .weekend-bet-right {
+            text-align: right;
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .weekend-bet-stake {
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 14px;
+        }
+
+        .weekend-bet-profit {
+            font-weight: 700;
+            font-size: 13px;
+        }
+
+        .weekend-bet-profit.profit-positive {
+            color: #27ae60;
+        }
+
+        .weekend-bet-profit.profit-negative {
+            color: #e74c3c;
+        }
+
+        .weekend-bet-profit.profit-pending {
+            color: #f39c12;
+        }
+
+        .weekend-bet-status {
+            padding: 3px 8px;
+            border-radius: 12px;
+            font-size: 11px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .weekend-bet-status.status-won {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .weekend-bet-status.status-lost {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .weekend-bet-status.status-pending {
+            background: #fff3cd;
+            color: #856404;
+        }
+
         /* Weekend Info Styles */
         .weekend-info {
             margin-bottom: 15px;
@@ -773,16 +923,31 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             font-weight: 600;
             color: #495057;
             margin-right: 10px;
+            display: block;
+            margin-bottom: 5px;
         }
         
-        #date-filter {
+        #date-filter,
+        #league-filter {
             padding: 8px 12px;
             border: 1px solid #ced4da;
             border-radius: 4px;
             background: white;
             font-size: 14px;
-            margin-right: 10px;
             min-width: 150px;
+            cursor: pointer;
+        }
+        
+        #date-filter:hover,
+        #league-filter:hover {
+            border-color: #adb5bd;
+        }
+        
+        #date-filter:focus,
+        #league-filter:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
         }
         
         .clear-filter-btn {
@@ -812,6 +977,62 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
             gap: 20px;
             margin-top: 20px;
+        }
+
+        /* League and Team Stats Card Styles */
+        .league-card,
+        .team-card {
+            background: white;
+            border: 2px solid #e9ecef;
+            border-radius: 10px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .league-card:hover,
+        .team-card:hover {
+            border-color: #3498db;
+            box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2);
+        }
+
+        .league-card h4,
+        .team-card h4 {
+            margin: 0 0 15px 0;
+            color: #2c3e50;
+            font-size: 16px;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f8f9fa;
+            font-size: 14px;
+        }
+
+        .stats-row:last-child {
+            border-bottom: none;
+        }
+
+        .stats-label {
+            color: #6c757d;
+            font-weight: 600;
+        }
+
+        .stats-value {
+            color: #2c3e50;
+            font-weight: 700;
+            text-align: right;
+        }
+
+        .stats-value.positive {
+            color: #27ae60;
+        }
+
+        .stats-value.negative {
+            color: #e74c3c;
         }
 
         .performance-card {
@@ -967,14 +1188,29 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             <div id="opportunities" class="tab-content active">
                 <h2>Available Betting Opportunities</h2>
                 
-                <!-- Date Filter -->
+                <!-- Date and League Filters -->
                 <div class="date-filter-section">
-                    <label for="date-filter">Filter by Date:</label>
-                    <select id="date-filter" onchange="filterOpportunitiesByDate()">
-                        <option value="all">All Dates</option>
-                        <!-- Date options will be populated dynamically -->
-                    </select>
-                    <button onclick="clearDateFilter()" class="clear-filter-btn">Clear Filter</button>
+                    <div style="display: flex; gap: 15px; align-items: flex-end; flex-wrap: wrap;">
+                        <div>
+                            <label for="date-filter">Filter by Date:</label>
+                            <select id="date-filter" onchange="applyFilters()">
+                                <option value="all">All Dates</option>
+                                <!-- Date options will be populated dynamically -->
+                            </select>
+                        </div>
+                        <div>
+                            <label for="league-filter">Filter by League:</label>
+                            <select id="league-filter" onchange="applyFilters()">
+                                <option value="all">All Leagues</option>
+                                <option value="Premier League">Premier League</option>
+                                <option value="Bundesliga">Bundesliga</option>
+                                <option value="La Liga">La Liga</option>
+                                <option value="Ligue 1">Ligue 1</option>
+                                <option value="Serie A">Serie A</option>
+                            </select>
+                        </div>
+                        <button onclick="clearFilters()" class="clear-filter-btn">Clear Filters</button>
+                    </div>
                 </div>
                 
                 <div id="opportunities-grid" class="opportunities-grid">
@@ -1013,6 +1249,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                             <div class="summary-value" id="total-profit">£0</div>
                             <div class="summary-label">Total Profit</div>
                         </div>
+                        <div class="summary-item">
+                            <div class="summary-value" id="total-roi">0%</div>
+                            <div class="summary-label">Total ROI</div>
+                        </div>
                     </div>
                 </div>
                 
@@ -1038,10 +1278,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                         </div>
                     </div>
                 </div>
-                <div style="display: flex; gap: 10px; margin-bottom: 20px;">
-                    <button class="calculate-btn" onclick="calculatePnL()" style="flex: 1;">Calculate P&L</button>
-                    <button class="clear-btn" onclick="clearAllHistory()" style="flex: 1; background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);">Clear All History</button>
-                </div>
                 
                 <!-- Weekend Analytics Section -->
                 <div class="round-analytics-section" style="margin-top: 30px;">
@@ -1059,18 +1295,30 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                     </div>
                 </div>
                 
-                <!-- Bet Breakdown Section -->
-                <div class="bet-breakdown">
-                    <h3>Bet Breakdown</h3>
-                    <div class="breakdown-tabs">
-                        <button class="breakdown-tab active" onclick="showBreakdown('all')">All Bets</button>
-                        <button class="breakdown-tab" onclick="showBreakdown('active')">Active</button>
-                        <button class="breakdown-tab" onclick="showBreakdown('completed')">Completed</button>
-                    </div>
-                    <div id="bet-breakdown-list" class="bet-breakdown-list">
-                        <!-- Bet details will be populated here -->
+                <!-- League Breakdown Section -->
+                <div class="performance-summary" style="margin-top: 30px;">
+                    <h3>📈 League Breakdown</h3>
+                    <div id="league-breakdown-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
+                        <!-- League stats will be populated here -->
                     </div>
                 </div>
+                
+                <!-- Top Teams Section -->
+                <div class="performance-summary" style="margin-top: 30px;">
+                    <h3>🏆 Top 3 Most Profitable Teams</h3>
+                    <div id="top-teams-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
+                        <!-- Top teams will be populated here -->
+                    </div>
+                </div>
+                
+                <!-- Bottom Teams Section -->
+                <div class="performance-summary" style="margin-top: 30px;">
+                    <h3>📉 Bottom 3 Most Loss-Making Teams</h3>
+                    <div id="bottom-teams-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; margin-top: 20px;">
+                        <!-- Bottom teams will be populated here -->
+                    </div>
+                </div>
+                
             </div>
         </div>
     </div>
@@ -1132,25 +1380,31 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             }
         }
         
-        function filterOpportunitiesByDate() {
+        function applyFilters() {
             const selectedDate = document.getElementById('date-filter').value;
-            currentDateFilter = selectedDate;  // Save current filter state
-            console.log('Selected date:', selectedDate);
+            const selectedLeague = document.getElementById('league-filter').value;
             
-            const filteredOpportunities = selectedDate === 'all' 
-                ? opportunities 
-                : opportunities.filter(opp => {
-                    console.log('Comparing:', opp.match_date, '===', selectedDate, '?', opp.match_date === selectedDate);
-                    return opp.match_date === selectedDate;
-                });
+            console.log('Filters applied - Date:', selectedDate, 'League:', selectedLeague);
+            
+            let filteredOpportunities = opportunities;
+            
+            // Filter by date
+            if (selectedDate !== 'all') {
+                filteredOpportunities = filteredOpportunities.filter(opp => opp.match_date === selectedDate);
+            }
+            
+            // Filter by league
+            if (selectedLeague !== 'all') {
+                filteredOpportunities = filteredOpportunities.filter(opp => opp.league === selectedLeague);
+            }
             
             console.log('Filtered opportunities:', filteredOpportunities.length, 'out of', opportunities.length);
             displayOpportunities(filteredOpportunities);
         }
         
-        function clearDateFilter() {
+        function clearFilters() {
             document.getElementById('date-filter').value = 'all';
-            currentDateFilter = 'all';  // Reset filter state
+            document.getElementById('league-filter').value = 'all';
             displayOpportunities(opportunities);
         }
 
@@ -1220,7 +1474,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 // Find the actual index in the full opportunities array
                 const actualIndex = opportunities.findIndex(o => 
                     o.game === opp.game && 
-                    o.bet_team === opp.bet_team && 
+                    o.bet_team === opp.bet_team &&
                     o.league === opp.league
                 );
                 const card = createOpportunityCard(opp, actualIndex);
@@ -1418,22 +1672,22 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         }
 
         // Add bet functions
-        function addBet(index) {
+        async function addBet(index) {
             const opportunity = opportunities[index];
             const oddsInput = document.getElementById(`odds-${index}`).value.trim();
             const stake = parseFloat(document.getElementById(`stake-${index}`).value);
-            
+
             if (!oddsInput || !stake) {
                 alert('Please enter both odds and stake amount.');
                 return;
             }
-            
+
             const odds = convertFractionalOdds(oddsInput);
             if (!odds || odds < 1.01) {
                 alert('Please enter valid odds (e.g., 2.5 or 8/11).');
                 return;
             }
-            
+
             const bet = {
                 id: Date.now(),
                 opportunity: opportunity,
@@ -1444,43 +1698,55 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 placement_date: new Date().toISOString(),
                 match_date: opportunity.match_date
             };
-            
+
+            // Add to in-memory list
             activeBets.push(bet);
-            saveBets();
-            updateBetsDisplay();
-            updateAnalytics();
-            
-            // Clear inputs
-            document.getElementById(`odds-${index}`).value = '';
-            document.getElementById(`stake-${index}`).value = '';
-            
-            // Refresh opportunities display with current filter
-            if (currentDateFilter === 'all') {
-                displayOpportunities(opportunities);
+
+            // Try to persist to server; if it fails, revert and show error
+            const saved = await saveBets();
+            if (saved) {
+                updateBetsDisplay();
+                updateAnalytics();
+
+                // Clear inputs
+                document.getElementById(`odds-${index}`).value = '';
+                document.getElementById(`stake-${index}`).value = '';
+
+                // Refresh opportunities display with current filter
+                if (currentDateFilter === 'all') {
+                    displayOpportunities(opportunities);
+                } else {
+                    const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
+                    displayOpportunities(filteredOpportunities);
+                }
+
+                alert('Bet added successfully!');
             } else {
-                const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
-                displayOpportunities(filteredOpportunities);
+                // Revert the in-memory change
+                const idx = activeBets.findIndex(b => b.id === bet.id);
+                if (idx !== -1) activeBets.splice(idx, 1);
+                updateBetsDisplay();
+                updateAnalytics();
+                alert('Failed to save bet to the server. Check server logs or try again.');
             }
-            
-            alert('Bet added successfully!');
         }
 
-        function addBetAndMarkWon(index) {
+        async function addBetAndMarkWon(index) {
             const opportunity = opportunities[index];
             const oddsInput = document.getElementById(`odds-${index}`).value.trim();
             const stake = parseFloat(document.getElementById(`stake-${index}`).value);
-            
+
             if (!oddsInput || !stake) {
                 alert('Please enter both odds and stake amount.');
                 return;
             }
-            
+
             const odds = convertFractionalOdds(oddsInput);
             if (!odds || odds < 1.01) {
                 alert('Please enter valid odds (e.g., 2.5 or 8/11).');
                 return;
             }
-            
+
             const bet = {
                 id: Date.now(),
                 opportunity: opportunity,
@@ -1493,43 +1759,52 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 placement_date: new Date().toISOString(),
                 match_date: opportunity.match_date
             };
-            
+
             completedBets.push(bet);
-            saveBets();
-            updateBetsDisplay();
-            updateAnalytics();
-            
-            // Clear inputs
-            document.getElementById(`odds-${index}`).value = '';
-            document.getElementById(`stake-${index}`).value = '';
-            
-            // Refresh opportunities display with current filter
-            if (currentDateFilter === 'all') {
-                displayOpportunities(opportunities);
+
+            const saved = await saveBets();
+            if (saved) {
+                updateBetsDisplay();
+                updateAnalytics();
+
+                // Clear inputs
+                document.getElementById(`odds-${index}`).value = '';
+                document.getElementById(`stake-${index}`).value = '';
+
+                if (currentDateFilter === 'all') {
+                    displayOpportunities(opportunities);
+                } else {
+                    const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
+                    displayOpportunities(filteredOpportunities);
+                }
+
+                alert('Bet added and marked as won!');
             } else {
-                const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
-                displayOpportunities(filteredOpportunities);
+                // Revert
+                const idx = completedBets.findIndex(b => b.id === bet.id);
+                if (idx !== -1) completedBets.splice(idx, 1);
+                updateBetsDisplay();
+                updateAnalytics();
+                alert('Failed to save bet to the server. Check server logs or try again.');
             }
-            
-            alert('Bet added and marked as won!');
         }
 
-        function addBetAndMarkLost(index) {
+        async function addBetAndMarkLost(index) {
             const opportunity = opportunities[index];
             const oddsInput = document.getElementById(`odds-${index}`).value.trim();
             const stake = parseFloat(document.getElementById(`stake-${index}`).value);
-            
+
             if (!oddsInput || !stake) {
                 alert('Please enter both odds and stake amount.');
                 return;
             }
-            
+
             const odds = convertFractionalOdds(oddsInput);
             if (!odds || odds < 1.01) {
                 alert('Please enter valid odds (e.g., 2.5 or 8/11).');
                 return;
             }
-            
+
             const bet = {
                 id: Date.now(),
                 opportunity: opportunity,
@@ -1542,25 +1817,34 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 placement_date: new Date().toISOString(),
                 match_date: opportunity.match_date
             };
-            
+
             completedBets.push(bet);
-            saveBets();
-            updateBetsDisplay();
-            updateAnalytics();
-            
-            // Clear inputs
-            document.getElementById(`odds-${index}`).value = '';
-            document.getElementById(`stake-${index}`).value = '';
-            
-            // Refresh opportunities display with current filter
-            if (currentDateFilter === 'all') {
-                displayOpportunities(opportunities);
+
+            const saved = await saveBets();
+            if (saved) {
+                updateBetsDisplay();
+                updateAnalytics();
+
+                // Clear inputs
+                document.getElementById(`odds-${index}`).value = '';
+                document.getElementById(`stake-${index}`).value = '';
+
+                if (currentDateFilter === 'all') {
+                    displayOpportunities(opportunities);
+                } else {
+                    const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
+                    displayOpportunities(filteredOpportunities);
+                }
+
+                alert('Bet added and marked as lost!');
             } else {
-                const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
-                displayOpportunities(filteredOpportunities);
+                // Revert
+                const idx = completedBets.findIndex(b => b.id === bet.id);
+                if (idx !== -1) completedBets.splice(idx, 1);
+                updateBetsDisplay();
+                updateAnalytics();
+                alert('Failed to save bet to the server. Check server logs or try again.');
             }
-            
-            alert('Bet added and marked as lost!');
         }
 
         // Load and save bets using file-based storage
@@ -1569,13 +1853,20 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 const response = await fetch('/api/bets');
                 if (response.ok) {
                     const allBets = await response.json();
+                    // Normalize status values to lowercase and trim whitespace so comparisons are robust
+                    allBets.forEach(b => {
+                        if (b.status && typeof b.status === 'string') {
+                            b.status = b.status.trim().toLowerCase();
+                        }
+                    });
+
                     activeBets = allBets.filter(bet => bet.status === 'pending');
                     completedBets = allBets.filter(bet => bet.status === 'won' || bet.status === 'lost');
-                }
-            } catch (error) {
-                console.error('Error loading bets:', error);
-            }
-        }
+                 }
+             } catch (error) {
+                 console.error('Error loading bets:', error);
+             }
+         }
 
         async function saveBets() {
             try {
@@ -1588,10 +1879,23 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                     body: JSON.stringify(allBets)
                 });
                 if (!response.ok) {
-                    console.error('Error saving bets');
+                    console.error('Error saving bets, server responded with status', response.status);
+                    try {
+                        const body = await response.text();
+                        console.error('Server response body:', body);
+                    } catch (e) {}
+                    return false;
+                }
+                const data = await response.json();
+                if (data && data.success) {
+                    return true;
+                } else {
+                    console.error('Server reported failure saving bets:', data);
+                    return false;
                 }
             } catch (error) {
                 console.error('Error saving bets:', error);
+                return false;
             }
         }
 
@@ -1700,8 +2004,16 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             // Update settled bets section
             document.getElementById('settled-bets').textContent = completedBetsCount;
             document.getElementById('win-rate').textContent = winRate + '%';
-            document.getElementById('settled-stake').textContent = '£' + (totalStake - pendingStake).toFixed(2);
+            const settledStake = totalStake - pendingStake;
+            document.getElementById('settled-stake').textContent = '£' + settledStake.toFixed(2);
             document.getElementById('total-profit').textContent = '£' + totalProfit.toFixed(2);
+            
+            // Calculate and display ROI for settled bets
+            const totalROI = settledStake > 0 ? ((totalProfit / settledStake) * 100).toFixed(2) : 0;
+            const roiElement = document.getElementById('total-roi');
+            roiElement.textContent = totalROI + '%';
+            // Color code ROI (green for positive, red for negative)
+            roiElement.style.color = totalROI >= 0 ? '#27ae60' : '#e74c3c';
             
             // Update pending bets section
             document.getElementById('pending-bets').textContent = pendingBetsCount;
@@ -1712,8 +2024,9 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             // Update weekend-based analytics
             updateRoundAnalytics(allBets);
             
-            // Update breakdown display
-            updateBetBreakdown();
+            // Update league breakdown and team stats
+            updateLeagueBreakdown(completedBets);
+            updateTopBottomTeams(completedBets);
         }
         
         // Update weekend-based analytics
@@ -1865,11 +2178,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             
             let html = '<div class="round-analytics-grid">';
             
-            weekends.forEach(weekend => {
+            weekends.forEach((weekend, index) => {
                 const stats = weekendStats[weekend];
                 const winRate = stats.completedBets > 0 ? Math.round((stats.wonBets / stats.completedBets) * 100) : 0;
                 const profitClass = stats.totalProfit >= 0 ? 'profit-positive' : 'profit-negative';
+                const weekendROI = stats.totalStake > 0 ? ((stats.totalProfit / stats.totalStake) * 100).toFixed(2) : 0;
+                const roiClass = weekendROI >= 0 ? 'profit-positive' : 'profit-negative';
                 const leaguesList = Array.from(stats.leagues).join(', ');
+                const weekendId = `weekend-${index}`;
                 
                 html += `
                     <div class="round-card">
@@ -1899,7 +2215,15 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                                 <span class="stat-label">Profit:</span>
                                 <span class="stat-value ${profitClass}">£${stats.totalProfit.toFixed(2)}</span>
                             </div>
+                            <div class="stat-item">
+                                <span class="stat-label">ROI:</span>
+                                <span class="stat-value ${roiClass}">${weekendROI}%</span>
+                            </div>
                         </div>
+                        <button class="weekend-expand-btn" onclick="toggleWeekendBets('${weekendId}', '${weekend}')">
+                            📋 View Bets (${stats.totalBets})
+                        </button>
+                        <div id="${weekendId}-bets" class="weekend-bets-container" style="display: none;"></div>
                     </div>
                 `;
             });
@@ -1960,6 +2284,12 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             const profitClass = totalProfit >= 0 ? 'profit-positive' : 'profit-negative';
             const avgProfitClass = avgProfitPerWeekend >= 0 ? 'profit-positive' : 'profit-negative';
             
+            // Calculate ROI metrics
+            const overallROI = totalStake > 0 ? ((totalProfit / totalStake) * 100).toFixed(2) : 0;
+            const overallROIClass = overallROI >= 0 ? 'profit-positive' : 'profit-negative';
+            const avgROIPerWeekend = weekends.length > 0 ? (overallROI / weekends.length).toFixed(2) : 0;
+            const avgROIClass = avgROIPerWeekend >= 0 ? 'profit-positive' : 'profit-negative';
+            
             const html = `
                 <div class="performance-grid">
                     <div class="performance-card">
@@ -1989,12 +2319,14 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                                 <span class="perf-label">Avg Profit/Weekend:</span>
                                 <span class="perf-value ${avgProfitClass}">£${avgProfitPerWeekend.toFixed(2)}</span>
                             </div>
-                        </div>
-                    </div>
-                    
-                    <div class="performance-card">
-                        <h4>Weekend Performance</h4>
-                        <div class="performance-stats">
+                            <div class="perf-stat">
+                                <span class="perf-label">Total ROI:</span>
+                                <span class="perf-value ${overallROIClass}">${overallROI}%</span>
+                            </div>
+                            <div class="perf-stat">
+                                <span class="perf-label">Avg ROI/Weekend:</span>
+                                <span class="perf-value ${avgROIClass}">${avgROIPerWeekend}%</span>
+                            </div>
                             <div class="perf-stat">
                                 <span class="perf-label">Best Weekend:</span>
                                 <span class="perf-value">${bestWeekend} (£${weekendStats[bestWeekend]?.totalProfit.toFixed(2) || '0.00'})</span>
@@ -2003,20 +2335,172 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                                 <span class="perf-label">Worst Weekend:</span>
                                 <span class="perf-value">${worstWeekend} (£${weekendStats[worstWeekend]?.totalProfit.toFixed(2) || '0.00'})</span>
                             </div>
-                            <div class="perf-stat">
-                                <span class="perf-label">Active Bets:</span>
-                                <span class="perf-value">${totalActiveBets}</span>
-                            </div>
-                            <div class="perf-stat">
-                                <span class="perf-label">Completed Bets:</span>
-                                <span class="perf-value">${totalCompletedBets}</span>
-                            </div>
                         </div>
                     </div>
                 </div>
             `;
             
             container.innerHTML = html;
+        }
+
+        // League Breakdown Analysis
+        function updateLeagueBreakdown(completedBets) {
+            const leagueStats = {};
+            
+            completedBets.forEach(bet => {
+                const league = bet.league || bet.opportunity?.league || 'Unknown';
+                if (!leagueStats[league]) {
+                    leagueStats[league] = {
+                        bets: 0,
+                        won: 0,
+                        lost: 0,
+                        stake: 0,
+                        profit: 0
+                    };
+                }
+                leagueStats[league].bets++;
+                leagueStats[league].stake += bet.stake;
+                leagueStats[league].profit += bet.profit || 0;
+                if (bet.status === 'won') {
+                    leagueStats[league].won++;
+                } else {
+                    leagueStats[league].lost++;
+                }
+            });
+            
+            const container = document.getElementById('league-breakdown-content');
+            let html = '';
+            
+            Object.entries(leagueStats).forEach(([league, stats]) => {
+                const winRate = stats.bets > 0 ? Math.round((stats.won / stats.bets) * 100) : 0;
+                const roi = stats.stake > 0 ? ((stats.profit / stats.stake) * 100).toFixed(2) : 0;
+                const profitClass = stats.profit >= 0 ? 'positive' : 'negative';
+                const roiClass = roi >= 0 ? 'positive' : 'negative';
+                
+                html += `
+                    <div class="league-card">
+                        <h4>${league}</h4>
+                        <div class="stats-row">
+                            <span class="stats-label">Bets:</span>
+                            <span class="stats-value">${stats.bets}</span>
+                        </div>
+                        <div class="stats-row">
+                            <span class="stats-label">Win Rate:</span>
+                            <span class="stats-value">${winRate}%</span>
+                        </div>
+                        <div class="stats-row">
+                            <span class="stats-label">Stake:</span>
+                            <span class="stats-value">£${stats.stake.toFixed(2)}</span>
+                        </div>
+                        <div class="stats-row">
+                            <span class="stats-label">Profit:</span>
+                            <span class="stats-value ${profitClass}">£${stats.profit.toFixed(2)}</span>
+                        </div>
+                        <div class="stats-row">
+                            <span class="stats-label">ROI:</span>
+                            <span class="stats-value ${roiClass}">${roi}%</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            container.innerHTML = html || '<p>No league data available yet.</p>';
+        }
+        
+        // Top and Bottom Teams Analysis
+        function updateTopBottomTeams(completedBets) {
+            const teamStats = {};
+            
+            completedBets.forEach(bet => {
+                const team = bet.bet_team || bet.opportunity?.bet_team || 'Unknown';
+                if (!teamStats[team]) {
+                    teamStats[team] = {
+                        bets: 0,
+                        profit: 0,
+                        stake: 0
+                    };
+                }
+                teamStats[team].bets++;
+                teamStats[team].stake += bet.stake;
+                teamStats[team].profit += bet.profit || 0;
+            });
+            
+            // Sort teams by profit
+            const sortedTeams = Object.entries(teamStats)
+                .map(([team, stats]) => ({
+                    team,
+                    ...stats,
+                    roi: stats.stake > 0 ? ((stats.profit / stats.stake) * 100).toFixed(2) : 0
+                }))
+                .sort((a, b) => b.profit - a.profit);
+            
+            // Get top 3 and bottom 3
+            const topTeams = sortedTeams.slice(0, 3);
+            const bottomTeams = sortedTeams.slice(-3).reverse();
+            
+            // Display top teams
+            let topHtml = '';
+            if (topTeams.length > 0) {
+                topTeams.forEach((team, index) => {
+                    const profitClass = team.profit >= 0 ? 'positive' : 'negative';
+                    topHtml += `
+                        <div class="team-card">
+                            <h4>${index + 1}. ${team.team}</h4>
+                            <div class="stats-row">
+                                <span class="stats-label">Bets:</span>
+                                <span class="stats-value">${team.bets}</span>
+                            </div>
+                            <div class="stats-row">
+                                <span class="stats-label">Stake:</span>
+                                <span class="stats-value">£${team.stake.toFixed(2)}</span>
+                            </div>
+                            <div class="stats-row">
+                                <span class="stats-label">Profit:</span>
+                                <span class="stats-value ${profitClass}">£${team.profit.toFixed(2)}</span>
+                            </div>
+                            <div class="stats-row">
+                                <span class="stats-label">ROI:</span>
+                                <span class="stats-value ${profitClass}">${team.roi}%</span>
+                            </div>
+                        </div>
+                    `;
+                });
+            } else {
+                topHtml = '<p>No team data available yet.</p>';
+            }
+            document.getElementById('top-teams-content').innerHTML = topHtml;
+            
+            // Display bottom teams
+            let bottomHtml = '';
+            if (bottomTeams.length > 0) {
+                bottomTeams.forEach((team, index) => {
+                    const profitClass = team.profit >= 0 ? 'positive' : 'negative';
+                    bottomHtml += `
+                        <div class="team-card">
+                            <h4>${index + 1}. ${team.team}</h4>
+                            <div class="stats-row">
+                                <span class="stats-label">Bets:</span>
+                                <span class="stats-value">${team.bets}</span>
+                            </div>
+                            <div class="stats-row">
+                                <span class="stats-label">Stake:</span>
+                                <span class="stats-value">£${team.stake.toFixed(2)}</span>
+                            </div>
+                            <div class="stats-row">
+                                <span class="stats-label">Profit:</span>
+                                <span class="stats-value ${profitClass}">£${team.profit.toFixed(2)}</span>
+                            </div>
+                            <div class="stats-row">
+                                <span class="stats-label">ROI:</span>
+                                <span class="stats-value ${profitClass}">${team.roi}%</span>
+                            </div>
+                        </div>
+                    `;
+                });
+            } else {
+                bottomHtml = '<p>No team data available yet.</p>';
+            }
+            document.getElementById('bottom-teams-content').innerHTML = bottomHtml;
         }
 
         // Test function to debug analytics
@@ -2029,96 +2513,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         
         // Make testAnalytics available globally
         window.testAnalytics = testAnalytics;
-
-        // Show breakdown by type
-        function showBreakdown(type) {
-            // Remove active class from all breakdown tabs
-            document.querySelectorAll('.breakdown-tab').forEach(tab => {
-                tab.classList.remove('active');
-            });
-            
-            // Add active class to clicked tab
-            event.target.classList.add('active');
-            
-            // Update breakdown display
-            updateBetBreakdown(type);
-        }
-
-        // Update bet breakdown display
-        function updateBetBreakdown(type = 'all') {
-            const container = document.getElementById('bet-breakdown-list');
-            let betsToShow = [];
-            
-            if (type === 'active') {
-                betsToShow = activeBets;
-            } else if (type === 'completed') {
-                betsToShow = completedBets;
-            } else {
-                betsToShow = [...activeBets, ...completedBets];
-            }
-            
-            if (betsToShow.length === 0) {
-                container.innerHTML = '<p style="text-align: center; color: #6c757d; padding: 20px;">No bets to display</p>';
-                return;
-            }
-            
-            // Sort bets by date (newest first)
-            betsToShow.sort((a, b) => new Date(b.date) - new Date(a.date));
-            
-            container.innerHTML = '';
-            
-            betsToShow.forEach(bet => {
-                const betItem = document.createElement('div');
-                betItem.className = 'breakdown-bet-item';
-                
-                // Use the profit value from database
-                const profit = bet.profit !== undefined ? bet.profit : 
-                              (bet.status === 'won' ? (bet.stake * bet.odds) - bet.stake : 
-                               bet.status === 'lost' ? -bet.stake : 0);
-                const profitClass = bet.status === 'won' ? 'profit-positive' : 
-                                   bet.status === 'lost' ? 'profit-negative' : 'profit-pending';
-                const profitText = bet.status === 'pending' ? 'Pending' : 
-                                  bet.status === 'won' ? `+£${profit.toFixed(2)}` : 
-                                  `-£${Math.abs(profit).toFixed(2)}`;
-                
-                const statusClass = bet.status === 'won' ? 'status-won' : 
-                                   bet.status === 'lost' ? 'status-lost' : 'status-pending';
-                const statusText = bet.status === 'won' ? 'Won' : 
-                                  bet.status === 'lost' ? 'Lost' : 'Pending';
-                
-                const date = new Date(bet.date).toLocaleDateString();
-                const time = new Date(bet.date).toLocaleTimeString();
-                
-                // Support both flat and nested structures
-                const game = bet.game || bet.opportunity?.game || 'Unknown';
-                const betTeam = bet.bet_team || bet.opportunity?.bet_team || 'Unknown';
-                const betType = bet.bet_type || bet.opportunity?.bet_type || 'WIN';
-                const strategy = bet.strategy || bet.opportunity?.strategy || 'Unknown';
-                const league = bet.league || bet.opportunity?.league || 'Unknown';
-                
-                betItem.innerHTML = `
-                    <div class="breakdown-bet-info">
-                        <div class="breakdown-bet-title">${game}</div>
-                        <div class="breakdown-bet-details">
-                            <strong>${betTeam}</strong> - ${betType} (${strategy})
-                        </div>
-                        <div class="breakdown-bet-meta">
-                            ${league} • ${date} ${time}
-                        </div>
-                    </div>
-                    <div class="breakdown-bet-amounts">
-                        <div class="breakdown-stake">£${bet.stake.toFixed(2)}</div>
-                        <div class="breakdown-odds">@ ${bet.odds.toFixed(3)}</div>
-                    </div>
-                    <div>
-                        <div class="breakdown-profit ${profitClass}">${profitText}</div>
-                        <div class="breakdown-status ${statusClass}">${statusText}</div>
-                    </div>
-                `;
-                
-                container.appendChild(betItem);
-            });
-        }
 
         // Calculate P&L
         function calculatePnL() {
@@ -2252,7 +2646,7 @@ if __name__ == '__main__':
 
         # Start browser opening in a separate thread
         browser_thread = threading.Thread(target=open_browser)
-        browser_thread.daemon = True
-        browser_thread.start()
+        browser_thread.daemon = True;
+        browser_thread.start();
 
     app.run(debug=False, host='0.0.0.0', port=5000)
