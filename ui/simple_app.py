@@ -2231,6 +2231,72 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             html += '</div>';
             container.innerHTML = html;
         }
+
+        // Toggle and display bets for a selected weekend
+        function toggleWeekendBets(weekendId, weekendLabel) {
+            try {
+                const container = document.getElementById(`${weekendId}-bets`);
+                if (!container) {
+                    console.warn('Weekend bets container not found for', weekendId);
+                    return;
+                }
+
+                // If already visible, hide it
+                if (container.style.display === 'block') {
+                    container.style.display = 'none';
+                    container.innerHTML = '';
+                    return;
+                }
+
+                // Build combined bets array and find bets that belong to this weekend
+                const allBets = [...activeBets, ...completedBets];
+                const betsForWeekend = allBets.filter(bet => {
+                    const betDate = bet.placement_date || bet.date || bet.match_date || 'Unknown';
+                    return getWeekendLabel(betDate) === weekendLabel;
+                });
+
+                // Create HTML for the bets list
+                let html = '';
+                if (betsForWeekend.length === 0) {
+                    html = '<p style="padding:12px;">No bets for this weekend.</p>';
+                } else {
+                    html = '<div class="weekend-bets-list">';
+                    betsForWeekend.forEach(bet => {
+                        const game = bet.opportunity?.game || bet.game || 'Unknown';
+                        const team = bet.opportunity?.bet_team || bet.bet_team || 'Unknown';
+                        const stake = typeof bet.stake === 'number' ? `£${bet.stake.toFixed(2)}` : (bet.stake || '£0.00');
+                        const odds = typeof bet.odds === 'number' ? bet.odds.toFixed(3) : (bet.odds || 'N/A');
+                        const status = (bet.status || 'pending').toLowerCase();
+                        const profit = typeof bet.profit === 'number' ? `£${bet.profit.toFixed(2)}` : (bet.profit || '£0.00');
+                        const placement = formatDateForDisplay(bet.placement_date || bet.date || bet.match_date || 'Unknown');
+
+                        let statusClass = 'weekend-bet-status status-pending';
+                        if (status === 'won') statusClass = 'weekend-bet-status status-won';
+                        if (status === 'lost') statusClass = 'weekend-bet-status status-lost';
+
+                        html += `
+                            <div class="weekend-bet-item">
+                                <div class="weekend-bet-left">
+                                    <div class="weekend-bet-game">${game}</div>
+                                    <div class="weekend-bet-team">${team}</div>
+                                    <div class="weekend-bet-meta">Placed: ${placement}</div>
+                                </div>
+                                <div class="weekend-bet-right">
+                                    <div class="weekend-bet-stake">${stake} @ ${odds}</div>
+                                    <div class="weekend-bet-profit ${profit.startsWith('-') ? 'profit-negative' : 'profit-positive'}">${profit}</div>
+                                    <div class="${statusClass}">${status.charAt(0).toUpperCase() + status.slice(1)}</div>
+                                </div>
+                            </div>`;
+                    });
+                    html += '</div>';
+                }
+
+                container.innerHTML = html;
+                container.style.display = 'block';
+            } catch (e) {
+                console.error('Error toggling weekend bets for', weekendId, weekendLabel, e);
+            }
+        }
         
         // Update performance summary
         function updatePerformanceSummary(weekendStats) {
