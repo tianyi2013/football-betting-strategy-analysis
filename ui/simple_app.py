@@ -175,12 +175,34 @@ def save_bets_to_db(bets_data):
     Save/update bets in database.
     This is called when the client sends updated bets list.
 
+    This function will:
+    1. Update or add bets that are in the received list
+    2. Delete bets from database that are not in the received list
+
     Returns:
         True if all bets were saved/updated successfully, False otherwise.
     """
     errors = []
     try:
-        # For each bet, update if exists or create new
+        # Get all existing bet IDs from database
+        existing_bets = storage.get_all_bets()
+        existing_ids = {bet['id'] for bet in existing_bets}
+
+        # Get IDs from the received bets data
+        received_ids = {bet['id'] for bet in bets_data if 'id' in bet and isinstance(bet['id'], int)}
+
+        # Find bets to delete (exist in DB but not in received data)
+        ids_to_delete = existing_ids - received_ids
+
+        # Delete bets that are no longer in the client's list
+        for bet_id in ids_to_delete:
+            try:
+                storage.delete_bet(bet_id)
+                print(f"Deleted bet {bet_id} from database")
+            except Exception as e:
+                errors.append({'bet_id': bet_id, 'error': f'Failed to delete: {str(e)}'})
+
+        # For each bet in the received data, update if exists or create new
         for bet in bets_data:
             # If the client provides an ID, it may be a temporary timestamp id generated in the browser.
             # Try to update an existing DB row with that id; if no row exists, add the bet as new.
