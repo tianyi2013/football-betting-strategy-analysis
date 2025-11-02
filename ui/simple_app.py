@@ -183,9 +183,26 @@ def save_bets_to_db(bets_data):
         True if all bets were saved/updated successfully, False otherwise.
     """
     errors = []
+    max_retries = 3
+    retry_delay = 0.5  # seconds
+
+    def retry_operation(operation, *args, **kwargs):
+        """Retry an operation with exponential backoff for database locks"""
+        for attempt in range(max_retries):
+            try:
+                return operation(*args, **kwargs)
+            except Exception as e:
+                if 'database is locked' in str(e).lower():
+                    if attempt < max_retries - 1:
+                        wait_time = retry_delay * (2 ** attempt)  # exponential backoff
+                        print(f"Database locked, retrying in {wait_time}s... (attempt {attempt + 1}/{max_retries})")
+                        time.sleep(wait_time)
+                        continue
+                raise
+
     try:
         # Get all existing bet IDs from database
-        existing_bets = storage.get_all_bets()
+        existing_bets = retry_operation(storage.get_all_bets)
         existing_ids = {bet['id'] for bet in existing_bets}
 
         # Get IDs from the received bets data
@@ -197,7 +214,7 @@ def save_bets_to_db(bets_data):
         # Delete bets that are no longer in the client's list
         for bet_id in ids_to_delete:
             try:
-                storage.delete_bet(bet_id)
+                retry_operation(storage.delete_bet, bet_id)
                 print(f"Deleted bet {bet_id} from database")
             except Exception as e:
                 errors.append({'bet_id': bet_id, 'error': f'Failed to delete: {str(e)}'})
@@ -208,21 +225,21 @@ def save_bets_to_db(bets_data):
             # Try to update an existing DB row with that id; if no row exists, add the bet as new.
             if 'id' in bet and isinstance(bet['id'], int):
                 try:
-                    existing = storage.get_bet_by_id(bet['id'])
+                    existing = retry_operation(storage.get_bet_by_id, bet['id'])
                     if existing:
-                        ok = storage.update_bet(bet['id'], bet)
+                        ok = retry_operation(storage.update_bet, bet['id'], bet)
                         if not ok:
                             # If update returned False, attempt insert
-                            storage.add_bet(bet)
+                            retry_operation(storage.add_bet, bet)
                     else:
                         # Insert as new since the provided id doesn't exist in DB
-                        storage.add_bet(bet)
+                        retry_operation(storage.add_bet, bet)
                 except Exception as e:
                     # Record the error and continue with next bet
                     errors.append({'bet': bet, 'error': str(e)})
             else:
                 try:
-                    storage.add_bet(bet)
+                    retry_operation(storage.add_bet, bet)
                 except Exception as e:
                     errors.append({'bet': bet, 'error': str(e)})
     except Exception as e:

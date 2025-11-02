@@ -80,10 +80,14 @@ class DatabaseManager:
 
     def get_connection(self) -> sqlite3.Connection:
         """Get database connection with row factory"""
-        conn = sqlite3.connect(self.db_path)
+        # Set timeout to 30 seconds to handle database locks better
+        # especially on Windows with multiple processes accessing the DB
+        conn = sqlite3.connect(self.db_path, timeout=30.0)
         conn.row_factory = sqlite3.Row
         # Enable foreign keys
         conn.execute('PRAGMA foreign_keys = ON')
+        # Enable WAL mode for better concurrency on Windows
+        conn.execute('PRAGMA journal_mode = WAL')
         return conn
 
 
