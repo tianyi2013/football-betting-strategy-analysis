@@ -10,18 +10,13 @@ Priority order: Form AGAINST → Momentum AGAINST → Form FOR → Momentum FOR 
 
 
 
-import pandas as pd
 
 from datetime import datetime
-
-from typing import List, Dict, Optional, Tuple
-
-from strategies.momentum_strategy import MomentumStrategy
+from typing import Dict, List
 
 from strategies.form_strategy import FormStrategy
-
+from strategies.momentum_strategy import MomentumStrategy
 from strategies.top_bottom_strategy import TopBottomStrategy
-
 
 
 class WaterfallBettingAdvisor:
