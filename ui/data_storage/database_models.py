@@ -4,12 +4,11 @@ Database models for betting data storage.
 Provides ORM-like interface using SQLite with better data integrity and querying capabilities.
 """
 
-from datetime import datetime
-from typing import Dict, List, Any, Optional
 import json
-import sqlite3
 import os
-from pathlib import Path
+import sqlite3
+from datetime import datetime
+from typing import Any, Dict, List, Optional
 
 
 class DatabaseManager:
@@ -74,7 +73,6 @@ class DatabaseManager:
             cursor.execute('''
                 CREATE INDEX IF NOT EXISTS idx_bets_league ON bets(league)
             ''')
-
 
             conn.commit()
 
@@ -334,6 +332,3 @@ class BetRepository:
     def _rows_to_dicts(self, rows: List[sqlite3.Row]) -> List[Dict[str, Any]]:
         """Convert list of sqlite3.Row to list of dictionaries"""
         return [self._row_to_dict(row) for row in rows]
-
-
-

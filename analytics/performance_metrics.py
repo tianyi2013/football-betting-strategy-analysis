@@ -2,8 +2,10 @@
 Performance metrics calculation and analysis
 """
 
-import pandas as pd
 from typing import Dict, List
+
+import pandas as pd
+
 
 class PerformanceMetrics:
     """

@@ -11,6 +11,7 @@ Note: Storage layer has been moved to ui/data_storage
 
 from .data_cleaner import DataCleaner
 
+
 # Create a compatibility function
 def cleanse_all_data(data_directory: str = "data"):
     """Compatibility function for the old data_cleaner interface"""

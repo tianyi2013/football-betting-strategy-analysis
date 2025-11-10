@@ -9,15 +9,15 @@ import sys
 # Add parent directory to path so imports work when running this script directly
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
-from backtest.backtest_runner import BacktestRunner
 from analytics.league_analytics import PremierLeagueAnalytics
-from strategies.form_strategy import FormStrategy
-from strategies.momentum_strategy import MomentumStrategy
-from strategies.top_bottom_strategy import TopBottomStrategy
-from strategies.home_away_strategy import HomeAwayStrategy
+from backtest.backtest_runner import BacktestRunner
+from data_processing import cleanse_all_data
 from predictions import run_predictions
 from predictions.waterfall_betting_advisor import WaterfallBettingAdvisor
-from data_processing import cleanse_all_data
+from strategies.form_strategy import FormStrategy
+from strategies.home_away_strategy import HomeAwayStrategy
+from strategies.momentum_strategy import MomentumStrategy
+from strategies.top_bottom_strategy import TopBottomStrategy
 
 
 class UnifiedBettingApp:

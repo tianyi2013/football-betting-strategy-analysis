@@ -2,11 +2,11 @@
 Backtest runner for executing and managing backtests
 """
 
-from typing import Dict, List, Optional
-import pandas as pd
-from strategies.top_bottom_strategy import TopBottomStrategy
+from typing import Dict, List
+
 from strategies.home_away_strategy import HomeAwayStrategy
-from analytics.performance_metrics import PerformanceMetrics
+from strategies.top_bottom_strategy import TopBottomStrategy
+
 
 class BacktestRunner:
     """

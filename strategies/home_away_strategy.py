@@ -2,11 +2,14 @@
 Home-Away betting strategy: Bet on home team to win all games
 """
 
-from typing import Dict, List, Optional
+from typing import Dict
+
 import pandas as pd
-import numpy as np
-from .base_strategy import BaseBettingStrategy
+
 from analytics.performance_metrics import PerformanceMetrics
+
+from .base_strategy import BaseBettingStrategy
+
 
 class HomeAwayStrategy(BaseBettingStrategy):
     """

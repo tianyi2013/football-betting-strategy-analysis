@@ -2,11 +2,14 @@
 Momentum-based betting strategy: Bet on teams with winning streaks and against teams with losing streaks
 """
 
-from typing import Dict, List, Tuple, Optional
+from typing import Dict, List
+
 import pandas as pd
-import numpy as np
-from .base_strategy import BaseBettingStrategy
+
 from analytics.performance_metrics import PerformanceMetrics
+
+from .base_strategy import BaseBettingStrategy
+
 
 class MomentumStrategy(BaseBettingStrategy):
     """

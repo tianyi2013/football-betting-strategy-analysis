@@ -11,7 +11,7 @@ import time
 import webbrowser
 from datetime import datetime
 
-from flask import Flask, jsonify, request, make_response
+from flask import Flask, jsonify, make_response, request
 
 # Add the parent directory to the path to import prediction modules
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
@@ -150,6 +150,7 @@ def get_real_opportunities():
 # Initialize storage adapter (SQLite database)
 # Use absolute path to ensure we find the database regardless of working directory
 import os
+
 _db_path = os.path.join(os.path.dirname(__file__), 'data_storage', 'betting_data.db')
 storage = get_storage_adapter(storage_type='sqlite', db_path=_db_path)
 

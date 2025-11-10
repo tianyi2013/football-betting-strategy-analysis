@@ -4,8 +4,10 @@ Prediction Runner: Main entry point for getting betting predictions.
 This consolidates the functionality from get_predictions.py.
 """
 
-from .next_round_predictor import NextRoundPredictor
 from datetime import datetime
+
+from .next_round_predictor import NextRoundPredictor
+
 
 def run_predictions(league: str = "premier_league"):
     """Get predictions for the next round of games.

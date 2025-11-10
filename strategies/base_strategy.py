@@ -2,11 +2,14 @@
 Base betting strategy class
 """
 
-from abc import ABC, abstractmethod
-from typing import Dict, List, Tuple, Optional
-import pandas as pd
 import os
+from abc import ABC, abstractmethod
+from typing import Dict, Tuple
+
+import pandas as pd
+
 from analytics.league_analytics import PremierLeagueAnalytics
+
 
 class BaseBettingStrategy(ABC):
     """

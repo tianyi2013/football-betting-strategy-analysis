@@ -2,9 +2,12 @@
 Results analyzer for backtest results
 """
 
-import pandas as pd
 from typing import Dict, List
+
+import pandas as pd
+
 from analytics.performance_metrics import PerformanceMetrics
+
 
 class ResultsAnalyzer:
     """
