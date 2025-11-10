@@ -4,7 +4,6 @@ Simple Football Betting Logger Web Interface
 Real-time predictions from your betting algorithm with robust database storage
 """
 
-import json
 import os
 import sys
 import threading
@@ -18,14 +17,12 @@ from flask import Flask, jsonify, request, make_response
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from predictions.next_round_predictor import NextRoundPredictor
-from ui.data_storage.storage_adapter import get_storage_adapter, SQLiteStorageAdapter
+from ui.data_storage.storage_adapter import get_storage_adapter
 
 app = Flask(__name__)
 
 # Global flag to prevent multiple browser openings
 _browser_opened = False
-
-# ...existing code...
 
 # League configuration
 _base_dir = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -1367,6 +1364,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         let activeBets = [];
         let completedBets = [];
         let currentDateFilter = 'all';  // Track current filter state
+        let currentLeagueFilter = 'all'; // Track current league filter
 
         // Date filtering functions
         function populateDateFilter() {
@@ -1383,6 +1381,11 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 option.textContent = formatDateForDisplay(date);  // Display formatted date
                 dateFilter.appendChild(option);
             });
+
+            // Preserve current selection if still valid
+            if ([...dateFilter.options].some(o => o.value === currentDateFilter)) {
+                dateFilter.value = currentDateFilter;
+            }
         }
         
         function formatDateForDisplay(dateStr) {
@@ -1422,6 +1425,10 @@ HTML_TEMPLATE = """<!DOCTYPE html>
         function applyFilters() {
             const selectedDate = document.getElementById('date-filter').value;
             const selectedLeague = document.getElementById('league-filter').value;
+
+            // Persist current selections
+            currentDateFilter = selectedDate;
+            currentLeagueFilter = selectedLeague;
             
             console.log('Filters applied - Date:', selectedDate, 'League:', selectedLeague);
             
@@ -1440,10 +1447,33 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             console.log('Filtered opportunities:', filteredOpportunities.length, 'out of', opportunities.length);
             displayOpportunities(filteredOpportunities);
         }
+
+        // Reapply current filters (used after add/delete/mark bet)
+        function reapplyFilters() {
+            const dateSel = currentDateFilter;
+            const leagueSel = currentLeagueFilter;
+
+            // Ensure dropdowns reflect selection
+            const dateEl = document.getElementById('date-filter');
+            const leagueEl = document.getElementById('league-filter');
+            if (dateEl) dateEl.value = dateSel;
+            if (leagueEl) leagueEl.value = leagueSel;
+
+            let filtered = opportunities;
+            if (dateSel !== 'all') {
+                filtered = filtered.filter(opp => opp.match_date === dateSel);
+            }
+            if (leagueSel !== 'all') {
+                filtered = filtered.filter(opp => opp.league === leagueSel);
+            }
+            displayOpportunities(filtered);
+        }
         
         function clearFilters() {
             document.getElementById('date-filter').value = 'all';
             document.getElementById('league-filter').value = 'all';
+            currentDateFilter = 'all';
+            currentLeagueFilter = 'all';
             displayOpportunities(opportunities);
         }
 
@@ -1751,13 +1781,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 document.getElementById(`odds-${index}`).value = '';
                 document.getElementById(`stake-${index}`).value = '';
 
-                // Refresh opportunities display with current filter
-                if (currentDateFilter === 'all') {
-                    displayOpportunities(opportunities);
-                } else {
-                    const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
-                    displayOpportunities(filteredOpportunities);
-                }
+                // Refresh opportunities display with current filters
+                reapplyFilters();
 
                 alert('Bet added successfully!');
             } else {
@@ -1810,12 +1835,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 document.getElementById(`odds-${index}`).value = '';
                 document.getElementById(`stake-${index}`).value = '';
 
-                if (currentDateFilter === 'all') {
-                    displayOpportunities(opportunities);
-                } else {
-                    const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
-                    displayOpportunities(filteredOpportunities);
-                }
+                // Reapply filters after updating
+                reapplyFilters();
 
                 alert('Bet added and marked as won!');
             } else {
@@ -1868,12 +1889,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 document.getElementById(`odds-${index}`).value = '';
                 document.getElementById(`stake-${index}`).value = '';
 
-                if (currentDateFilter === 'all') {
-                    displayOpportunities(opportunities);
-                } else {
-                    const filteredOpportunities = opportunities.filter(opp => opp.match_date === currentDateFilter);
-                    displayOpportunities(filteredOpportunities);
-                }
+                // Reapply filters after updating
+                reapplyFilters();
 
                 alert('Bet added and marked as lost!');
             } else {
@@ -1984,6 +2001,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 saveBets();
                 updateBetsDisplay();
                 updateAnalytics();
+                // Update opportunities while preserving filters
+                reapplyFilters();
             }
         }
 
@@ -1999,6 +2018,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 saveBets();
                 updateBetsDisplay();
                 updateAnalytics();
+                // Update opportunities while preserving filters
+                reapplyFilters();
             }
         }
 
@@ -2011,8 +2032,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                     saveBets();
                     updateBetsDisplay();
                     updateAnalytics();
-                    // Refresh opportunities display to remove bet placed indicator
-                    displayOpportunities();
+                    // Refresh opportunities display to remove bet placed indicator while preserving filters
+                    reapplyFilters();
                     alert('Bet deleted successfully!');
                 }
             }
@@ -2751,7 +2772,7 @@ if __name__ == '__main__':
 
         # Start browser opening in a separate thread
         browser_thread = threading.Thread(target=open_browser)
-        browser_thread.daemon = True;
-        browser_thread.start();
+        browser_thread.daemon = True
+        browser_thread.start()
 
     app.run(debug=False, host='0.0.0.0', port=5000)
