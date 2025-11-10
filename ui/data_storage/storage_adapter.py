@@ -40,6 +40,11 @@ class StorageAdapter(ABC):
         """Get analytics"""
         pass
 
+    @abstractmethod
+    def get_bet_by_id(self, bet_id: Any) -> Optional[Dict[str, Any]]:
+        """Get a bet by ID"""
+        pass
+
 
 class SQLiteStorageAdapter(StorageAdapter):
     """SQLite-based storage adapter (recommended)"""
@@ -222,6 +227,14 @@ class JSONStorageAdapter(StorageAdapter):
             return True
         return False
 
+    def get_bet_by_id(self, bet_id: Any) -> Optional[Dict[str, Any]]:
+        """Get a bet by ID from JSON file"""
+        data = self._load_data()
+        for bet in data:
+            if bet.get('id') == bet_id:
+                return bet
+        return None
+
     def get_analytics(self) -> Dict[str, Any]:
         """Get analytics from JSON data"""
         bets = self._load_data()
@@ -297,4 +310,3 @@ def get_storage_adapter(storage_type: str = 'sqlite', **kwargs) -> StorageAdapte
         _default_adapter = StorageFactory.create_adapter(storage_type, **kwargs)
 
     return _default_adapter
-
