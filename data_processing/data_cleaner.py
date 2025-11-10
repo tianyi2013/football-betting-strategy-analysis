@@ -10,8 +10,7 @@ date parsing logic in the strategy code.
 import pandas as pd
 import os
 import glob
-from pathlib import Path
-from typing import List, Dict, Tuple
+from typing import Dict, Tuple
 
 class DataCleaner:
     """
@@ -52,13 +51,21 @@ class DataCleaner:
             # Store original date format for logging
             original_dates = df['Date'].head(3).tolist()
             
-            # Try different date formats and convert to yyyy-mm-dd
+            # Ensure string and strip spaces
+            df['Date'] = df['Date'].astype(str).str.strip()
+
+            # Try different date formats (with and without time) and convert to yyyy-mm-dd
             date_formats = [
-                '%d/%m/%Y',  # 16/08/2024
-                '%d/%m/%y',   # 16/08/05
-                '%Y-%m-%d',   # 2024-08-16 (already correct)
-                '%d-%m-%Y',   # 16-08-2024
-                '%d-%m-%y',   # 16-08-05
+                '%d/%m/%Y %H:%M',  # 16/08/2024 20:30
+                '%d/%m/%y %H:%M',  # 16/08/05 20:30
+                '%d/%m/%Y',        # 16/08/2024
+                '%d/%m/%y',        # 16/08/05
+                '%Y-%m-%d %H:%M',  # 2024-08-16 20:30
+                '%Y-%m-%d',        # 2024-08-16 (already correct)
+                '%d-%m-%Y %H:%M',  # 16-08-2024 20:30
+                '%d-%m-%y %H:%M',  # 16-08-05 20:30
+                '%d-%m-%Y',        # 16-08-2024
+                '%d-%m-%y',        # 16-08-05
             ]
             
             converted = False
@@ -72,18 +79,31 @@ class DataCleaner:
                     na_count = test_df['Date'].isna().sum()
                     if na_count < len(test_df) * 0.5:  # Less than 50% NaT values
                         df['Date'] = test_df['Date']
-                        # Convert to yyyy-mm-dd string format
-                        df['Date'] = df['Date'].dt.strftime('%Y-%m-%d')
                         converted = True
                         break
-                except:
+                except Exception:
                     continue
             
+            # Fallback: general day-first parse (handles mixed DD/MM/YYYY[ HH:MM])
+            if not converted:
+                try:
+                    test_df = df.copy()
+                    test_df['Date'] = pd.to_datetime(test_df['Date'], dayfirst=True, errors='coerce')
+                    na_count = test_df['Date'].isna().sum()
+                    if na_count < len(test_df) * 0.5:
+                        df['Date'] = test_df['Date']
+                        converted = True
+                except Exception:
+                    pass
+
             if not converted:
                 message = f"Could not parse dates in {file_path}"
                 print(f"  [ERROR] {message}")
                 return False, message
             
+            # Convert to yyyy-mm-dd string format (drop time component)
+            df['Date'] = df['Date'].dt.strftime('%Y-%m-%d')
+
             # Save the cleansed data back to the file
             df.to_csv(file_path, index=False, encoding='utf-8')
             
