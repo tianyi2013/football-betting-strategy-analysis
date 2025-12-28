@@ -1,19 +1,17 @@
 #!/usr/bin/env python3
 """
-Minimal test application for Elastic Beanstalk.
+Entry point for Elastic Beanstalk.
 """
-from flask import Flask
 
-application = Flask(__name__)
+# Add the project root to the path to allow imports.
+import os
+import sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
-@application.route('/')
-def index():
-    return '<h1>Hello from Elastic Beanstalk!</h1><p>If you see this, the deployment is working.</p>'
-
-@application.route('/health')
-def health():
-    return {'status': 'ok'}, 200
+from ui.simple_app import application
 
 if __name__ == '__main__':
-    application.run(debug=False, host='0.0.0.0', port=5000)
+    # This allows running the app locally for testing,
+    # but EB will use the 'application' object directly.
+    application.run()
 
