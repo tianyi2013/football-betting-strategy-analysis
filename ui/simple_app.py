@@ -19,7 +19,7 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from predictions.next_round_predictor import NextRoundPredictor
 from ui.data_storage.storage_adapter import get_storage_adapter
 
-app = Flask(__name__)
+application = Flask(__name__)
 
 # Global flag to prevent multiple browser openings
 _browser_opened = False
@@ -254,7 +254,7 @@ def save_bets_to_db(bets_data):
 
 
 
-@app.route('/')
+@application.route('/')
 def index():
     """Serve the main HTML page"""
     # Add cache-busting headers to prevent browser caching
@@ -1819,7 +1819,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 stake: stake,
                 status: 'won',
                 result: 'Won',
-                profit: (stake * odds) - stake,
+                // UI-side profit for immediate feedback; backend will recompute
+                profit: Math.round(((stake * odds) - stake) * 100) / 100,
                 date: new Date().toISOString(),
                 placement_date: new Date().toISOString(),
                 match_date: opportunity.match_date
@@ -1873,7 +1874,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 stake: stake,
                 status: 'lost',
                 result: 'Lost',
-                profit: -stake,
+                // UI-side profit; backend will recompute
+                profit: Math.round((-stake) * 100) / 100,
                 date: new Date().toISOString(),
                 placement_date: new Date().toISOString(),
                 match_date: opportunity.match_date
@@ -1996,7 +1998,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 const bet = activeBets[betIndex];
                 bet.status = 'won';
                 bet.result = 'Won';
-                bet.profit = (bet.stake * bet.odds) - bet.stake;
+                // UI-side profit for immediate feedback; backend will recompute
+                bet.profit = Math.round(((bet.stake * bet.odds) - bet.stake) * 100) / 100;
                 completedBets.push(bet);
                 activeBets.splice(betIndex, 1);
                 saveBets();
@@ -2013,7 +2016,8 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 const bet = activeBets[betIndex];
                 bet.status = 'lost';
                 bet.result = 'Lost';
-                bet.profit = -bet.stake;
+                // UI-side profit; backend will recompute
+                bet.profit = Math.round((-bet.stake) * 100) / 100;
                 completedBets.push(bet);
                 activeBets.splice(betIndex, 1);
                 saveBets();
@@ -2086,7 +2090,6 @@ HTML_TEMPLATE = """<!DOCTYPE html>
             updateRoundAnalytics(allBets);
             
             // Update league breakdown and team stats
-            updateLeagueBreakdown(completedBets);
             updateTopBottomTeams(completedBets);
         }
         
@@ -2691,7 +2694,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
 </html>"""
 
 
-@app.route('/api/opportunities')
+@application.route('/api/opportunities')
 def get_opportunities():
     """API endpoint to get real betting opportunities from prediction system"""
     try:
@@ -2707,7 +2710,7 @@ def get_opportunities():
         return jsonify([])
 
 
-@app.route('/api/bets', methods=['GET', 'POST'])
+@application.route('/api/bets', methods=['GET', 'POST'])
 def handle_bets():
     """API endpoint to handle bets with database storage"""
     if request.method == 'GET':
@@ -2721,7 +2724,7 @@ def handle_bets():
         return jsonify({'success': True})
 
 
-@app.route('/api/analytics')
+@application.route('/api/analytics')
 def get_analytics():
     """API endpoint to get betting analytics"""
     try:
@@ -2776,4 +2779,4 @@ if __name__ == '__main__':
         browser_thread.daemon = True
         browser_thread.start()
 
-    app.run(debug=False, host='0.0.0.0', port=5000)
+    application.run(debug=False, host='0.0.0.0', port=5000)
