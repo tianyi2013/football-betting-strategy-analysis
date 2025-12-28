@@ -217,7 +217,6 @@ class BetRepository:
         if not update_data:
             return False
 
-        # Build dynamic update query
         allowed_fields = {
             'status', 'profit', 'odds', 'stake', 'reason'
         }
@@ -226,6 +225,29 @@ class BetRepository:
         if not update_data:
             return False
 
+        # If any of the core fields change, recompute profit from odds/stake/status
+        needs_profit_recalc = any(k in update_data for k in ('status', 'odds', 'stake'))
+        if needs_profit_recalc:
+            with self.db_manager.get_connection() as conn:
+                cursor = conn.cursor()
+                cursor.execute('SELECT odds, stake, status FROM bets WHERE id = ?', (bet_id,))
+                row = cursor.fetchone()
+                if row:
+                    current_odds = row['odds']
+                    current_stake = row['stake']
+                    current_status = row['status']
+
+                    odds = float(update_data.get('odds', current_odds))
+                    stake = float(update_data.get('stake', current_stake))
+                    status = (update_data.get('status', current_status) or '').lower().strip()
+
+                    if status == 'won':
+                        update_data['profit'] = round((stake * odds) - stake, 2)
+                    elif status == 'lost':
+                        update_data['profit'] = round(-stake, 2)
+                    else:
+                        update_data['profit'] = 0.0
+
         update_data['updated_at'] = datetime.now().isoformat()
 
         set_clause = ', '.join([f'{k} = ?' for k in update_data.keys()])
@@ -233,9 +255,7 @@ class BetRepository:
 
         with self.db_manager.get_connection() as conn:
             cursor = conn.cursor()
-            cursor.execute(f'''
-                UPDATE bets SET {set_clause} WHERE id = ?
-            ''', values)
+            cursor.execute(f'''UPDATE bets SET {set_clause} WHERE id = ?''', values)
             conn.commit()
             return cursor.rowcount > 0
 

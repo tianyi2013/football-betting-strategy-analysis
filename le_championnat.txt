@@ -1,0 +1,1182 @@
+[TARGET] Ligue 1 Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LIGUE 1 BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-08
+[TROPHY] Next Round: 12
+[CHART] Total Games: 8
+[MONEY] Betting Opportunities: 7
+[TARGET] Average Confidence: 28.8%
+[DATE] Round Date: 08/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Angers SCO vs AJ Auxerre
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['L', 'L', 'L'] (Score: -1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (0 pts, Score: 0.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Angers (pos 14), Auxerre (pos 18)
+    [HOME] Home-Away: Angers SCO (Confidence: 100.0%)
+        Home team strong home record (40.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Angers SCO
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (40.0%) vs away team weak away record (0.0%)
+
+ 2. Havre Athletic Club vs FC Nantes
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'W'] (Score: 0.00) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Havre Athletic Club (Confidence: 88.9%)
+        Home team good form (0.78) vs away team poor form (0.33)
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Le Havre (pos 12), Nantes (pos 15)
+    [HOME] Home-Away: Havre Athletic Club (Confidence: 60.0%)
+        Home team strong home record (40.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Havre Athletic Club
+        [TARGET] Confidence: 32.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.78) vs away team poor form (0.33), home_away: Home team strong home record (40.0%) vs away team weak away record (20.0%)
+
+ 3. FC Lorient vs Toulouse FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['D', 'D', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Lorient (pos 16), Toulouse (pos 9)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 4. Olympique Lyonnais vs Paris Saint-Germain
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'D', 'W'] (Score: 0.00) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Lyon (pos 6), Paris SG (pos 1)
+    [HOME] Home-Away: Olympique Lyonnais (Confidence: 90.0%)
+        Home team strong home record (80.0%) vs away team weak away record (50.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Olympique Lyonnais
+        [TARGET] Confidence: 9.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (80.0%) vs away team weak away record (50.0%)
+
+ 5. Olympique de Marseille vs Stade Brestois 29
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'L'] (Score: 0.33) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Marseille (pos 2), Brest (pos 13)
+    [HOME] Home-Away: Olympique de Marseille (Confidence: 100.0%)
+        Home team strong home record (80.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Olympique de Marseille
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (80.0%) vs away team weak away record (20.0%)
+
+ 6. FC Metz vs OGC Nice
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: FC Metz (Confidence: 100.0%)
+        Home team strong momentum (0.67) vs away team weak momentum (-0.33)
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Metz (pos 17), Nice (pos 8)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Metz
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.67) vs away team weak momentum (-0.33)
+
+ 7. AS Monaco vs RC Lens
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: RC Lens (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Monaco (pos 5), Lens (pos 3)
+    [HOME] Home-Away: AS Monaco (Confidence: 80.0%)
+        Home team strong home record (66.7%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RC Lens
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+
+ 8. RC Strasbourg Alsace vs LOSC Lille
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: LOSC Lille (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: LOSC Lille (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Strasbourg (pos 7), Lille (pos 4)
+    [HOME] Home-Away: RC Strasbourg Alsace (Confidence: 100.0%)
+        Home team strong home record (80.0%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: LOSC Lille
+        [TARGET] Confidence: 60.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33), form: Away team good form (0.67) vs home team poor form (0.33)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Ligue 1 Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LIGUE 1 BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-08
+[TROPHY] Next Round: 12
+[CHART] Total Games: 8
+[MONEY] Betting Opportunities: 7
+[TARGET] Average Confidence: 28.8%
+[DATE] Round Date: 08/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Angers SCO vs AJ Auxerre
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['L', 'L', 'L'] (Score: -1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (0 pts, Score: 0.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Angers (pos 14), Auxerre (pos 18)
+    [HOME] Home-Away: Angers SCO (Confidence: 100.0%)
+        Home team strong home record (40.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Angers SCO
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (40.0%) vs away team weak away record (0.0%)
+
+ 2. Havre Athletic Club vs FC Nantes
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'W'] (Score: 0.00) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Havre Athletic Club (Confidence: 88.9%)
+        Home team good form (0.78) vs away team poor form (0.33)
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Le Havre (pos 12), Nantes (pos 15)
+    [HOME] Home-Away: Havre Athletic Club (Confidence: 60.0%)
+        Home team strong home record (40.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Havre Athletic Club
+        [TARGET] Confidence: 32.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.78) vs away team poor form (0.33), home_away: Home team strong home record (40.0%) vs away team weak away record (20.0%)
+
+ 3. FC Lorient vs Toulouse FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['D', 'D', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Lorient (pos 16), Toulouse (pos 9)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 4. Olympique Lyonnais vs Paris Saint-Germain
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'D', 'W'] (Score: 0.00) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Lyon (pos 6), Paris SG (pos 1)
+    [HOME] Home-Away: Olympique Lyonnais (Confidence: 90.0%)
+        Home team strong home record (80.0%) vs away team weak away record (50.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Olympique Lyonnais
+        [TARGET] Confidence: 9.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (80.0%) vs away team weak away record (50.0%)
+
+ 5. Olympique de Marseille vs Stade Brestois 29
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'L'] (Score: 0.33) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Marseille (pos 2), Brest (pos 13)
+    [HOME] Home-Away: Olympique de Marseille (Confidence: 100.0%)
+        Home team strong home record (80.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Olympique de Marseille
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (80.0%) vs away team weak away record (20.0%)
+
+ 6. FC Metz vs OGC Nice
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: FC Metz (Confidence: 100.0%)
+        Home team strong momentum (0.67) vs away team weak momentum (-0.33)
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Metz (pos 17), Nice (pos 8)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Metz
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.67) vs away team weak momentum (-0.33)
+
+ 7. AS Monaco vs RC Lens
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: RC Lens (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Monaco (pos 5), Lens (pos 3)
+    [HOME] Home-Away: AS Monaco (Confidence: 80.0%)
+        Home team strong home record (66.7%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RC Lens
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+
+ 8. RC Strasbourg Alsace vs LOSC Lille
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: LOSC Lille (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: LOSC Lille (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Strasbourg (pos 7), Lille (pos 4)
+    [HOME] Home-Away: RC Strasbourg Alsace (Confidence: 100.0%)
+        Home team strong home record (80.0%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: LOSC Lille
+        [TARGET] Confidence: 60.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33), form: Away team good form (0.67) vs home team poor form (0.33)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Ligue 1 Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LIGUE 1 BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-10
+[TROPHY] Next Round: 13
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 8
+[TARGET] Average Confidence: 31.0%
+[DATE] Round Date: 22/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. AJ Auxerre vs Olympique Lyonnais
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['L', 'D', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Auxerre (pos 18), Lyon (pos 6)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 2. Stade Brestois 29 vs FC Metz
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: FC Metz (Confidence: 100.0%)
+        Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: FC Metz (Confidence: 100.0%)
+        Away team good form (1.00) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Brest (pos 15), Metz (pos 14)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Metz
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (1.00) vs home team weak momentum (-0.33), form: Away team good form (1.00) vs home team poor form (0.11)
+
+ 3. RC Lens vs RC Strasbourg Alsace
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Lens (pos 3), Strasbourg (pos 4)
+    [HOME] Home-Away: RC Lens (Confidence: 100.0%)
+        Home team strong home record (83.3%) vs away team weak away record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RC Lens
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (83.3%) vs away team weak away record (33.3%)
+
+ 4. LOSC Lille vs Paris FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['L', 'W', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Lille (pos 5), Paris FC (pos 11)
+    [HOME] Home-Away: LOSC Lille (Confidence: 100.0%)
+        Home team strong home record (66.7%) vs away team weak away record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: LOSC Lille
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (66.7%) vs away team weak away record (33.3%)
+
+ 5. FC Nantes vs FC Lorient
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['D', 'L', 'D'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Nantes (pos 16), Lorient (pos 17)
+    [HOME] Home-Away: FC Nantes (Confidence: 50.0%)
+        Home team strong home record (16.7%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Nantes
+        [TARGET] Confidence: 5.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (16.7%) vs away team weak away record (0.0%)
+
+ 6. OGC Nice vs Olympique de Marseille
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Olympique de Marseille (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'W'] (Score: -0.67) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Olympique de Marseille (Confidence: 88.9%)
+        Away team good form (0.78) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Nice (pos 9), Marseille (pos 2)
+    [HOME] Home-Away: OGC Nice (Confidence: 50.0%)
+        Home team strong home record (66.7%) vs away team weak away record (50.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Olympique de Marseille
+        [TARGET] Confidence: 66.7%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.67), form: Away team good form (0.78) vs home team poor form (0.33)
+
+ 7. Paris Saint-Germain vs Havre Athletic Club
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'D'] (Score: 0.67) | Away team: ['D', 'D', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Paris SG (pos 1), Le Havre (pos 12)
+    [HOME] Home-Away: Paris Saint-Germain (Confidence: 100.0%)
+        Home team strong home record (80.0%) vs away team weak away record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Paris Saint-Germain
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (80.0%) vs away team weak away record (16.7%)
+
+ 8. Stade Rennais FC vs AS Monaco
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Stade Rennais FC (Confidence: 100.0%)
+        Home team strong momentum (0.67) vs away team weak momentum (-0.67)
+        [CHART] Details: Home team: ['W', 'W', 'D'] (Score: 0.67) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Stade Rennais FC (Confidence: 88.9%)
+        Home team good form (0.78) vs away team poor form (0.33)
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Rennes (pos 8), Monaco (pos 7)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Stade Rennais FC
+        [TARGET] Confidence: 66.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.67) vs away team weak momentum (-0.67), form: Home team good form (0.78) vs away team poor form (0.33)
+
+ 9. Toulouse FC vs Angers SCO
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'D', 'D'] (Score: 0.00) | Away team: ['W', 'L', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Paris SG, Marseille, Lens | Bottom 3: Auxerre | Teams: Toulouse (pos 10), Angers (pos 13)
+    [HOME] Home-Away: Toulouse FC (Confidence: 100.0%)
+        Home team strong home record (33.3%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Toulouse FC
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (33.3%) vs away team weak away record (0.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Ligue 1 Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LIGUE 1 BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-01
+[TROPHY] Next Round: 15
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 7
+[TARGET] Average Confidence: 26.1%
+[DATE] Round Date: 06/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. AJ Auxerre vs FC Metz
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'D', 'L'] (Score: 0.00) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Auxerre (pos 18), Metz (pos 17)
+    [HOME] Home-Away: AJ Auxerre (Confidence: 42.9%)
+        Home team strong home record (28.6%) vs away team weak away record (14.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: AJ Auxerre
+        [TARGET] Confidence: 4.3%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (28.6%) vs away team weak away record (14.3%)
+
+ 2. Stade Brestois 29 vs AS Monaco
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['W', 'L', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Stade Brestois 29 (Confidence: 66.7%)
+        Home team good form (0.67) vs away team poor form (0.33)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Brest (pos 11), Monaco (pos 7)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Stade Brestois 29
+        [TARGET] Confidence: 20.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.67) vs away team poor form (0.33)
+
+ 3. LOSC Lille vs Olympique de Marseille
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Lille (pos 4), Marseille (pos 3)
+    [HOME] Home-Away: LOSC Lille (Confidence: 42.9%)
+        Home team strong home record (71.4%) vs away team weak away record (57.1%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: LOSC Lille
+        [TARGET] Confidence: 4.3%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (71.4%) vs away team weak away record (57.1%)
+
+ 4. FC Lorient vs Olympique Lyonnais
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'D'] (Score: 0.33) | Away team: ['W', 'D', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Lorient (pos 15), Lyon (pos 6)
+    [HOME] Home-Away: FC Lorient (Confidence: 42.9%)
+        Home team strong home record (42.9%) vs away team weak away record (28.6%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Lorient
+        [TARGET] Confidence: 4.3%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (42.9%) vs away team weak away record (28.6%)
+
+ 5. Paris Saint-Germain vs Stade Rennais FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Stade Rennais FC (Confidence: 100.0%)
+        Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Paris SG (pos 2), Rennes (pos 5)
+    [HOME] Home-Away: Paris Saint-Germain (Confidence: 100.0%)
+        Home team strong home record (83.3%) vs away team weak away record (28.6%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Stade Rennais FC
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+
+ 6. Toulouse FC vs RC Strasbourg Alsace
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'D'] (Score: 0.00) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Toulouse (pos 9), Strasbourg (pos 8)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 7. Havre Athletic Club vs Paris FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Le Havre (pos 14), Paris FC (pos 13)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 8. OGC Nice vs Angers SCO
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Angers SCO (Confidence: 100.0%)
+        Away team good form (0.67) vs home team poor form (0.00)
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Nice (pos 10), Angers (pos 12)
+    [HOME] Home-Away: OGC Nice (Confidence: 100.0%)
+        Home team strong home record (57.1%) vs away team weak away record (14.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Angers SCO
+        [TARGET] Confidence: 30.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.00)
+
+ 9. FC Nantes vs RC Lens
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: RC Lens (Confidence: 100.0%)
+        Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'D', 'D'] (Score: -0.33) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: RC Lens (Confidence: 100.0%)
+        Away team good form (1.00) vs home team poor form (0.22)
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Nantes (pos 16), Lens (pos 1)
+    [HOME] Home-Away: RC Lens (Confidence: 100.0%)
+        Away team strong away record (57.1%) vs home team weak home record (14.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RC Lens
+        [TARGET] Confidence: 80.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (1.00) vs home team weak momentum (-0.33), form: Away team good form (1.00) vs home team poor form (0.22), home_away: Away team strong away record (57.1%) vs home team weak home record (14.3%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Ligue 1 Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LIGUE 1 BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-06
+[TROPHY] Next Round: 15
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 7
+[TARGET] Average Confidence: 26.1%
+[DATE] Round Date: 06/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. AJ Auxerre vs FC Metz
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'D', 'L'] (Score: 0.00) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Auxerre (pos 18), Metz (pos 17)
+    [HOME] Home-Away: AJ Auxerre (Confidence: 42.9%)
+        Home team strong home record (28.6%) vs away team weak away record (14.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: AJ Auxerre
+        [TARGET] Confidence: 4.3%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (28.6%) vs away team weak away record (14.3%)
+
+ 2. Stade Brestois 29 vs AS Monaco
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['W', 'L', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Stade Brestois 29 (Confidence: 66.7%)
+        Home team good form (0.67) vs away team poor form (0.33)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Brest (pos 11), Monaco (pos 7)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Stade Brestois 29
+        [TARGET] Confidence: 20.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.67) vs away team poor form (0.33)
+
+ 3. LOSC Lille vs Olympique de Marseille
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Lille (pos 4), Marseille (pos 3)
+    [HOME] Home-Away: LOSC Lille (Confidence: 42.9%)
+        Home team strong home record (71.4%) vs away team weak away record (57.1%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: LOSC Lille
+        [TARGET] Confidence: 4.3%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (71.4%) vs away team weak away record (57.1%)
+
+ 4. FC Lorient vs Olympique Lyonnais
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'D'] (Score: 0.33) | Away team: ['W', 'D', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Lorient (pos 15), Lyon (pos 6)
+    [HOME] Home-Away: FC Lorient (Confidence: 42.9%)
+        Home team strong home record (42.9%) vs away team weak away record (28.6%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Lorient
+        [TARGET] Confidence: 4.3%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (42.9%) vs away team weak away record (28.6%)
+
+ 5. Paris Saint-Germain vs Stade Rennais FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Stade Rennais FC (Confidence: 100.0%)
+        Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Paris SG (pos 2), Rennes (pos 5)
+    [HOME] Home-Away: Paris Saint-Germain (Confidence: 100.0%)
+        Home team strong home record (83.3%) vs away team weak away record (28.6%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Stade Rennais FC
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+
+ 6. Toulouse FC vs RC Strasbourg Alsace
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'D'] (Score: 0.00) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Toulouse (pos 9), Strasbourg (pos 8)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 7. Havre Athletic Club vs Paris FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Le Havre (pos 14), Paris FC (pos 13)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 8. OGC Nice vs Angers SCO
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Angers SCO (Confidence: 100.0%)
+        Away team good form (0.67) vs home team poor form (0.00)
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Nice (pos 10), Angers (pos 12)
+    [HOME] Home-Away: OGC Nice (Confidence: 100.0%)
+        Home team strong home record (57.1%) vs away team weak away record (14.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Angers SCO
+        [TARGET] Confidence: 30.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.00)
+
+ 9. FC Nantes vs RC Lens
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: RC Lens (Confidence: 100.0%)
+        Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'D', 'D'] (Score: -0.33) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: RC Lens (Confidence: 100.0%)
+        Away team good form (1.00) vs home team poor form (0.22)
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Auxerre | Teams: Nantes (pos 16), Lens (pos 1)
+    [HOME] Home-Away: RC Lens (Confidence: 100.0%)
+        Away team strong away record (57.1%) vs home team weak home record (14.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RC Lens
+        [TARGET] Confidence: 80.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (1.00) vs home team weak momentum (-0.33), form: Away team good form (1.00) vs home team poor form (0.22), home_away: Away team strong away record (57.1%) vs home team weak home record (14.3%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Ligue 1 Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LIGUE 1 BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-27
+[TROPHY] Next Round: 17
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 9
+[TARGET] Average Confidence: 36.9%
+[DATE] Round Date: 03/01/2026
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Stade Brestois 29 vs AJ Auxerre
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['L', 'W', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Brest (pos 11), Auxerre (pos 16)
+    [HOME] Home-Away: Stade Brestois 29 (Confidence: 100.0%)
+        Home team strong home record (37.5%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Stade Brestois 29
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (37.5%) vs away team weak away record (0.0%)
+
+ 2. Havre Athletic Club vs Angers SCO
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Angers SCO (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['W', 'W', 'L'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Angers SCO (Confidence: 100.0%)
+        Away team good form (0.67) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Le Havre (pos 15), Angers (pos 10)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Angers SCO
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.33), form: Away team good form (0.67) vs home team poor form (0.11)
+
+ 3. LOSC Lille vs Stade Rennais FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'W'] (Score: 1.00) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (9 pts, Score: 1.00) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Lille (pos 4), Rennes (pos 6)
+    [HOME] Home-Away: LOSC Lille (Confidence: 100.0%)
+        Home team strong home record (75.0%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: LOSC Lille
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (75.0%) vs away team weak away record (25.0%)
+
+ 4. FC Lorient vs FC Metz
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'W'] (Score: 0.00) | Away team: ['L', 'L', 'L'] (Score: -1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: FC Lorient (Confidence: 100.0%)
+        Home team good form (0.78) vs away team poor form (0.00)
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (0 pts, Score: 0.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Lorient (pos 12), Metz (pos 18)
+    [HOME] Home-Away: FC Lorient (Confidence: 100.0%)
+        Home team strong home record (50.0%) vs away team weak away record (12.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Lorient
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.78) vs away team poor form (0.00), home_away: Home team strong home record (50.0%) vs away team weak away record (12.5%)
+
+ 5. Olympique de Marseille vs FC Nantes
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Olympique de Marseille (Confidence: 100.0%)
+        Home team strong momentum (0.33) vs away team weak momentum (-1.00)
+        [CHART] Details: Home team: ['W', 'L', 'D'] (Score: 0.33) | Away team: ['L', 'L', 'L'] (Score: -1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (0 pts, Score: 0.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Marseille (pos 3), Nantes (pos 17)
+    [HOME] Home-Away: Olympique de Marseille (Confidence: 100.0%)
+        Home team strong home record (75.0%) vs away team weak away record (12.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Olympique de Marseille
+        [TARGET] Confidence: 50.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.33) vs away team weak momentum (-1.00), home_away: Home team strong home record (75.0%) vs away team weak away record (12.5%)
+
+ 6. AS Monaco vs Olympique Lyonnais
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Olympique Lyonnais (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'W'] (Score: -0.67) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Olympique Lyonnais (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Monaco (pos 9), Lyon (pos 5)
+    [HOME] Home-Away: AS Monaco (Confidence: 100.0%)
+        Home team strong home record (62.5%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Olympique Lyonnais
+        [TARGET] Confidence: 60.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.67), form: Away team good form (0.67) vs home team poor form (0.33)
+
+ 7. OGC Nice vs RC Strasbourg Alsace
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Nice (pos 13), Strasbourg (pos 8)
+    [HOME] Home-Away: OGC Nice (Confidence: 75.0%)
+        Home team strong home record (50.0%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: OGC Nice
+        [TARGET] Confidence: 7.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (50.0%) vs away team weak away record (25.0%)
+
+ 8. Paris Saint-Germain vs Paris FC
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Paris Saint-Germain (Confidence: 100.0%)
+        Home team strong momentum (0.67) vs away team weak momentum (-0.33)
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['L', 'D', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Paris Saint-Germain (Confidence: 88.9%)
+        Home team good form (0.67) vs away team poor form (0.22)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Paris SG (pos 2), Paris FC (pos 14)
+    [HOME] Home-Away: Paris Saint-Germain (Confidence: 100.0%)
+        Home team strong home record (85.7%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Paris Saint-Germain
+        [TARGET] Confidence: 76.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.67) vs away team weak momentum (-0.33), form: Home team good form (0.67) vs away team poor form (0.22), home_away: Home team strong home record (85.7%) vs away team weak away record (25.0%)
+
+ 9. Toulouse FC vs RC Lens
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'D'] (Score: 0.67) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Lens, Paris SG, Marseille | Bottom 3: Metz | Teams: Toulouse (pos 7), Lens (pos 1)
+    [HOME] Home-Away: RC Lens (Confidence: 75.0%)
+        Away team strong away record (62.5%) vs home team weak home record (37.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RC Lens
+        [TARGET] Confidence: 7.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (62.5%) vs home team weak home record (37.5%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.

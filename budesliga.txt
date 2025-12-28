@@ -1,0 +1,1176 @@
+[TARGET] Bundesliga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] BUNDESLIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-08
+[TROPHY] Next Round: 10
+[CHART] Total Games: 8
+[MONEY] Betting Opportunities: 7
+[TARGET] Average Confidence: 26.3%
+[DATE] Round Date: 08/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Hamburg vs Dortmund
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Dortmund (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-1.00)
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['W', 'W', 'L'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Dortmund (Confidence: 100.0%)
+        Away team good form (0.67) vs home team poor form (0.00)
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Hamburg (pos 13), Dortmund (pos 3)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Dortmund
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-1.00), form: Away team good form (0.67) vs home team poor form (0.00)
+
+ 2. Hoffenheim vs RB Leipzig
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'W'] (Score: 1.00) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (9 pts, Score: 1.00) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Hoffenheim (pos 6), RB Leipzig (pos 2)
+    [HOME] Home-Away: RB Leipzig (Confidence: 100.0%)
+        Away team strong away record (60.0%) vs home team weak home record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RB Leipzig
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (60.0%) vs home team weak home record (25.0%)
+
+ 3. Union Berlin vs Bayern Munich
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'W'] (Score: 0.00) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Union Berlin (pos 10), Bayern Munich (pos 1)
+    [HOME] Home-Away: Bayern Munich (Confidence: 100.0%)
+        Away team strong away record (100.0%) vs home team weak home record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bayern Munich
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (100.0%) vs home team weak home record (40.0%)
+
+ 4. M'gladbach vs FC Koln
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['W', 'L', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: M'gladbach (pos 16), FC Koln (pos 7)
+    [HOME] Home-Away: FC Koln (Confidence: 100.0%)
+        Away team strong away record (40.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Koln
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (40.0%) vs home team weak home record (0.0%)
+
+ 5. Stuttgart vs Augsburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Stuttgart (Confidence: 100.0%)
+        Home team good form (0.67) vs away team poor form (0.11)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Stuttgart (pos 4), Augsburg (pos 14)
+    [HOME] Home-Away: Stuttgart (Confidence: 100.0%)
+        Home team strong home record (100.0%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Stuttgart
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.67) vs away team poor form (0.11), home_away: Home team strong home record (100.0%) vs away team weak away record (25.0%)
+
+ 6. Freiburg vs St Pauli
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'D'] (Score: 0.00) | Away team: ['L', 'L', 'L'] (Score: -1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (0 pts, Score: 0.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Freiburg (pos 11), St Pauli (pos 15)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 7. Ein Frankfurt vs Mainz
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'D'] (Score: 0.00) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Ein Frankfurt (pos 8), Mainz (pos 17)
+    [HOME] Home-Away: Ein Frankfurt (Confidence: 75.0%)
+        Home team strong home record (50.0%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Ein Frankfurt
+        [TARGET] Confidence: 7.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (50.0%) vs away team weak away record (25.0%)
+
+ 8. Leverkusen vs Heidenheim
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['D', 'L', 'D'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Leverkusen (Confidence: 88.9%)
+        Home team good form (0.67) vs away team poor form (0.22)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Leverkusen (pos 5), Heidenheim (pos 18)
+    [HOME] Home-Away: Leverkusen (Confidence: 100.0%)
+        Home team strong home record (60.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Leverkusen
+        [TARGET] Confidence: 36.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.67) vs away team poor form (0.22), home_away: Home team strong home record (60.0%) vs away team weak away record (0.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Bundesliga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] BUNDESLIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-08
+[TROPHY] Next Round: 10
+[CHART] Total Games: 8
+[MONEY] Betting Opportunities: 7
+[TARGET] Average Confidence: 26.3%
+[DATE] Round Date: 08/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Hamburg vs Dortmund
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Dortmund (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-1.00)
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['W', 'W', 'L'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Dortmund (Confidence: 100.0%)
+        Away team good form (0.67) vs home team poor form (0.00)
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Hamburg (pos 13), Dortmund (pos 3)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Dortmund
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-1.00), form: Away team good form (0.67) vs home team poor form (0.00)
+
+ 2. Hoffenheim vs RB Leipzig
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'W'] (Score: 1.00) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (9 pts, Score: 1.00) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Hoffenheim (pos 6), RB Leipzig (pos 2)
+    [HOME] Home-Away: RB Leipzig (Confidence: 100.0%)
+        Away team strong away record (60.0%) vs home team weak home record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RB Leipzig
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (60.0%) vs home team weak home record (25.0%)
+
+ 3. Union Berlin vs Bayern Munich
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'W'] (Score: 0.00) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Union Berlin (pos 10), Bayern Munich (pos 1)
+    [HOME] Home-Away: Bayern Munich (Confidence: 100.0%)
+        Away team strong away record (100.0%) vs home team weak home record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bayern Munich
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (100.0%) vs home team weak home record (40.0%)
+
+ 4. M'gladbach vs FC Koln
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['W', 'L', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: M'gladbach (pos 16), FC Koln (pos 7)
+    [HOME] Home-Away: FC Koln (Confidence: 100.0%)
+        Away team strong away record (40.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Koln
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (40.0%) vs home team weak home record (0.0%)
+
+ 5. Stuttgart vs Augsburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Stuttgart (Confidence: 100.0%)
+        Home team good form (0.67) vs away team poor form (0.11)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Stuttgart (pos 4), Augsburg (pos 14)
+    [HOME] Home-Away: Stuttgart (Confidence: 100.0%)
+        Home team strong home record (100.0%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Stuttgart
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.67) vs away team poor form (0.11), home_away: Home team strong home record (100.0%) vs away team weak away record (25.0%)
+
+ 6. Freiburg vs St Pauli
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'D'] (Score: 0.00) | Away team: ['L', 'L', 'L'] (Score: -1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (0 pts, Score: 0.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Freiburg (pos 11), St Pauli (pos 15)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 7. Ein Frankfurt vs Mainz
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'D'] (Score: 0.00) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Ein Frankfurt (pos 8), Mainz (pos 17)
+    [HOME] Home-Away: Ein Frankfurt (Confidence: 75.0%)
+        Home team strong home record (50.0%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Ein Frankfurt
+        [TARGET] Confidence: 7.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (50.0%) vs away team weak away record (25.0%)
+
+ 8. Leverkusen vs Heidenheim
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['D', 'L', 'D'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Leverkusen (Confidence: 88.9%)
+        Home team good form (0.67) vs away team poor form (0.22)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Leverkusen (pos 5), Heidenheim (pos 18)
+    [HOME] Home-Away: Leverkusen (Confidence: 100.0%)
+        Home team strong home record (60.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Leverkusen
+        [TARGET] Confidence: 36.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.67) vs away team poor form (0.22), home_away: Home team strong home record (60.0%) vs away team weak away record (0.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Bundesliga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] BUNDESLIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-10
+[TROPHY] Next Round: 11
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 8
+[TARGET] Average Confidence: 44.1%
+[DATE] Round Date: 21/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. FC Koln vs Ein Frankfurt
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Ein Frankfurt (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Ein Frankfurt (Confidence: 88.9%)
+        Away team good form (0.78) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: FC Koln (pos 9), Ein Frankfurt (pos 7)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Ein Frankfurt
+        [TARGET] Confidence: 66.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33), form: Away team good form (0.78) vs home team poor form (0.33)
+
+ 2. Heidenheim vs M'gladbach
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: M'gladbach (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['W', 'W', 'L'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: M'gladbach (Confidence: 100.0%)
+        Away team good form (0.67) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Heidenheim (pos 18), M'gladbach (pos 12)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: M'gladbach
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.33), form: Away team good form (0.67) vs home team poor form (0.11)
+
+ 3. St Pauli vs Union Berlin
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['D', 'D', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: St Pauli (pos 16), Union Berlin (pos 11)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 4. Augsburg vs Hamburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Augsburg (pos 15), Hamburg (pos 13)
+    [HOME] Home-Away: Augsburg (Confidence: 60.0%)
+        Home team strong home record (20.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Augsburg
+        [TARGET] Confidence: 6.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (20.0%) vs away team weak away record (0.0%)
+
+ 5. Wolfsburg vs Leverkusen
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Leverkusen (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'W'] (Score: -0.67) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Leverkusen (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Wolfsburg (pos 14), Leverkusen (pos 5)
+    [HOME] Home-Away: Leverkusen (Confidence: 100.0%)
+        Away team strong away record (50.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Leverkusen
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.67), form: Away team good form (0.67) vs home team poor form (0.33), home_away: Away team strong away record (50.0%) vs home team weak home record (0.0%)
+
+ 6. RB Leipzig vs Werder Bremen
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Werder Bremen (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: RB Leipzig (pos 2), Werder Bremen (pos 8)
+    [HOME] Home-Away: RB Leipzig (Confidence: 100.0%)
+        Home team strong home record (100.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Werder Bremen
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+
+ 7. Mainz vs Hoffenheim
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Hoffenheim (Confidence: 100.0%)
+        Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Hoffenheim (Confidence: 100.0%)
+        Away team good form (1.00) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Mainz (pos 17), Hoffenheim (pos 6)
+    [HOME] Home-Away: Hoffenheim (Confidence: 100.0%)
+        Away team strong away record (80.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Hoffenheim
+        [TARGET] Confidence: 80.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (1.00) vs home team weak momentum (-0.33), form: Away team good form (1.00) vs home team poor form (0.11), home_away: Away team strong away record (80.0%) vs home team weak home record (0.0%)
+
+ 8. Dortmund vs Stuttgart
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'W'] (Score: 0.00) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Dortmund (pos 3), Stuttgart (pos 4)
+    [HOME] Home-Away: Dortmund (Confidence: 100.0%)
+        Home team strong home record (75.0%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Dortmund
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (75.0%) vs away team weak away record (40.0%)
+
+ 9. Bayern Munich vs Freiburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'W'] (Score: 0.00) | Away team: ['W', 'D', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Heidenheim | Teams: Bayern Munich (pos 1), Freiburg (pos 10)
+    [HOME] Home-Away: Bayern Munich (Confidence: 100.0%)
+        Home team strong home record (100.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bayern Munich
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (100.0%) vs away team weak away record (20.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Bundesliga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] BUNDESLIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-01
+[TROPHY] Next Round: 13
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 8
+[TARGET] Average Confidence: 20.6%
+[DATE] Round Date: 06/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Hamburg vs Werder Bremen
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'D'] (Score: 0.33) | Away team: ['D', 'L', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Hamburg (pos 13), Werder Bremen (pos 9)
+    [HOME] Home-Away: Hamburg (Confidence: 100.0%)
+        Home team strong home record (50.0%) vs away team weak away record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Hamburg
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (50.0%) vs away team weak away record (16.7%)
+
+ 2. FC Koln vs St Pauli
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['L', 'L', 'L'] (Score: -1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (0 pts, Score: 0.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: FC Koln (pos 10), St Pauli (pos 17)
+    [HOME] Home-Away: FC Koln (Confidence: 70.0%)
+        Home team strong home record (40.0%) vs away team weak away record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Koln
+        [TARGET] Confidence: 7.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (40.0%) vs away team weak away record (16.7%)
+
+ 3. Heidenheim vs Freiburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Freiburg (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Heidenheim (pos 16), Freiburg (pos 8)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Freiburg
+        [TARGET] Confidence: 20.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.33)
+
+ 4. Augsburg vs Leverkusen
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Leverkusen (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Augsburg (pos 14), Leverkusen (pos 4)
+    [HOME] Home-Away: Leverkusen (Confidence: 80.0%)
+        Away team strong away record (60.0%) vs home team weak home record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Leverkusen
+        [TARGET] Confidence: 28.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.33), home_away: Away team strong away record (60.0%) vs home team weak home record (33.3%)
+
+ 5. Wolfsburg vs Union Berlin
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['L', 'W', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Wolfsburg (pos 15), Union Berlin (pos 11)
+    [HOME] Home-Away: Union Berlin (Confidence: 100.0%)
+        Away team strong away record (40.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Union Berlin
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (40.0%) vs home team weak home record (0.0%)
+
+ 6. Stuttgart vs Bayern Munich
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Bayern Munich (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Stuttgart (pos 6), Bayern Munich (pos 1)
+    [HOME] Home-Away: Stuttgart (Confidence: 60.0%)
+        Home team strong home record (100.0%) vs away team weak away record (80.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bayern Munich
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+
+ 7. RB Leipzig vs Ein Frankfurt
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'L'] (Score: 0.00) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: RB Leipzig (pos 2), Ein Frankfurt (pos 7)
+    [HOME] Home-Away: RB Leipzig (Confidence: 100.0%)
+        Home team strong home record (100.0%) vs away team weak away record (50.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RB Leipzig
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (100.0%) vs away team weak away record (50.0%)
+
+ 8. Mainz vs M'gladbach
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: M'gladbach (Confidence: 100.0%)
+        Away team good form (0.78) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Mainz (pos 18), M'gladbach (pos 12)
+    [HOME] Home-Away: M'gladbach (Confidence: 100.0%)
+        Away team strong away record (40.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: M'gladbach
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.78) vs home team poor form (0.11), home_away: Away team strong away record (40.0%) vs home team weak home record (0.0%)
+
+ 9. Dortmund vs Hoffenheim
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'D'] (Score: 0.33) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Dortmund (pos 3), Hoffenheim (pos 5)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Bundesliga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] BUNDESLIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-06
+[TROPHY] Next Round: 13
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 8
+[TARGET] Average Confidence: 20.6%
+[DATE] Round Date: 06/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Hamburg vs Werder Bremen
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'D'] (Score: 0.33) | Away team: ['D', 'L', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Hamburg (pos 13), Werder Bremen (pos 9)
+    [HOME] Home-Away: Hamburg (Confidence: 100.0%)
+        Home team strong home record (50.0%) vs away team weak away record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Hamburg
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (50.0%) vs away team weak away record (16.7%)
+
+ 2. FC Koln vs St Pauli
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['L', 'L', 'L'] (Score: -1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (0 pts, Score: 0.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: FC Koln (pos 10), St Pauli (pos 17)
+    [HOME] Home-Away: FC Koln (Confidence: 70.0%)
+        Home team strong home record (40.0%) vs away team weak away record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Koln
+        [TARGET] Confidence: 7.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (40.0%) vs away team weak away record (16.7%)
+
+ 3. Heidenheim vs Freiburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Freiburg (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Heidenheim (pos 16), Freiburg (pos 8)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Freiburg
+        [TARGET] Confidence: 20.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.33)
+
+ 4. Augsburg vs Leverkusen
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Leverkusen (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Augsburg (pos 14), Leverkusen (pos 4)
+    [HOME] Home-Away: Leverkusen (Confidence: 80.0%)
+        Away team strong away record (60.0%) vs home team weak home record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Leverkusen
+        [TARGET] Confidence: 28.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.33), home_away: Away team strong away record (60.0%) vs home team weak home record (33.3%)
+
+ 5. Wolfsburg vs Union Berlin
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['L', 'W', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Wolfsburg (pos 15), Union Berlin (pos 11)
+    [HOME] Home-Away: Union Berlin (Confidence: 100.0%)
+        Away team strong away record (40.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Union Berlin
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (40.0%) vs home team weak home record (0.0%)
+
+ 6. Stuttgart vs Bayern Munich
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Bayern Munich (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Stuttgart (pos 6), Bayern Munich (pos 1)
+    [HOME] Home-Away: Stuttgart (Confidence: 60.0%)
+        Home team strong home record (100.0%) vs away team weak away record (80.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bayern Munich
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+
+ 7. RB Leipzig vs Ein Frankfurt
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'L'] (Score: 0.00) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: RB Leipzig (pos 2), Ein Frankfurt (pos 7)
+    [HOME] Home-Away: RB Leipzig (Confidence: 100.0%)
+        Home team strong home record (100.0%) vs away team weak away record (50.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: RB Leipzig
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (100.0%) vs away team weak away record (50.0%)
+
+ 8. Mainz vs M'gladbach
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: M'gladbach (Confidence: 100.0%)
+        Away team good form (0.78) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Mainz (pos 18), M'gladbach (pos 12)
+    [HOME] Home-Away: M'gladbach (Confidence: 100.0%)
+        Away team strong away record (40.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: M'gladbach
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.78) vs home team poor form (0.11), home_away: Away team strong away record (40.0%) vs home team weak home record (0.0%)
+
+ 9. Dortmund vs Hoffenheim
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'D'] (Score: 0.33) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, RB Leipzig, Dortmund | Bottom 3: Mainz | Teams: Dortmund (pos 3), Hoffenheim (pos 5)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Bundesliga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] BUNDESLIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-27
+[TROPHY] Next Round: 16
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 4
+[TARGET] Average Confidence: 25.3%
+[DATE] Round Date: 10/01/2026
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Heidenheim vs FC Koln
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'W'] (Score: -0.67) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: Heidenheim (pos 17), FC Koln (pos 11)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 2. St Pauli vs RB Leipzig
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'D'] (Score: 0.00) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: St Pauli (pos 16), RB Leipzig (pos 4)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 3. Union Berlin vs Mainz
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['D', 'D', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Union Berlin (Confidence: 88.9%)
+        Home team good form (0.67) vs away team poor form (0.22)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: Union Berlin (pos 8), Mainz (pos 18)
+    [HOME] Home-Away: Union Berlin (Confidence: 69.6%)
+        Home team strong home record (37.5%) vs away team weak away record (14.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Union Berlin
+        [TARGET] Confidence: 33.6%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Home team good form (0.67) vs away team poor form (0.22), home_away: Home team strong home record (37.5%) vs away team weak away record (14.3%)
+
+ 4. M'gladbach vs Augsburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'W'] (Score: -0.67) | Away team: ['D', 'L', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: M'gladbach (pos 12), Augsburg (pos 15)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 5. Werder Bremen vs Hoffenheim
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['D', 'W', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: Werder Bremen (pos 10), Hoffenheim (pos 5)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 6. Freiburg vs Hamburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'L'] (Score: 0.33) | Away team: ['D', 'L', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: Freiburg (pos 9), Hamburg (pos 13)
+    [HOME] Home-Away: Freiburg (Confidence: 100.0%)
+        Home team strong home record (42.9%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Freiburg
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (42.9%) vs away team weak away record (0.0%)
+
+ 7. Ein Frankfurt vs Dortmund
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'L'] (Score: 0.00) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: Ein Frankfurt (pos 7), Dortmund (pos 2)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 8. Leverkusen vs Stuttgart
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['D', 'W', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: Leverkusen (pos 3), Stuttgart (pos 6)
+    [HOME] Home-Away: Leverkusen (Confidence: 75.0%)
+        Home team strong home record (62.5%) vs away team weak away record (37.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Leverkusen
+        [TARGET] Confidence: 7.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (62.5%) vs away team weak away record (37.5%)
+
+ 9. Bayern Munich vs Wolfsburg
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Bayern Munich (Confidence: 100.0%)
+        Home team strong momentum (0.33) vs away team weak momentum (-0.33)
+        [CHART] Details: Home team: ['W', 'D', 'W'] (Score: 0.33) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Bayern Munich, Dortmund, Leverkusen | Bottom 3: Mainz | Teams: Bayern Munich (pos 1), Wolfsburg (pos 14)
+    [HOME] Home-Away: Bayern Munich (Confidence: 100.0%)
+        Home team strong home record (87.5%) vs away team weak away record (42.9%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bayern Munich
+        [TARGET] Confidence: 50.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.33) vs away team weak momentum (-0.33), home_away: Home team strong home record (87.5%) vs away team weak away record (42.9%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
