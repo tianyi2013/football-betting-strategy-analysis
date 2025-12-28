@@ -1,0 +1,1308 @@
+[TARGET] Serie A Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] SERIE A BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-08
+[TROPHY] Next Round: 11
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 9
+[TARGET] Average Confidence: 23.3%
+[DATE] Round Date: 08/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Como vs Cagliari
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'D'] (Score: 0.00) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Como (pos 7), Cagliari (pos 14)
+    [HOME] Home-Away: Como (Confidence: 100.0%)
+        Home team strong home record (60.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Como
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (60.0%) vs away team weak away record (20.0%)
+
+ 2. Lecce vs Hellas Verona
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Lecce (Confidence: 100.0%)
+        Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Lecce (pos 15), Verona (pos 19)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Lecce
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+
+ 3. Juventus vs Torino
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['D', 'D', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Juventus (pos 6), Torino (pos 13)
+    [HOME] Home-Away: Juventus (Confidence: 100.0%)
+        Home team strong home record (60.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Juventus
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (60.0%) vs away team weak away record (20.0%)
+
+ 4. Parma vs Milan
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Milan (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['W', 'D', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Parma (pos 16), Milan (pos 3)
+    [HOME] Home-Away: Milan (Confidence: 90.0%)
+        Away team strong away record (50.0%) vs home team weak home record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Milan
+        [TARGET] Confidence: 49.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.67), home_away: Away team strong away record (50.0%) vs home team weak home record (20.0%)
+
+ 5. Atalanta vs Sassuolo
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'D'] (Score: -0.33) | Away team: ['L', 'W', 'L'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Atalanta (pos 11), Sassuolo (pos 12)
+    [HOME] Home-Away: Sassuolo (Confidence: 60.0%)
+        Away team strong away record (40.0%) vs home team weak home record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Sassuolo
+        [TARGET] Confidence: 6.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (40.0%) vs home team weak home record (20.0%)
+
+ 6. Bologna vs Napoli
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'D'] (Score: 0.33) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Bologna (pos 5), Napoli (pos 1)
+    [HOME] Home-Away: Bologna (Confidence: 45.0%)
+        Home team strong home record (75.0%) vs away team weak away record (60.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bologna
+        [TARGET] Confidence: 4.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (75.0%) vs away team weak away record (60.0%)
+
+ 7. Genoa vs Fiorentina
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Genoa (Confidence: 100.0%)
+        Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Genoa (pos 18), Fiorentina (pos 20)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Genoa
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+
+ 8. Roma vs Udinese
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Udinese (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Roma (pos 4), Udinese (pos 9)
+    [HOME] Home-Away: Roma (Confidence: 60.0%)
+        Home team strong home record (60.0%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Udinese
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+
+ 9. Inter vs Lazio
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Inter (pos 2), Lazio (pos 8)
+    [HOME] Home-Away: Inter (Confidence: 100.0%)
+        Home team strong home record (80.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Inter
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (80.0%) vs away team weak away record (20.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Serie A Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] SERIE A BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-08
+[TROPHY] Next Round: 11
+[CHART] Total Games: 9
+[MONEY] Betting Opportunities: 9
+[TARGET] Average Confidence: 23.3%
+[DATE] Round Date: 08/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Como vs Cagliari
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'D'] (Score: 0.00) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Como (pos 7), Cagliari (pos 14)
+    [HOME] Home-Away: Como (Confidence: 100.0%)
+        Home team strong home record (60.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Como
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (60.0%) vs away team weak away record (20.0%)
+
+ 2. Lecce vs Hellas Verona
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Lecce (Confidence: 100.0%)
+        Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Lecce (pos 15), Verona (pos 19)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Lecce
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+
+ 3. Juventus vs Torino
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['D', 'D', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Juventus (pos 6), Torino (pos 13)
+    [HOME] Home-Away: Juventus (Confidence: 100.0%)
+        Home team strong home record (60.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Juventus
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (60.0%) vs away team weak away record (20.0%)
+
+ 4. Parma vs Milan
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Milan (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['W', 'D', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Parma (pos 16), Milan (pos 3)
+    [HOME] Home-Away: Milan (Confidence: 90.0%)
+        Away team strong away record (50.0%) vs home team weak home record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Milan
+        [TARGET] Confidence: 49.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.67), home_away: Away team strong away record (50.0%) vs home team weak home record (20.0%)
+
+ 5. Atalanta vs Sassuolo
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'D'] (Score: -0.33) | Away team: ['L', 'W', 'L'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Atalanta (pos 11), Sassuolo (pos 12)
+    [HOME] Home-Away: Sassuolo (Confidence: 60.0%)
+        Away team strong away record (40.0%) vs home team weak home record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Sassuolo
+        [TARGET] Confidence: 6.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (40.0%) vs home team weak home record (20.0%)
+
+ 6. Bologna vs Napoli
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'D', 'D'] (Score: 0.33) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (5 pts, Score: 0.56) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Bologna (pos 5), Napoli (pos 1)
+    [HOME] Home-Away: Bologna (Confidence: 45.0%)
+        Home team strong home record (75.0%) vs away team weak away record (60.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bologna
+        [TARGET] Confidence: 4.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (75.0%) vs away team weak away record (60.0%)
+
+ 7. Genoa vs Fiorentina
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Genoa (Confidence: 100.0%)
+        Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Genoa (pos 18), Fiorentina (pos 20)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Genoa
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+
+ 8. Roma vs Udinese
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Udinese (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Roma (pos 4), Udinese (pos 9)
+    [HOME] Home-Away: Roma (Confidence: 60.0%)
+        Home team strong home record (60.0%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Udinese
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+
+ 9. Inter vs Lazio
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['W', 'D', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Napoli, Inter, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Inter (pos 2), Lazio (pos 8)
+    [HOME] Home-Away: Inter (Confidence: 100.0%)
+        Home team strong home record (80.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Inter
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (80.0%) vs away team weak away record (20.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Serie A Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] SERIE A BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-10
+[TROPHY] Next Round: 12
+[CHART] Total Games: 10
+[MONEY] Betting Opportunities: 8
+[TARGET] Average Confidence: 27.3%
+[DATE] Round Date: 22/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Cagliari vs Genoa
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['D', 'W', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Cagliari (pos 14), Genoa (pos 18)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 2. Udinese vs Bologna
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Bologna (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Bologna (Confidence: 88.9%)
+        Away team good form (0.78) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Udinese (pos 10), Bologna (pos 5)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bologna
+        [TARGET] Confidence: 66.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.33), form: Away team good form (0.78) vs home team poor form (0.33)
+
+ 3. Fiorentina vs Juventus
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['D', 'W', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Juventus (Confidence: 100.0%)
+        Away team good form (0.78) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Fiorentina (pos 20), Juventus (pos 6)
+    [HOME] Home-Away: Juventus (Confidence: 100.0%)
+        Away team strong away record (40.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Juventus
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.78) vs home team poor form (0.11), home_away: Away team strong away record (40.0%) vs home team weak home record (0.0%)
+
+ 4. Napoli vs Atalanta
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Napoli (pos 4), Atalanta (pos 13)
+    [HOME] Home-Away: Napoli (Confidence: 100.0%)
+        Home team strong home record (80.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Napoli
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (80.0%) vs away team weak away record (20.0%)
+
+ 5. Hellas Verona vs Parma
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Verona (pos 19), Parma (pos 17)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 6. Cremonese vs Roma
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Roma (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'W'] (Score: -0.67) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Roma (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Cremonese (pos 11), Roma (pos 2)
+    [HOME] Home-Away: Roma (Confidence: 100.0%)
+        Away team strong away record (80.0%) vs home team weak home record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Roma
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.67), form: Away team good form (0.67) vs home team poor form (0.33), home_away: Away team strong away record (80.0%) vs home team weak home record (20.0%)
+
+ 7. Lazio vs Lecce
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'D'] (Score: -0.33) | Away team: ['D', 'W', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Lazio (pos 9), Lecce (pos 15)
+    [HOME] Home-Away: Lazio (Confidence: 60.0%)
+        Home team strong home record (60.0%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Lazio
+        [TARGET] Confidence: 6.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (60.0%) vs away team weak away record (40.0%)
+
+ 8. Inter vs Milan
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'W'] (Score: 1.00) | Away team: ['D', 'W', 'D'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (9 pts, Score: 1.00) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Inter (pos 1), Milan (pos 3)
+    [HOME] Home-Away: Inter (Confidence: 100.0%)
+        Home team strong home record (83.3%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Inter
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (83.3%) vs away team weak away record (40.0%)
+
+ 9. Torino vs Como
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'D', 'D'] (Score: 0.00) | Away team: ['D', 'D', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Torino (pos 12), Como (pos 7)
+    [HOME] Home-Away: Torino (Confidence: 60.0%)
+        Home team strong home record (40.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Torino
+        [TARGET] Confidence: 6.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (40.0%) vs away team weak away record (20.0%)
+
+10. Sassuolo vs Pisa
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'W'] (Score: 0.33) | Away team: ['W', 'D', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Roma, Milan | Bottom 3: Genoa, Verona, Fiorentina | Teams: Sassuolo (pos 8), Pisa (pos 16)
+    [HOME] Home-Away: Sassuolo (Confidence: 100.0%)
+        Home team strong home record (40.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Sassuolo
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (40.0%) vs away team weak away record (0.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Serie A Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] SERIE A BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-01
+[TROPHY] Next Round: 14
+[CHART] Total Games: 10
+[MONEY] Betting Opportunities: 9
+[TARGET] Average Confidence: 34.1%
+[DATE] Round Date: 07/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Cagliari vs Roma
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'D'] (Score: -0.33) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Roma (Confidence: 88.9%)
+        Away team good form (0.67) vs home team poor form (0.22)
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Cagliari (pos 15), Roma (pos 4)
+    [HOME] Home-Away: Roma (Confidence: 100.0%)
+        Away team strong away record (83.3%) vs home team weak home record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Roma
+        [TARGET] Confidence: 36.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.22), home_away: Away team strong away record (83.3%) vs home team weak home record (16.7%)
+
+ 2. Cremonese vs Lecce
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Lecce (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-1.00)
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['W', 'L', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Cremonese (pos 12), Lecce (pos 14)
+    [HOME] Home-Away: Lecce (Confidence: 50.0%)
+        Away team strong away record (33.3%) vs home team weak home record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Lecce
+        [TARGET] Confidence: 45.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-1.00), home_away: Away team strong away record (33.3%) vs home team weak home record (16.7%)
+
+ 3. Inter vs Como
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'W'] (Score: 0.33) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Inter (pos 3), Como (pos 6)
+    [HOME] Home-Away: Inter (Confidence: 100.0%)
+        Home team strong home record (71.4%) vs away team weak away record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Inter
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (71.4%) vs away team weak away record (33.3%)
+
+ 4. Lazio vs Bologna
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Bologna (Confidence: 100.0%)
+        Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Bologna (Confidence: 100.0%)
+        Away team good form (1.00) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Lazio (pos 8), Bologna (pos 5)
+    [HOME] Home-Away: Lazio (Confidence: 71.4%)
+        Home team strong home record (66.7%) vs away team weak away record (42.9%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bologna
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (1.00) vs home team weak momentum (-0.33), form: Away team good form (1.00) vs home team poor form (0.33)
+
+ 5. Napoli vs Juventus
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['W', 'D', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Napoli (pos 2), Juventus (pos 7)
+    [HOME] Home-Away: Napoli (Confidence: 100.0%)
+        Home team strong home record (83.3%) vs away team weak away record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Napoli
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (83.3%) vs away team weak away record (33.3%)
+
+ 6. Pisa vs Parma
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['L', 'W', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Pisa (pos 18), Parma (pos 17)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 7. Sassuolo vs Fiorentina
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['L', 'D', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Sassuolo (pos 10), Fiorentina (pos 19)
+    [HOME] Home-Away: Sassuolo (Confidence: 100.0%)
+        Home team strong home record (33.3%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Sassuolo
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (33.3%) vs away team weak away record (0.0%)
+
+ 8. Torino vs Milan
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Milan (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Milan (Confidence: 100.0%)
+        Away team good form (0.78) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Torino (pos 13), Milan (pos 1)
+    [HOME] Home-Away: Milan (Confidence: 50.0%)
+        Away team strong away record (50.0%) vs home team weak home record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Milan
+        [TARGET] Confidence: 75.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.67), form: Away team good form (0.78) vs home team poor form (0.11), home_away: Away team strong away record (50.0%) vs home team weak home record (33.3%)
+
+ 9. Udinese vs Genoa
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['W', 'D', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Udinese (pos 9), Genoa (pos 16)
+    [HOME] Home-Away: Udinese (Confidence: 50.0%)
+        Home team strong home record (33.3%) vs away team weak away record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Udinese
+        [TARGET] Confidence: 5.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (33.3%) vs away team weak away record (16.7%)
+
+10. Hellas Verona vs Atalanta
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Atalanta (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['W', 'L', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Verona (pos 20), Atalanta (pos 11)
+    [HOME] Home-Away: Atalanta (Confidence: 50.0%)
+        Away team strong away record (16.7%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Atalanta
+        [TARGET] Confidence: 45.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.67), home_away: Away team strong away record (16.7%) vs home team weak home record (0.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Serie A Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] SERIE A BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-06
+[TROPHY] Next Round: 14
+[CHART] Total Games: 10
+[MONEY] Betting Opportunities: 9
+[TARGET] Average Confidence: 24.1%
+[DATE] Round Date: 07/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Cagliari vs Roma
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'D'] (Score: -0.33) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Roma (Confidence: 88.9%)
+        Away team good form (0.67) vs home team poor form (0.22)
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Cagliari (pos 15), Roma (pos 4)
+    [HOME] Home-Away: Roma (Confidence: 100.0%)
+        Away team strong away record (83.3%) vs home team weak home record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Roma
+        [TARGET] Confidence: 36.7%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.22), home_away: Away team strong away record (83.3%) vs home team weak home record (16.7%)
+
+ 2. Cremonese vs Lecce
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['W', 'L', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Cremonese (pos 11), Lecce (pos 14)
+    [HOME] Home-Away: Lecce (Confidence: 50.0%)
+        Away team strong away record (33.3%) vs home team weak home record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Lecce
+        [TARGET] Confidence: 5.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (33.3%) vs home team weak home record (16.7%)
+
+ 3. Inter vs Como
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'W'] (Score: 0.33) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Inter (pos 3), Como (pos 5)
+    [HOME] Home-Away: Inter (Confidence: 100.0%)
+        Home team strong home record (71.4%) vs away team weak away record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Inter
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (71.4%) vs away team weak away record (33.3%)
+
+ 4. Lazio vs Bologna
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Bologna (Confidence: 66.7%)
+        Away team good form (0.67) vs home team poor form (0.33)
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Lazio (pos 8), Bologna (pos 6)
+    [HOME] Home-Away: Lazio (Confidence: 71.4%)
+        Home team strong home record (66.7%) vs away team weak away record (42.9%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bologna
+        [TARGET] Confidence: 20.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.33)
+
+ 5. Napoli vs Juventus
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['W', 'D', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Napoli (pos 2), Juventus (pos 7)
+    [HOME] Home-Away: Napoli (Confidence: 100.0%)
+        Home team strong home record (83.3%) vs away team weak away record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Napoli
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (83.3%) vs away team weak away record (33.3%)
+
+ 6. Pisa vs Parma
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['L', 'W', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Pisa (pos 18), Parma (pos 17)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 7. Sassuolo vs Fiorentina
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'W'] (Score: -0.33) | Away team: ['L', 'D', 'D'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Sassuolo (pos 10), Fiorentina (pos 19)
+    [HOME] Home-Away: Sassuolo (Confidence: 100.0%)
+        Home team strong home record (33.3%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Sassuolo
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (33.3%) vs away team weak away record (0.0%)
+
+ 8. Torino vs Milan
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Milan (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Milan (Confidence: 100.0%)
+        Away team good form (0.78) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Torino (pos 13), Milan (pos 1)
+    [HOME] Home-Away: Milan (Confidence: 50.0%)
+        Away team strong away record (50.0%) vs home team weak home record (33.3%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Milan
+        [TARGET] Confidence: 75.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.67), form: Away team good form (0.78) vs home team poor form (0.11), home_away: Away team strong away record (50.0%) vs home team weak home record (33.3%)
+
+ 9. Udinese vs Genoa
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'L', 'L'] (Score: 0.33) | Away team: ['W', 'D', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Udinese (pos 9), Genoa (pos 16)
+    [HOME] Home-Away: Udinese (Confidence: 50.0%)
+        Home team strong home record (33.3%) vs away team weak away record (16.7%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Udinese
+        [TARGET] Confidence: 5.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (33.3%) vs away team weak away record (16.7%)
+
+10. Hellas Verona vs Atalanta
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Atalanta (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['W', 'L', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Milan, Napoli, Inter | Bottom 3: Pisa, Fiorentina, Verona | Teams: Verona (pos 20), Atalanta (pos 12)
+    [HOME] Home-Away: Atalanta (Confidence: 50.0%)
+        Away team strong away record (16.7%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Atalanta
+        [TARGET] Confidence: 45.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.67), home_away: Away team strong away record (16.7%) vs home team weak home record (0.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] Serie A Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] SERIE A BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-27
+[TROPHY] Next Round: 17
+[CHART] Total Games: 10
+[MONEY] Betting Opportunities: 10
+[TARGET] Average Confidence: 20.7%
+[DATE] Round Date: 28/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Bologna vs Sassuolo
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'D', 'L'] (Score: -0.33) | Away team: ['L', 'D', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Bologna (pos 6), Sassuolo (pos 10)
+    [HOME] Home-Away: Bologna (Confidence: 58.9%)
+        Home team strong home record (57.1%) vs away team weak away record (37.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Bologna
+        [TARGET] Confidence: 5.9%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (57.1%) vs away team weak away record (37.5%)
+
+ 2. Cremonese vs Napoli
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'W'] (Score: 0.00) | Away team: ['L', 'W', 'W'] (Score: -0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (4 pts, Score: 0.44) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Cremonese (pos 11), Napoli (pos 3)
+    [HOME] Home-Away: Napoli (Confidence: 64.3%)
+        Away team strong away record (50.0%) vs home team weak home record (28.6%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Napoli
+        [TARGET] Confidence: 6.4%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (50.0%) vs home team weak home record (28.6%)
+
+ 3. Lecce vs Como
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Lecce (Confidence: 100.0%)
+        Home team strong momentum (0.33) vs away team weak momentum (-0.67)
+        [CHART] Details: Home team: ['W', 'L', 'W'] (Score: 0.33) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Lecce (Confidence: 66.7%)
+        Home team good form (0.67) vs away team poor form (0.33)
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Lecce (pos 14), Como (pos 7)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Lecce
+        [TARGET] Confidence: 60.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Home team strong momentum (0.33) vs away team weak momentum (-0.67), form: Home team good form (0.67) vs away team poor form (0.33)
+
+ 4. Milan vs Hellas Verona
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'W', 'W'] (Score: 0.00) | Away team: ['W', 'W', 'L'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: Milan (Confidence: 80.0%)
+        Home team top 2 vs away team bottom 18
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Milan (pos 2), Verona (pos 18)
+    [HOME] Home-Away: Milan (Confidence: 100.0%)
+        Home team strong home record (62.5%) vs away team weak away record (12.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Milan
+        [TARGET] Confidence: 26.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: top_bottom: Home team top 2 vs away team bottom 18, home_away: Home team strong home record (62.5%) vs away team weak away record (12.5%)
+
+ 5. Parma vs Fiorentina
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Fiorentina (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['W', 'L', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Parma (pos 17), Fiorentina (pos 20)
+    [HOME] Home-Away: Parma (Confidence: 37.5%)
+        Home team strong home record (12.5%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Fiorentina
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.33)
+
+ 6. Pisa vs Juventus
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['W', 'W', 'L'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Juventus (Confidence: 100.0%)
+        Away team good form (0.67) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Pisa (pos 19), Juventus (pos 5)
+    [HOME] Home-Away: Juventus (Confidence: 75.0%)
+        Away team strong away record (37.5%) vs home team weak home record (12.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Juventus
+        [TARGET] Confidence: 37.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: form: Away team good form (0.67) vs home team poor form (0.11), home_away: Away team strong away record (37.5%) vs home team weak home record (12.5%)
+
+ 7. Roma vs Genoa
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['L', 'L', 'W'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (3 pts, Score: 0.33) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Roma (pos 4), Genoa (pos 16)
+    [HOME] Home-Away: Roma (Confidence: 100.0%)
+        Home team strong home record (62.5%) vs away team weak away record (28.6%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Roma
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (62.5%) vs away team weak away record (28.6%)
+
+ 8. Torino vs Cagliari
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['D', 'L', 'W'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Torino (pos 13), Cagliari (pos 15)
+    [HOME] Home-Away: Torino (Confidence: 75.0%)
+        Home team strong home record (37.5%) vs away team weak away record (12.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Torino
+        [TARGET] Confidence: 7.5%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (37.5%) vs away team weak away record (12.5%)
+
+ 9. Udinese vs Lazio
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'W', 'L'] (Score: -0.33) | Away team: ['D', 'W', 'D'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (3 pts, Score: 0.33) | Away team: [] (5 pts, Score: 0.56) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Udinese (pos 12), Lazio (pos 8)
+    [HOME] Home-Away: Udinese (Confidence: 37.5%)
+        Home team strong home record (37.5%) vs away team weak away record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Udinese
+        [TARGET] Confidence: 3.8%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (37.5%) vs away team weak away record (25.0%)
+
+10. Atalanta vs Inter
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'L'] (Score: 0.67) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Inter, Milan, Napoli | Bottom 3: Verona, Pisa, Fiorentina | Teams: Atalanta (pos 9), Inter (pos 1)
+    [HOME] Home-Away: Inter (Confidence: 100.0%)
+        Away team strong away record (71.4%) vs home team weak home record (37.5%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Inter
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (71.4%) vs home team weak home record (37.5%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.

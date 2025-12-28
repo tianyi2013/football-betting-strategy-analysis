@@ -1,0 +1,2 @@
+Found 1 Bayern vs St Pauli bets
+(217, 'Bayern Munich vs St Pauli', 1.333, 0.1, 'won', 0.0)

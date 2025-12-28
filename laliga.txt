@@ -1,0 +1,342 @@
+[TARGET] La Liga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LA LIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-08
+[ERROR] Error: No upcoming games found
+[TARGET] La Liga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LA LIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-08
+[TROPHY] Next Round: 12
+[CHART] Total Games: 10
+[MONEY] Betting Opportunities: 7
+[TARGET] Average Confidence: 32.1%
+[DATE] Round Date: 08/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Elche CF vs Real Sociedad
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Real Sociedad (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: Real Sociedad (Confidence: 100.0%)
+        Away team good form (0.78) vs home team poor form (0.11)
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Real Madrid, Barcelona, Villarreal | Bottom 3: Valencia, Oviedo, Girona | Teams: Elche (pos 9), Sociedad (pos 14)
+    [HOME] Home-Away: Elche CF (Confidence: 100.0%)
+        Home team strong home record (60.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Real Sociedad
+        [TARGET] Confidence: 70.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.67), form: Away team good form (0.78) vs home team poor form (0.11)
+
+ 2. Sevilla FC vs CA Osasuna
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'L'] (Score: -1.00) | Away team: ['D', 'L', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (0 pts, Score: 0.00) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Real Madrid, Barcelona, Villarreal | Bottom 3: Valencia, Oviedo, Girona | Teams: Sevilla (pos 13), Osasuna (pos 15)
+    [HOME] Home-Away: Sevilla FC (Confidence: 60.0%)
+        Home team strong home record (20.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Sevilla FC
+        [TARGET] Confidence: 6.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (20.0%) vs away team weak away record (0.0%)
+
+ 3. Atlético de Madrid vs Levante UD
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        Insufficient games
+    [SILVER] Form: None (Confidence: 0.0%)
+        Insufficient games
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        Team not found in standings
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        Insufficient data
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 4. RCD Espanyol de Barcelona vs Villarreal CF
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Villarreal CF (Confidence: 100.0%)
+        Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'W', 'D'] (Score: 0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (7 pts, Score: 0.78) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Real Madrid, Barcelona, Villarreal | Bottom 3: Valencia, Oviedo, Girona | Teams: Espanol (pos 6), Villarreal (pos 3)
+    [HOME] Home-Away: RCD Espanyol de Barcelona (Confidence: 80.0%)
+        Home team strong home record (66.7%) vs away team weak away record (40.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Villarreal CF
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.67) vs home team weak momentum (-0.33)
+
+ 5. Athletic Club vs Real Oviedo
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['D', 'D', 'L'] (Score: 0.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (2 pts, Score: 0.22) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Real Madrid, Barcelona, Villarreal | Bottom 3: Valencia, Oviedo, Girona | Teams: Ath Bilbao (pos 11), Oviedo (pos 19)
+    [HOME] Home-Away: Athletic Club (Confidence: 90.0%)
+        Home team strong home record (50.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Athletic Club
+        [TARGET] Confidence: 9.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (50.0%) vs away team weak away record (20.0%)
+
+ 6. Rayo Vallecano vs Real Madrid
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Real Madrid (Confidence: 100.0%)
+        Away team strong momentum (1.00) vs home team weak momentum (-0.33)
+        [CHART] Details: Home team: ['L', 'W', 'W'] (Score: -0.33) | Away team: ['W', 'W', 'W'] (Score: 1.00) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (6 pts, Score: 0.67) | Away team: [] (9 pts, Score: 1.00) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Real Madrid, Barcelona, Villarreal | Bottom 3: Valencia, Oviedo, Girona | Teams: Vallecano (pos 10), Real Madrid (pos 1)
+    [HOME] Home-Away: Real Madrid (Confidence: 100.0%)
+        Away team strong away record (80.0%) vs home team weak home record (25.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Real Madrid
+        [TARGET] Confidence: 50.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (1.00) vs home team weak momentum (-0.33), home_away: Away team strong away record (80.0%) vs home team weak home record (25.0%)
+
+ 7. Valencia CF vs Real Betis
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: Real Betis (Confidence: 100.0%)
+        Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+        [CHART] Details: Home team: ['L', 'L', 'D'] (Score: -0.67) | Away team: ['W', 'L', 'D'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Real Madrid, Barcelona, Villarreal | Bottom 3: Valencia, Oviedo, Girona | Teams: Valencia (pos 18), Betis (pos 5)
+    [HOME] Home-Away: Valencia CF (Confidence: 60.0%)
+        Home team strong home record (40.0%) vs away team weak away record (20.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Real Betis
+        [TARGET] Confidence: 40.0%
+        [NOTE] Reason: Weighted recommendation based on 2 strategies
+        [SEARCH] Supporting: momentum: Away team strong momentum (0.33) vs home team weak momentum (-0.67)
+
+ 8. RCD Mallorca vs Getafe CF
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        Insufficient games
+    [SILVER] Form: None (Confidence: 0.0%)
+        Insufficient games
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        Team not found in standings
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        Insufficient data
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+ 9. Girona FC vs Deportivo Alavés
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        Insufficient games
+    [SILVER] Form: None (Confidence: 0.0%)
+        Insufficient games
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        Team not found in standings
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        Insufficient data
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+10. Celta vs FC Barcelona
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['W', 'W', 'D'] (Score: 0.67) | Away team: ['W', 'L', 'W'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (7 pts, Score: 0.78) | Away team: [] (6 pts, Score: 0.67) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Real Madrid, Barcelona, Villarreal | Bottom 3: Valencia, Oviedo, Girona | Teams: Celta (pos 12), Barcelona (pos 2)
+    [HOME] Home-Away: FC Barcelona (Confidence: 100.0%)
+        Away team strong away record (50.0%) vs home team weak home record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: FC Barcelona
+        [TARGET] Confidence: 10.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Away team strong away record (50.0%) vs home team weak home record (0.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] La Liga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LA LIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-11-10
+[TROPHY] Next Round: 13
+[CHART] Total Games: 10
+[MONEY] Betting Opportunities: 7
+[TARGET] Average Confidence: 23.3%
+[DATE] Round Date: 21/11/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Valencia CF vs Levante UD
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'L', 'L'] (Score: 0.00) | Away team: ['L', 'L', 'D'] (Score: -0.67) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (1 pts, Score: 0.11) | Away team: [] (1 pts, Score: 0.11) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Real Madrid, Barcelona, Villarreal | Bottom 3: Girona, Levante, Oviedo | Teams: Valencia (pos 17), Levante (pos 19)
+    [HOME] Home-Away: None (Confidence: 0.0%)
+        No clear home/away advantage
+    [TARGET] FINAL RECOMMENDATION:
+        [ERROR] No bet recommended
+        [NOTE] Reason: No strategies recommend betting
+
+[ERROR] Error running predictions: 'charmap' codec can't encode character '\x83' in position 19: character maps to <undefined>
+[TARGET] La Liga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LA LIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-01
+[TROPHY] Next Round: 14
+[CHART] Total Games: 1
+[MONEY] Betting Opportunities: 1
+[TARGET] Average Confidence: 6.0%
+[DATE] Round Date: 01/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+ 1. Rayo Vallecano vs Valencia CF
+    ==================================================
+    [CHART] STRATEGY ANALYSIS:
+    [TROPHY] Momentum: None (Confidence: 0.0%)
+        No clear momentum advantage
+        [CHART] Details: Home team: ['D', 'D', 'L'] (Score: 0.00) | Away team: ['W', 'D', 'L'] (Score: 0.33) | Thresholds: Strong >=0.2, Weak <=-0.2
+    [SILVER] Form: None (Confidence: 0.0%)
+        No clear form advantage
+        [CHART] Details: Home team: [] (2 pts, Score: 0.22) | Away team: [] (4 pts, Score: 0.44) | Thresholds: Good >=0.6, Poor <=0.4
+    [BRONZE] Top-Bottom: None (Confidence: 0.0%)
+        No top-bottom advantage
+        [CHART] Details: Top 3: Barcelona, Real Madrid, Villarreal | Bottom 3: Girona, Levante, Oviedo | Teams: Vallecano (pos 9), Valencia (pos 16)
+    [HOME] Home-Away: Rayo Vallecano (Confidence: 60.0%)
+        Home team strong home record (20.0%) vs away team weak away record (0.0%)
+    [TARGET] FINAL RECOMMENDATION:
+        [MONEY] BET ON: Rayo Vallecano
+        [TARGET] Confidence: 6.0%
+        [NOTE] Reason: Weighted recommendation based on 1 strategies
+        [SEARCH] Supporting: home_away: Home team strong home record (20.0%) vs away team weak away record (0.0%)
+
+============================================================
+[WARNING]  Remember: These are recommendations based on historical data.
+   Always do your own research and bet responsibly!
+============================================================
+
+[IDEA] Note: Predictions are only for the next round.
+   After each round, update your data and run predictions again
+   to get fresh recommendations based on the latest results.
+[TARGET] La Liga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LA LIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-06
+[TROPHY] Next Round: 15
+[CHART] Total Games: 10
+[MONEY] Betting Opportunities: 4
+[TARGET] Average Confidence: 23.8%
+[DATE] Round Date: 07/12/2025
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+[ERROR] Error running predictions: 'charmap' codec can't encode character '\x83' in position 19: character maps to <undefined>
+[TARGET] La Liga Betting Predictions (Weighted Approach)
+============================================================
+Getting predictions for the next round of games...
+============================================================
+[TARGET] LA LIGA BETTING PREDICTOR
+============================================================
+Loading upcoming games and calculating predictions...
+============================================================
+[DATE] Current Date: 2025-12-27
+[TROPHY] Next Round: 18
+[CHART] Total Games: 10
+[MONEY] Betting Opportunities: 6
+[TARGET] Average Confidence: 27.6%
+[DATE] Round Date: 04/01/2026
+============================================================
+
+[DICE] BETTING RECOMMENDATIONS:
+------------------------------------------------------------
+[ERROR] Error running predictions: 'charmap' codec can't encode character '\x83' in position 19: character maps to <undefined>
