@@ -151,7 +151,15 @@ def get_real_opportunities():
 # Use absolute path to ensure we find the database regardless of working directory
 import os
 
-_db_path = os.path.join(os.path.dirname(__file__), 'data_storage', 'betting_data.db')
+# On Elastic Beanstalk, use /var/app-data/betting_data.db for persistence across deployments
+# Locally, use the data_storage directory
+if os.path.exists('/var/app/current'):
+    # Running on Elastic Beanstalk - use persistent location
+    _db_path = '/var/app-data/betting_data.db'
+else:
+    # Running locally
+    _db_path = os.path.join(os.path.dirname(__file__), 'data_storage', 'betting_data.db')
+
 storage = get_storage_adapter(storage_type='sqlite', db_path=_db_path)
 
 # Legacy JSON file path for potential migration
