@@ -217,16 +217,24 @@ class BetRepository:
         if not update_data:
             return False
 
+        # Check if we need to recalculate profit (before filtering fields)
+        needs_profit_recalc = any(k in update_data for k in ('status', 'odds', 'stake'))
+
+        # Filter to allowed fields
+        # Note: We exclude 'profit' from allowed fields if we're recalculating it
+        # to ensure the recalculated value takes precedence
         allowed_fields = {
-            'status', 'profit', 'odds', 'stake', 'reason'
+            'status', 'odds', 'stake', 'reason'
         }
+        if not needs_profit_recalc:
+            allowed_fields.add('profit')
+
         update_data = {k: v for k, v in update_data.items() if k in allowed_fields}
 
         if not update_data:
             return False
 
-        # If any of the core fields change, recompute profit from odds/stake/status
-        needs_profit_recalc = any(k in update_data for k in ('status', 'odds', 'stake'))
+        # Recalculate profit if status, odds, or stake changed
         if needs_profit_recalc:
             with self.db_manager.get_connection() as conn:
                 cursor = conn.cursor()
