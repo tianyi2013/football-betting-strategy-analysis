@@ -71,6 +71,11 @@ dmypy.json
 
 ui/bets.json
 
+# Database files
+*.db
+betting_data.db
+ui/data_storage/*.db
+
 # Elastic Beanstalk Files
 .elasticbeanstalk/*
 !.elasticbeanstalk/*.cfg.yml
