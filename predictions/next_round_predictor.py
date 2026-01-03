@@ -41,8 +41,12 @@ class NextRoundPredictor:
             current_date = datetime.now().strftime('%Y-%m-%d')
 
         try:
-            # Load upcoming games
-            upcoming_df = pd.read_csv(self.upcoming_file)
+            # Load upcoming games - try Latin-1 encoding first as the CSV may have been saved incorrectly
+            # Use error handling to replace problematic characters
+            try:
+                upcoming_df = pd.read_csv(self.upcoming_file, encoding='latin-1')
+            except:
+                upcoming_df = pd.read_csv(self.upcoming_file, encoding='utf-8', encoding_errors='replace')
 
             # Clean column names
             upcoming_df.columns = upcoming_df.columns.str.strip()
