@@ -6,6 +6,13 @@ import argparse
 import os
 import sys
 
+# Configure UTF-8 encoding for stdout/stderr to handle special characters on Windows
+if sys.platform == 'win32':
+    if sys.stdout.encoding != 'utf-8':
+        sys.stdout.reconfigure(encoding='utf-8', errors='replace')
+    if sys.stderr.encoding != 'utf-8':
+        sys.stderr.reconfigure(encoding='utf-8', errors='replace')
+
 # Add parent directory to path so imports work when running this script directly
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
