@@ -1,54 +1,54 @@
 Match Number,Round Number,Date,Location,Home Team,Away Team,Result
-1,1,2025-08-15,Anfield,Liverpool,Bournemouth,4 - 2
+1,1,2025-08-15,Anfield,Liverpool,Bournemouth,2-Apr
 2,1,2025-08-16,Villa Park,Aston Villa,Newcastle,0 - 0
-3,1,2025-08-16,American Express Stadium,Brighton,Fulham,1 - 1
-5,1,2025-08-16,Stadium of Light,Sunderland,West Ham,3 - 0
-6,1,2025-08-16,Tottenham Hotspur Stadium,Tottenham,Burnley,3 - 0
+3,1,2025-08-16,American Express Stadium,Brighton,Fulham,1-Jan
+5,1,2025-08-16,Stadium of Light,Sunderland,West Ham,Mar-00
+6,1,2025-08-16,Tottenham Hotspur Stadium,Tottenham,Burnley,Mar-00
 7,1,2025-08-16,Molineux Stadium,Wolves,Man City,0 - 4
-4,1,2025-08-17,The City Ground,Nott'm Forest,Brentford,3 - 1
+4,1,2025-08-17,The City Ground,Nott'm Forest,Brentford,1-Mar
 8,1,2025-08-17,Stamford Bridge,Chelsea,Crystal Palace,0 - 0
 9,1,2025-08-17,Old Trafford,Man United,Arsenal,0 - 1
-10,1,2025-08-18,Elland Road,Leeds,Everton,1 - 0
-20,2,2025-08-22,London Stadium,West Ham,Chelsea,1 - 5
+10,1,2025-08-18,Elland Road,Leeds,Everton,Jan-00
+20,2,2025-08-22,London Stadium,West Ham,Chelsea,5-Jan
 18,2,2025-08-23,Etihad Stadium,Man City,Tottenham,0 - 2
-12,2,2025-08-23,Vitality Stadium,Bournemouth,Wolves,1 - 0
-13,2,2025-08-23,Gtech Community Stadium,Brentford,Aston Villa,1 - 0
-14,2,2025-08-23,Turf Moor,Burnley,Sunderland,2 - 0
-11,2,2025-08-23,Emirates Stadium,Arsenal,Leeds,5 - 0
-15,2,2025-08-24,Selhurst Park,Crystal Palace,Nott'm Forest,1 - 1
-16,2,2025-08-24,Hill Dickinson Stadium,Everton,Brighton,2 - 0
-17,2,2025-08-24,Craven Cottage,Fulham,Man United,1 - 1
-19,2,2025-08-25,St. James' Park,Newcastle,Liverpool,2 - 3
-23,3,2025-08-30,Stamford Bridge,Chelsea,Fulham,2 - 0
-26,3,2025-08-30,Old Trafford,Man United,Burnley,3 - 2
-28,3,2025-08-30,Stadium of Light,Sunderland,Brentford,2 - 1
+12,2,2025-08-23,Vitality Stadium,Bournemouth,Wolves,Jan-00
+13,2,2025-08-23,Gtech Community Stadium,Brentford,Aston Villa,Jan-00
+14,2,2025-08-23,Turf Moor,Burnley,Sunderland,Feb-00
+11,2,2025-08-23,Emirates Stadium,Arsenal,Leeds,May-00
+15,2,2025-08-24,Selhurst Park,Crystal Palace,Nott'm Forest,1-Jan
+16,2,2025-08-24,Hill Dickinson Stadium,Everton,Brighton,Feb-00
+17,2,2025-08-24,Craven Cottage,Fulham,Man United,1-Jan
+19,2,2025-08-25,St. James' Park,Newcastle,Liverpool,3-Feb
+23,3,2025-08-30,Stamford Bridge,Chelsea,Fulham,Feb-00
+26,3,2025-08-30,Old Trafford,Man United,Burnley,2-Mar
+28,3,2025-08-30,Stadium of Light,Sunderland,Brentford,1-Feb
 29,3,2025-08-30,Tottenham Hotspur Stadium,Tottenham,Bournemouth,0 - 1
-30,3,2025-08-30,Molineux Stadium,Wolves,Everton,2 - 3
+30,3,2025-08-30,Molineux Stadium,Wolves,Everton,3-Feb
 24,3,2025-08-30,Elland Road,Leeds,Newcastle,0 - 0
-22,3,2025-08-31,American Express Stadium,Brighton,Man City,2 - 1
+22,3,2025-08-31,American Express Stadium,Brighton,Man City,1-Feb
 27,3,2025-08-31,The City Ground,Nott'm Forest,West Ham,0 - 3
-25,3,2025-08-31,Anfield,Liverpool,Arsenal,1 - 0
+25,3,2025-08-31,Anfield,Liverpool,Arsenal,Jan-00
 21,3,2025-08-31,Villa Park,Aston Villa,Crystal Palace,0 - 3
-31,4,2025-09-13,Emirates Stadium,Arsenal,Nott'm Forest,3 - 0
-32,4,2025-09-13,Vitality Stadium,Bournemouth,Brighton,2 - 1
+31,4,2025-09-13,Emirates Stadium,Arsenal,Nott'm Forest,Mar-00
+32,4,2025-09-13,Vitality Stadium,Bournemouth,Brighton,1-Feb
 35,4,2025-09-13,Selhurst Park,Crystal Palace,Sunderland,0 - 0
 36,4,2025-09-13,Hill Dickinson Stadium,Everton,Aston Villa,0 - 0
-37,4,2025-09-13,Craven Cottage,Fulham,Leeds,1 - 0
-39,4,2025-09-13,St. James' Park,Newcastle,Wolves,1 - 0
+37,4,2025-09-13,Craven Cottage,Fulham,Leeds,Jan-00
+39,4,2025-09-13,St. James' Park,Newcastle,Wolves,Jan-00
 40,4,2025-09-13,London Stadium,West Ham,Tottenham,0 - 3
-33,4,2025-09-13,Gtech Community Stadium,Brentford,Chelsea,2 - 2
+33,4,2025-09-13,Gtech Community Stadium,Brentford,Chelsea,2-Feb
 34,4,2025-09-14,Turf Moor,Burnley,Liverpool,0 - 1
-38,4,2025-09-14,Etihad Stadium,Man City,Man United,3 - 0
-46,5,2025-09-20,Anfield,Liverpool,Everton,2 - 1
-43,5,2025-09-20,American Express Stadium,Brighton,Tottenham,2 - 2
-44,5,2025-09-20,Turf Moor,Burnley,Nott'm Forest,1 - 1
-49,5,2025-09-20,London Stadium,West Ham,Crystal Palace,1 - 2
-50,5,2025-09-20,Molineux Stadium,Wolves,Leeds,1 - 3
-47,5,2025-09-20,Old Trafford,Man United,Chelsea,2 - 1
-45,5,2025-09-20,Craven Cottage,Fulham,Brentford,3 - 1
+38,4,2025-09-14,Etihad Stadium,Man City,Man United,Mar-00
+46,5,2025-09-20,Anfield,Liverpool,Everton,1-Feb
+43,5,2025-09-20,American Express Stadium,Brighton,Tottenham,2-Feb
+44,5,2025-09-20,Turf Moor,Burnley,Nott'm Forest,1-Jan
+49,5,2025-09-20,London Stadium,West Ham,Crystal Palace,2-Jan
+50,5,2025-09-20,Molineux Stadium,Wolves,Leeds,3-Jan
+47,5,2025-09-20,Old Trafford,Man United,Chelsea,1-Feb
+45,5,2025-09-20,Craven Cottage,Fulham,Brentford,1-Mar
 42,5,2025-09-21,Vitality Stadium,Bournemouth,Newcastle,0 - 0
-48,5,2025-09-21,Stadium of Light,Sunderland,Aston Villa,1 - 1
-41,5,2025-09-21,Emirates Stadium,Arsenal,Man City,1 - 1
+48,5,2025-09-21,Stadium of Light,Sunderland,Aston Villa,1-Jan
+41,5,2025-09-21,Emirates Stadium,Arsenal,Man City,1-Jan
 52,6,2025-09-27,Gtech Community Stadium,Brentford,Man United,
 53,6,2025-09-27,Stamford Bridge,Chelsea,Brighton,
 54,6,2025-09-27,Selhurst Park,Crystal Palace,Liverpool,
@@ -192,12 +192,12 @@ Match Number,Round Number,Date,Location,Home Team,Away Team,Result
 191,20,2026-01-03,Villa Park,Aston Villa,Nott'm Forest,
 192,20,2026-01-03,Vitality Stadium,Bournemouth,Arsenal,
 193,20,2026-01-03,American Express Stadium,Brighton,Burnley,
-194,20,2026-01-03,Hill Dickinson Stadium,Everton,Brentford,
-195,20,2026-01-03,Craven Cottage,Fulham,Liverpool,
-196,20,2026-01-03,Elland Road,Leeds,Man United,
-197,20,2026-01-03,Etihad Stadium,Man City,Chelsea,
-198,20,2026-01-03,St. James' Park,Newcastle,Crystal Palace,
-199,20,2026-01-03,Tottenham Hotspur Stadium,Tottenham,Sunderland,
+194,20,2026-01-04,Hill Dickinson Stadium,Everton,Brentford,
+195,20,2026-01-04,Craven Cottage,Fulham,Liverpool,
+196,20,2026-01-04,Elland Road,Leeds,Man United,
+197,20,2026-01-04,Etihad Stadium,Man City,Chelsea,
+198,20,2026-01-04,St. James' Park,Newcastle,Crystal Palace,
+199,20,2026-01-04,Tottenham Hotspur Stadium,Tottenham,Sunderland,
 200,20,2026-01-03,Molineux Stadium,Wolves,West Ham,
 201,21,2026-01-07,Emirates Stadium,Arsenal,Liverpool,
 202,21,2026-01-07,Vitality Stadium,Bournemouth,Tottenham,
