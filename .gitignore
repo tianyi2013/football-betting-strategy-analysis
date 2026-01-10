@@ -50,6 +50,11 @@ momentum_bet_details_*.csv
 *_backtest_results_*.json
 *.log
 
+# Exclude very large CSV files that exceed GitHub's 100 MB limit
+data/premier_league/2024.csv
+data/bundesliga_1/2000.csv
+data/serie_a/upcoming_25.csv
+
 # Temporary files
 temp/
 tmp/
