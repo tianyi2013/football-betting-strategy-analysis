@@ -41,9 +41,12 @@ class DataCleaner:
         try:
             print(f"Processing {file_path}...")
             
-            # Read the CSV file
-            df = pd.read_csv(file_path, on_bad_lines='skip', encoding='latin-1')
-            
+            # Read the CSV file - try UTF-8 with BOM first, then fall back to latin-1
+            try:
+                df = pd.read_csv(file_path, on_bad_lines='skip', encoding='utf-8-sig')
+            except:
+                df = pd.read_csv(file_path, on_bad_lines='skip', encoding='latin-1')
+
             # Check if Date column exists
             if 'Date' not in df.columns:
                 message = f"No 'Date' column found in {file_path}"

@@ -76,8 +76,12 @@ class BaseBettingStrategy(ABC):
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"Season {season_year} data not found")
         
-        return pd.read_csv(file_path, on_bad_lines='skip', encoding='latin-1')
-    
+        # Try UTF-8 with BOM first, then fall back to latin-1
+        try:
+            return pd.read_csv(file_path, on_bad_lines='skip', encoding='utf-8-sig')
+        except:
+            return pd.read_csv(file_path, on_bad_lines='skip', encoding='latin-1')
+
     @abstractmethod
     def analyze_betting_performance(self, target_season: int, **kwargs) -> Dict:
         """

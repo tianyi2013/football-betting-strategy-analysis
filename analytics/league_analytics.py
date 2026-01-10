@@ -77,8 +77,12 @@ class PremierLeagueAnalytics:
         if not os.path.exists(file_path):
             raise FileNotFoundError(f"Season {season_year} data not found")
         
-        df = pd.read_csv(file_path, on_bad_lines='skip', encoding='latin-1')
-        
+        # Try UTF-8 with BOM first, then fall back to latin-1
+        try:
+            df = pd.read_csv(file_path, on_bad_lines='skip', encoding='utf-8-sig')
+        except:
+            df = pd.read_csv(file_path, on_bad_lines='skip', encoding='latin-1')
+
         # Validate required columns
         required_columns = ['HomeTeam', 'AwayTeam', 'FTHG', 'FTAG', 'FTR']
         missing_columns = [col for col in required_columns if col not in df.columns]
